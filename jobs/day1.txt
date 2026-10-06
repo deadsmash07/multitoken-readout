@@ -1,4 +1,3 @@
-# Day 1 of docs/REFORMULATION_AND_PLAN.md section 6, pre-registered in docs/prereg_R.yaml.
 # Format: name<TAB>python-args, args relative to sjlens/. One command per GPU (8 x A100-80GB):
 # Each line: <run name> TAB <arguments to python, relative to the repository root>; one GPU per line.
 # GPU 0-3: X1 (R1 locality, R2 linearity) on Qwen3-1.7B, one layer each, HELD-OUT half, 64 carriers.

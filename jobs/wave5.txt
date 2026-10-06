@@ -1,4 +1,3 @@
-# Wave 5 (29 Sep 2026; prereg A19-A25; ANALYSIS_WAVE4 section 10 sets 2-8; set 1 = w5_x3c_14b_basic_all / typo_all / 27b_basic +
 # E3 + judge is ALREADY queued under A15-A18 and is NOT in this file). Format: name<TAB>python-args<TAB># ~A100-h; args relative
 # Each line: <run name> TAB <arguments to python, relative to the repository root>; one GPU per line.
 # Qwen3-14B bf16-mixed, min backend unless stated. Cost model (measured, wave 4): 14B one 8-token patched generation ~0.9 s,

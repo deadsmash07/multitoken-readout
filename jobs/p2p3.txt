@@ -1,5 +1,4 @@
 # P2 (vocabulary-space probes, scripts/x6_future_probe.py) and P3 (unconditional chain reader, scripts/x7_chain_reader.py),
-# pre-registered as amendment A11 of docs/prereg_R.yaml. Format: name<TAB>python-args<TAB># ~A100-h; args relative to sjlens/;
 # Each line: <run name> TAB <arguments to python, relative to the repository root>; one GPU per line.
 # Tracks A (data/h2a_items.json, sub-word), B (data/phrase_items.json, word phrases), S (data/single_items.json, 1-token).
 # Rates assumed (LOG): 1.7B ~1.6 s per 64-carrier forward, 14B ~12 s (bf16-mixed) -> 14B lines use 32 carriers (~6 s);

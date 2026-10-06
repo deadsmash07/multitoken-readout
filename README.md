@@ -22,7 +22,6 @@ runs/<name>/results.json    result file behind every number in the paper (full c
 paper/analysis/         scripts that recompute the paper's tables and intervals from runs/
 paper/figures/src/      figure scripts
 PROVENANCE.md           maps every number in the paper and appendix to its result file
-preregistration.yaml    the registered tests, criteria and amendments
 jobs/                   the run commands, one run per line (name, then the arguments to python)
 tests/                  CPU tests on a tiny random Qwen3 model
 ```

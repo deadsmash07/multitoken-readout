@@ -1,5 +1,3 @@
-# Wave 2 (docs/ANALYSIS_DAY1.md section 5, N1-N6 + the single-token and word-phrase sets), pre-registered as
-# amendments A1-A9 of docs/prereg_R.yaml. Format: name<TAB>python-args, args relative to sjlens/; one GPU per job:
 # Each line: <run name> TAB <arguments to python, relative to the repository root>; one GPU per line.
 # Tracks (both first-class, reported side by side): A = sub-word multi-token (data/h2a_items.json: fragments, digits),
 # B = word-phrase (data/phrase_items.json: every piece a word token), S = single-token calibration
@@ -21,7 +19,6 @@ w2A_x1lite	scripts/x1_gap1_patch.py --model Qwen/Qwen3-1.7B --layers 14,18,22,26
 # N1, track B (phrase set): same-layer add a1 + replace at L18/22/26 with the new controls / ranks / p3 arm.
 w2B_x1_1p7b	scripts/x1_gap1_patch.py --model Qwen/Qwen3-1.7B --items data/phrase_items.json --split-file data/phrase_split.json --layers 18,22,26 --split heldout --n-ctx 64 --chunk 8 --alphas 1 --modes add,replace --target-layer same --pieces 2,3 --controls shuffled,crosscat,random --frame plain --kinds answer --device cuda --contexts runs/contexts/qwen3_T128_256.pt --resume --tag w2B_x1_1p7b	# ~2.5 h
 #
-# ---------------- N3: X1 v2 on 14B (pre-registered L16/24/32/36; add a1 + replace + linear lp + fargap), track A ----------------
 # ~400 s/item (8 finite runs, 2 JVP arms x 4 conditions); 3 shards per layer x ~11 h. linear:z left out (--linear-modes lp)
 # to halve the JVP cost; add "z" back if R2's pseudo-logit variant is wanted on 14B (+~4 h per shard).
 w2A_x1_14b_L16_s0	scripts/x1_gap1_patch.py --model Qwen/Qwen3-14B --dtype bf16-mixed --lens-file qwen3-14b/jlens/Salesforce-wikitext/Qwen3-14B_jacobian_lens.pt --layers 16 --split heldout --n-ctx 64 --chunk 8 --alphas 1 --modes add,replace --target-layer same --linear --linear-modes lp --fargap --controls shuffled,crosscat,random --frame plain --kinds answer --shard 0/3 --device cuda --contexts runs/contexts/qwen3_T128_256.pt --resume --tag w2A_x1_14b_L16_s0	# ~11 h

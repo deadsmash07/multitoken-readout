@@ -22,9 +22,9 @@ BASE = "#8C8C8C"
 # (group, label, same-layer %, early-layer %)
 ROWS = [
     ("Qwen3-14B", "Two-word names", 20.6, 46.9),
-    ("Qwen3-14B", "  fresh items", 8.6, 33.7),
+    ("Qwen3-14B", "  new items", 8.6, 33.7),
     ("Qwen3-14B", "Sub-word strings", 12.9, 31.0),
-    ("Qwen3-14B", "  fresh items", 4.4, 16.9),
+    ("Qwen3-14B", "  new items", 4.4, 16.9),
     ("Qwen3-8B", "Two-word names", 25.0, 49.4),
     ("Qwen3-8B", "Sub-word strings", 16.8, 37.9),
 ]

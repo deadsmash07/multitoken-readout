@@ -45,7 +45,9 @@ Caption: The two carrier prompts, verbatim. Each line is one variant; the eight 
 Caption: Number of the 100 WorkspaceBench items of each family that pass the plain-prompt gate on each model, and the number whose greedy answer starts with the target (immediate). No typo item is immediate on either model.
 
 
-## Registration and Verdicts
+## Decision Rules and Outcomes
+
+Each row lists a test, the success and stop lines written down before the run, the result, and the outcome.
 
 
 ### tab:prereg

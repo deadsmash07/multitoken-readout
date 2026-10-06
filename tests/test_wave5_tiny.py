@@ -5,7 +5,7 @@ nopatch controls and the no-patch withdrawal, the primary-string-only column, --
 profile, --x3-carrier-ids, and --rescore --rescore-out leaving the source run untouched (A20 / A22); (3) the R7
 certificate script: batched generation == x3.patched_generate row by row, the agreement score, the conformal
 bookkeeping, an end-to-end run with the item side (A25); (4) the fresh item set: contract, entity-disjointness from
-every existing file, first-hop positions (A24); (5) scripts/dl_model.sh parses. Content is meaningless on a random
+every existing file, first-hop positions (A24). Content is meaningless on a random
 model; identities, formats and rules are what is checked. Run: python tests/test_wave5_tiny.py"""
 import importlib.util, io, json, os, shutil, subprocess, sys, tempfile, torch
 sys.path.insert(0, "."); sys.path.insert(0, "tests")
@@ -189,8 +189,7 @@ try:
 except Exception as e:  # no cached tokenizer on this machine: run the same two checks on a GPU machine (make_fresh_items.py --check)
     print(f"[SKIP] real-tokenizer checks of the fresh set ({type(e).__name__}); run scripts/make_fresh_items.py --check offline on a GPU machine")
 
-# ---------------- (5) dl_model.sh parses ----------------
-chk("dl_model.sh: bash -n parses; defaults are Qwen3-8B and its lens file", float(subprocess.run(["bash", "-n", os.path.join(SC, "dl_model.sh")]).returncode != 0 or "Qwen/Qwen3-8B" not in open(os.path.join(SC, "dl_model.sh")).read() or "Qwen3-8B_jacobian_lens.pt" not in open(os.path.join(SC, "dl_model.sh")).read()))
+# (5) removed: dl_model.sh is a cluster download helper and is not part of the public repo
 
 for t in (tag, tag + "_rs", tagp, tag3, tag5): shutil.rmtree(os.path.join(runs, t), ignore_errors=True)
 shutil.rmtree(tmp, ignore_errors=True)

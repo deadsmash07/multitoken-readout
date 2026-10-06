@@ -1,0 +1,7220 @@
+{
+ "model": "Qwen/Qwen3-14B",
+ "dtype": "bf16-mixed",
+ "split": "heldout",
+ "seed": 0,
+ "track": "B",
+ "n_ctx": 32,
+ "n_cands": 488,
+ "n_queries": 318,
+ "numeric_categories": [
+  "number_word"
+ ],
+ "n_bridge_leak_excluded": 8,
+ "positions": [
+  "last",
+  "firsthop"
+ ],
+ "n_firsthop_queries": 30,
+ "layers": {
+  "32": {
+   "seconds_vectors": 13096.530180931091,
+   "methods": {
+    "pure": {
+     "all": {
+      "n": 318,
+      "top1": 0.4119496855345912,
+      "top10": 0.7641509433962265,
+      "median_rank": 2.0
+     },
+     "answer": {
+      "n": 175,
+      "top1": 0.56,
+      "top10": 0.9028571428571428,
+      "median_rank": 1.0
+     },
+     "answer:animal": {
+      "n": 4,
+      "top1": 0.25,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "answer:arts": {
+      "n": 2,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:capital": {
+      "n": 4,
+      "top1": 0.75,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:character": {
+      "n": 4,
+      "top1": 0.5,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:chemistry": {
+      "n": 1,
+      "top1": 0.0,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "answer:company": {
+      "n": 3,
+      "top1": 0.3333333333333333,
+      "top10": 0.6666666666666666,
+      "median_rank": 2.0
+     },
+     "answer:compound": {
+      "n": 16,
+      "top1": 0.875,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:country_of_capital": {
+      "n": 12,
+      "top1": 0.8333333333333334,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:event": {
+      "n": 4,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:landmark": {
+      "n": 13,
+      "top1": 0.6923076923076923,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:number_word": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_arts": {
+      "n": 7,
+      "top1": 0.14285714285714285,
+      "top10": 0.42857142857142855,
+      "median_rank": 18.0
+     },
+     "answer:person_history": {
+      "n": 13,
+      "top1": 0.5384615384615384,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_more": {
+      "n": 14,
+      "top1": 0.14285714285714285,
+      "top10": 0.6428571428571429,
+      "median_rank": 7.0
+     },
+     "answer:person_science": {
+      "n": 11,
+      "top1": 0.8181818181818182,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_sport": {
+      "n": 5,
+      "top1": 0.4,
+      "top10": 0.6,
+      "median_rank": 10.0
+     },
+     "answer:person_writer": {
+      "n": 4,
+      "top1": 0.0,
+      "top10": 0.75,
+      "median_rank": 2.0
+     },
+     "answer:place": {
+      "n": 12,
+      "top1": 0.4166666666666667,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "answer:president": {
+      "n": 10,
+      "top1": 0.3,
+      "top10": 0.8,
+      "median_rank": 2.0
+     },
+     "answer:region": {
+      "n": 9,
+      "top1": 0.3333333333333333,
+      "top10": 0.8888888888888888,
+      "median_rank": 2.0
+     },
+     "answer:science": {
+      "n": 2,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:sport": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:team": {
+      "n": 7,
+      "top1": 0.7142857142857143,
+      "top10": 0.8571428571428571,
+      "median_rank": 1.0
+     },
+     "answer:translation_spanish": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:us_state": {
+      "n": 10,
+      "top1": 0.7,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:us_state_capital": {
+      "n": 5,
+      "top1": 0.6,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge": {
+      "n": 143,
+      "top1": 0.23076923076923078,
+      "top10": 0.5944055944055944,
+      "median_rank": 6.0
+     },
+     "bridge:bridge_capital_continent": {
+      "n": 8,
+      "top1": 0.5,
+      "top10": 0.875,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_capital_currency": {
+      "n": 12,
+      "top1": 0.6666666666666666,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_capital_language": {
+      "n": 9,
+      "top1": 0.3333333333333333,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "bridge:bridge_character_creator": {
+      "n": 4,
+      "top1": 0.0,
+      "top10": 0.5,
+      "median_rank": 7.0
+     },
+     "bridge:bridge_company_country": {
+      "n": 8,
+      "top1": 0.0,
+      "top10": 0.125,
+      "median_rank": 98.0
+     },
+     "bridge:bridge_concept": {
+      "n": 11,
+      "top1": 0.18181818181818182,
+      "top10": 0.8181818181818182,
+      "median_rank": 6.0
+     },
+     "bridge:bridge_currency_capital": {
+      "n": 7,
+      "top1": 0.42857142857142855,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "bridge:bridge_currency_continent": {
+      "n": 5,
+      "top1": 0.2,
+      "top10": 0.6,
+      "median_rank": 8.0
+     },
+     "bridge:bridge_landmark_country": {
+      "n": 8,
+      "top1": 0.125,
+      "top10": 0.375,
+      "median_rank": 58.0
+     },
+     "bridge:bridge_person_arts_nationality": {
+      "n": 7,
+      "top1": 0.0,
+      "top10": 0.14285714285714285,
+      "median_rank": 95.0
+     },
+     "bridge:bridge_person_history_nationality": {
+      "n": 15,
+      "top1": 0.13333333333333333,
+      "top10": 0.5333333333333333,
+      "median_rank": 9.0
+     },
+     "bridge:bridge_person_science_nationality": {
+      "n": 14,
+      "top1": 0.0,
+      "top10": 0.14285714285714285,
+      "median_rank": 37.0
+     },
+     "bridge:bridge_person_sport_nationality": {
+      "n": 2,
+      "top1": 0.0,
+      "top10": 0.0,
+      "median_rank": 186.0
+     },
+     "bridge:bridge_person_writer_nationality": {
+      "n": 9,
+      "top1": 0.0,
+      "top10": 0.4444444444444444,
+      "median_rank": 27.0
+     },
+     "bridge:bridge_state_capital": {
+      "n": 17,
+      "top1": 0.47058823529411764,
+      "top10": 0.8235294117647058,
+      "median_rank": 3.0
+     },
+     "bridge:bridge_team_country": {
+      "n": 7,
+      "top1": 0.14285714285714285,
+      "top10": 0.42857142857142855,
+      "median_rank": 14.0
+     },
+     "ranks": [
+      1.0,
+      7.0,
+      1.0,
+      3.0,
+      5.0,
+      15.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      2.0,
+      5.0,
+      4.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      2.0,
+      6.0,
+      6.0,
+      5.0,
+      18.0,
+      1.0,
+      8.0,
+      11.0,
+      1.0,
+      1.0,
+      4.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      10.0,
+      2.0,
+      1.0,
+      5.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      3.0,
+      1.0,
+      9.0,
+      2.0,
+      7.0,
+      27.0,
+      3.0,
+      122.0,
+      200.0,
+      455.0,
+      98.0,
+      336.0,
+      70.0,
+      346.0,
+      4.0,
+      29.0,
+      5.0,
+      2.0,
+      25.0,
+      12.0,
+      1.0,
+      6.0,
+      2.0,
+      9.0,
+      10.0,
+      8.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      78.0,
+      58.0,
+      5.0,
+      212.0,
+      2.0,
+      88.0,
+      441.0,
+      15.0,
+      95.0,
+      194.0,
+      227.0,
+      100.0,
+      13.0,
+      6.0,
+      27.0,
+      6.0,
+      48.0,
+      3.0,
+      67.0,
+      1.0,
+      17.0,
+      45.0,
+      88.0,
+      1.0,
+      51.0,
+      4.0,
+      6.0,
+      5.0,
+      9.0,
+      5.0,
+      14.0,
+      33.0,
+      81.0,
+      102.0,
+      208.0,
+      204.0,
+      80.0,
+      370.0,
+      36.0,
+      37.0,
+      131.0,
+      12.0,
+      5.0,
+      186.0,
+      331.0,
+      2.0,
+      81.0,
+      2.0,
+      36.0,
+      101.0,
+      2.0,
+      27.0,
+      31.0,
+      10.0,
+      1.0,
+      1.0,
+      1.0,
+      8.0,
+      7.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      10.0,
+      5.0,
+      9.0,
+      23.0,
+      22.0,
+      42.0,
+      1.0,
+      4.0,
+      1.0,
+      2.0,
+      122.0,
+      82.0,
+      14.0,
+      50.0,
+      1.0,
+      8.0,
+      1.0,
+      6.0,
+      2.0,
+      1.0,
+      23.0,
+      2.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      2.0,
+      158.0,
+      18.0,
+      1.0,
+      3.0,
+      143.0,
+      50.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      2.0,
+      3.0,
+      4.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      2.0,
+      1.0,
+      25.0,
+      1.0,
+      6.0,
+      7.0,
+      80.0,
+      7.0,
+      8.0,
+      2.0,
+      65.0,
+      11.0,
+      1.0,
+      6.0,
+      6.0,
+      27.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      5.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      12.0,
+      18.0,
+      10.0,
+      2.0,
+      22.0,
+      6.0,
+      2.0,
+      9.0,
+      2.0,
+      2.0,
+      1.0,
+      6.0,
+      2.0,
+      2.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      20.0,
+      6.0,
+      1.0,
+      1.0,
+      3.0,
+      2.0,
+      14.0,
+      2.0,
+      1.0,
+      2.0,
+      5.0,
+      1.0,
+      2.0,
+      7.0,
+      7.0,
+      134.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      12.0,
+      2.0,
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      4.0
+     ],
+     "family": {
+      "n_unique": 184,
+      "unique_top1": 0.45652173913043476,
+      "n_family": 134,
+      "within_family_top1": 0.753731343283582,
+      "within_family_chance": 0.28436207242177436,
+      "n_unique_ex_numeric": 183,
+      "unique_top1_ex_numeric": 0.453551912568306,
+      "n_family_ex_numeric": 134,
+      "within_family_top1_ex_numeric": 0.753731343283582,
+      "within_family_chance_ex_numeric": 0.28436207242177436,
+      "by_category": {
+       "animal": {
+        "n": 4,
+        "top1": 0.25,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.25,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "arts": {
+        "n": 2,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "bridge_capital_continent": {
+        "n": 8,
+        "top1": 0.5,
+        "top10": 0.875,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 4,
+        "within_top1": 0.75,
+        "chance": 0.11843711843711843,
+        "numeric": false
+       },
+       "bridge_capital_currency": {
+        "n": 12,
+        "top1": 0.6666666666666666,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 0.8,
+        "n_family": 7,
+        "within_top1": 1.0,
+        "chance": 0.286281179138322,
+        "numeric": false
+       },
+       "bridge_capital_language": {
+        "n": 9,
+        "top1": 0.3333333333333333,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 0.6,
+        "n_family": 4,
+        "within_top1": 1.0,
+        "chance": 0.11843711843711843,
+        "numeric": false
+       },
+       "bridge_character_creator": {
+        "n": 4,
+        "top1": 0.0,
+        "top10": 0.5,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 3,
+        "within_top1": 0.0,
+        "chance": 0.2976190476190476,
+        "numeric": false
+       },
+       "bridge_company_country": {
+        "n": 8,
+        "top1": 0.0,
+        "top10": 0.125,
+        "n_unique": 6,
+        "unique_top1": 0.0,
+        "n_family": 2,
+        "within_top1": 0.5,
+        "chance": 0.375,
+        "numeric": false
+       },
+       "bridge_concept": {
+        "n": 11,
+        "top1": 0.18181818181818182,
+        "top10": 0.8181818181818182,
+        "n_unique": 6,
+        "unique_top1": 0.16666666666666666,
+        "n_family": 5,
+        "within_top1": 0.6,
+        "chance": 0.45,
+        "numeric": false
+       },
+       "bridge_currency_capital": {
+        "n": 7,
+        "top1": 0.42857142857142855,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 0.4,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.18055555555555555,
+        "numeric": false
+       },
+       "bridge_currency_continent": {
+        "n": 5,
+        "top1": 0.2,
+        "top10": 0.6,
+        "n_unique": 3,
+        "unique_top1": 0.0,
+        "n_family": 2,
+        "within_top1": 0.5,
+        "chance": 0.12698412698412698,
+        "numeric": false
+       },
+       "bridge_landmark_country": {
+        "n": 8,
+        "top1": 0.125,
+        "top10": 0.375,
+        "n_unique": 3,
+        "unique_top1": 0.0,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.3888888888888889,
+        "numeric": false
+       },
+       "bridge_person_arts_nationality": {
+        "n": 7,
+        "top1": 0.0,
+        "top10": 0.14285714285714285,
+        "n_unique": 6,
+        "unique_top1": 0.0,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "bridge_person_history_nationality": {
+        "n": 15,
+        "top1": 0.13333333333333333,
+        "top10": 0.5333333333333333,
+        "n_unique": 10,
+        "unique_top1": 0.2,
+        "n_family": 5,
+        "within_top1": 0.6,
+        "chance": 0.34523809523809523,
+        "numeric": false
+       },
+       "bridge_person_science_nationality": {
+        "n": 14,
+        "top1": 0.0,
+        "top10": 0.14285714285714285,
+        "n_unique": 7,
+        "unique_top1": 0.0,
+        "n_family": 7,
+        "within_top1": 0.42857142857142855,
+        "chance": 0.4523809523809524,
+        "numeric": false
+       },
+       "bridge_person_sport_nationality": {
+        "n": 2,
+        "top1": 0.0,
+        "top10": 0.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "bridge_person_writer_nationality": {
+        "n": 9,
+        "top1": 0.0,
+        "top10": 0.4444444444444444,
+        "n_unique": 4,
+        "unique_top1": 0.0,
+        "n_family": 5,
+        "within_top1": 0.6,
+        "chance": 0.3071428571428571,
+        "numeric": false
+       },
+       "bridge_state_capital": {
+        "n": 17,
+        "top1": 0.47058823529411764,
+        "top10": 0.8235294117647058,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 16,
+        "within_top1": 0.875,
+        "chance": 0.10964590964590964,
+        "numeric": false
+       },
+       "bridge_team_country": {
+        "n": 7,
+        "top1": 0.14285714285714285,
+        "top10": 0.42857142857142855,
+        "n_unique": 5,
+        "unique_top1": 0.2,
+        "n_family": 2,
+        "within_top1": 0.5,
+        "chance": 0.28846153846153844,
+        "numeric": false
+       },
+       "capital": {
+        "n": 4,
+        "top1": 0.75,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.14285714285714285,
+        "numeric": false
+       },
+       "character": {
+        "n": 4,
+        "top1": 0.5,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 0.6666666666666666,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "chemistry": {
+        "n": 1,
+        "top1": 0.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "company": {
+        "n": 3,
+        "top1": 0.3333333333333333,
+        "top10": 0.6666666666666666,
+        "n_unique": 2,
+        "unique_top1": 0.5,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "compound": {
+        "n": 16,
+        "top1": 0.875,
+        "top10": 1.0,
+        "n_unique": 13,
+        "unique_top1": 0.9230769230769231,
+        "n_family": 3,
+        "within_top1": 0.6666666666666666,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "country_of_capital": {
+        "n": 12,
+        "top1": 0.8333333333333334,
+        "top10": 1.0,
+        "n_unique": 9,
+        "unique_top1": 0.7777777777777778,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.25132275132275134,
+        "numeric": false
+       },
+       "event": {
+        "n": 4,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "landmark": {
+        "n": 13,
+        "top1": 0.6923076923076923,
+        "top10": 1.0,
+        "n_unique": 8,
+        "unique_top1": 0.625,
+        "n_family": 5,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "number_word": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": true
+       },
+       "person_arts": {
+        "n": 7,
+        "top1": 0.14285714285714285,
+        "top10": 0.42857142857142855,
+        "n_unique": 4,
+        "unique_top1": 0.25,
+        "n_family": 3,
+        "within_top1": 0.6666666666666666,
+        "chance": 0.4444444444444444,
+        "numeric": false
+       },
+       "person_history": {
+        "n": 13,
+        "top1": 0.5384615384615384,
+        "top10": 1.0,
+        "n_unique": 9,
+        "unique_top1": 0.5555555555555556,
+        "n_family": 4,
+        "within_top1": 1.0,
+        "chance": 0.3958333333333333,
+        "numeric": false
+       },
+       "person_more": {
+        "n": 14,
+        "top1": 0.14285714285714285,
+        "top10": 0.6428571428571429,
+        "n_unique": 9,
+        "unique_top1": 0.1111111111111111,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.32857142857142857,
+        "numeric": false
+       },
+       "person_science": {
+        "n": 11,
+        "top1": 0.8181818181818182,
+        "top10": 1.0,
+        "n_unique": 8,
+        "unique_top1": 1.0,
+        "n_family": 3,
+        "within_top1": 0.6666666666666666,
+        "chance": 0.38888888888888884,
+        "numeric": false
+       },
+       "person_sport": {
+        "n": 5,
+        "top1": 0.4,
+        "top10": 0.6,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "person_writer": {
+        "n": 4,
+        "top1": 0.0,
+        "top10": 0.75,
+        "n_unique": 2,
+        "unique_top1": 0.0,
+        "n_family": 2,
+        "within_top1": 0.5,
+        "chance": 0.3214285714285714,
+        "numeric": false
+       },
+       "place": {
+        "n": 12,
+        "top1": 0.4166666666666667,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 8,
+        "within_top1": 0.875,
+        "chance": 0.1730006105006105,
+        "numeric": false
+       },
+       "president": {
+        "n": 10,
+        "top1": 0.3,
+        "top10": 0.8,
+        "n_unique": 7,
+        "unique_top1": 0.2857142857142857,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.4166666666666667,
+        "numeric": false
+       },
+       "region": {
+        "n": 9,
+        "top1": 0.3333333333333333,
+        "top10": 0.8888888888888888,
+        "n_unique": 6,
+        "unique_top1": 0.3333333333333333,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.12169312169312169,
+        "numeric": false
+       },
+       "science": {
+        "n": 2,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "sport": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 0,
+        "unique_top1": null,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.25,
+        "numeric": false
+       },
+       "team": {
+        "n": 7,
+        "top1": 0.7142857142857143,
+        "top10": 0.8571428571428571,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 6,
+        "within_top1": 0.6666666666666666,
+        "chance": 0.2756410256410256,
+        "numeric": false
+       },
+       "translation_spanish": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "us_state": {
+        "n": 10,
+        "top1": 0.7,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 8,
+        "within_top1": 0.875,
+        "chance": 0.11733821733821734,
+        "numeric": false
+       },
+       "us_state_capital": {
+        "n": 5,
+        "top1": 0.6,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 0.6,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       }
+      },
+      "answer": {
+       "n_unique": 112,
+       "unique_top1": 0.6071428571428571,
+       "n_family": 63,
+       "within_family_top1": 0.8095238095238095,
+       "within_family_chance": 0.3059392987964415,
+       "n_unique_ex_numeric": 111,
+       "unique_top1_ex_numeric": 0.6036036036036037,
+       "n_family_ex_numeric": 63,
+       "within_family_top1_ex_numeric": 0.8095238095238095,
+       "within_family_chance_ex_numeric": 0.3059392987964415
+      },
+      "bridge": {
+       "n_unique": 72,
+       "unique_top1": 0.2222222222222222,
+       "n_family": 71,
+       "within_family_top1": 0.704225352112676,
+       "within_family_chance": 0.26521608282171655,
+       "n_unique_ex_numeric": 72,
+       "unique_top1_ex_numeric": 0.2222222222222222,
+       "n_family_ex_numeric": 71,
+       "within_family_top1_ex_numeric": 0.704225352112676,
+       "within_family_chance_ex_numeric": 0.26521608282171655
+      }
+     },
+     "control_shuffled": {
+      "n": 314,
+      "top1": 0.009554140127388535,
+      "top10": 0.1305732484076433,
+      "median_rank": 98.0,
+      "family": {
+       "n_unique": 181,
+       "unique_top1": 0.011049723756906077,
+       "n_family": 133,
+       "within_family_top1": 0.3308270676691729,
+       "within_family_chance": 0.28462043386855457,
+       "n_unique_ex_numeric": 181,
+       "unique_top1_ex_numeric": 0.011049723756906077,
+       "n_family_ex_numeric": 133,
+       "within_family_top1_ex_numeric": 0.3308270676691729,
+       "within_family_chance_ex_numeric": 0.28462043386855457
+      }
+     },
+     "control_crosscat": {
+      "n": 318,
+      "top1": 0.0,
+      "top10": 0.0220125786163522,
+      "median_rank": 223.0,
+      "family": {
+       "n_unique": 184,
+       "unique_top1": 0.0,
+       "n_family": 134,
+       "within_family_top1": 0.26119402985074625,
+       "within_family_chance": 0.28436207242177436,
+       "n_unique_ex_numeric": 183,
+       "unique_top1_ex_numeric": 0.0,
+       "n_family_ex_numeric": 134,
+       "within_family_top1_ex_numeric": 0.26119402985074625,
+       "within_family_chance_ex_numeric": 0.28436207242177436
+      }
+     },
+     "control_random": {
+      "n": 318,
+      "top1": 0.0031446540880503146,
+      "top10": 0.018867924528301886,
+      "median_rank": 248.0,
+      "family": {
+       "n_unique": 184,
+       "unique_top1": 0.005434782608695652,
+       "n_family": 134,
+       "within_family_top1": 0.23880597014925373,
+       "within_family_chance": 0.28436207242177436,
+       "n_unique_ex_numeric": 183,
+       "unique_top1_ex_numeric": 0.00546448087431694,
+       "n_family_ex_numeric": 134,
+       "within_family_top1_ex_numeric": 0.23880597014925373,
+       "within_family_chance_ex_numeric": 0.28436207242177436
+      }
+     }
+    },
+    "hybrid_nm": {
+     "all": {
+      "n": 318,
+      "top1": 0.48427672955974843,
+      "top10": 0.7861635220125787,
+      "median_rank": 2.0
+     },
+     "answer": {
+      "n": 175,
+      "top1": 0.6571428571428571,
+      "top10": 0.9485714285714286,
+      "median_rank": 1.0
+     },
+     "answer:animal": {
+      "n": 4,
+      "top1": 0.5,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:arts": {
+      "n": 2,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:capital": {
+      "n": 4,
+      "top1": 0.75,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:character": {
+      "n": 4,
+      "top1": 0.75,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:chemistry": {
+      "n": 1,
+      "top1": 0.0,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "answer:company": {
+      "n": 3,
+      "top1": 0.3333333333333333,
+      "top10": 1.0,
+      "median_rank": 4.0
+     },
+     "answer:compound": {
+      "n": 16,
+      "top1": 0.875,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:country_of_capital": {
+      "n": 12,
+      "top1": 0.9166666666666666,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:event": {
+      "n": 4,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:landmark": {
+      "n": 13,
+      "top1": 0.5384615384615384,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:number_word": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_arts": {
+      "n": 7,
+      "top1": 0.2857142857142857,
+      "top10": 0.5714285714285714,
+      "median_rank": 4.0
+     },
+     "answer:person_history": {
+      "n": 13,
+      "top1": 0.6923076923076923,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_more": {
+      "n": 14,
+      "top1": 0.5,
+      "top10": 0.9285714285714286,
+      "median_rank": 1.0
+     },
+     "answer:person_science": {
+      "n": 11,
+      "top1": 0.9090909090909091,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_sport": {
+      "n": 5,
+      "top1": 0.4,
+      "top10": 1.0,
+      "median_rank": 3.0
+     },
+     "answer:person_writer": {
+      "n": 4,
+      "top1": 0.5,
+      "top10": 0.75,
+      "median_rank": 1.0
+     },
+     "answer:place": {
+      "n": 12,
+      "top1": 0.5833333333333334,
+      "top10": 0.9166666666666666,
+      "median_rank": 1.0
+     },
+     "answer:president": {
+      "n": 10,
+      "top1": 0.7,
+      "top10": 0.9,
+      "median_rank": 1.0
+     },
+     "answer:region": {
+      "n": 9,
+      "top1": 0.3333333333333333,
+      "top10": 0.8888888888888888,
+      "median_rank": 2.0
+     },
+     "answer:science": {
+      "n": 2,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:sport": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:team": {
+      "n": 7,
+      "top1": 0.5714285714285714,
+      "top10": 0.8571428571428571,
+      "median_rank": 1.0
+     },
+     "answer:translation_spanish": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:us_state": {
+      "n": 10,
+      "top1": 0.7,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:us_state_capital": {
+      "n": 5,
+      "top1": 0.6,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge": {
+      "n": 143,
+      "top1": 0.2727272727272727,
+      "top10": 0.5874125874125874,
+      "median_rank": 6.0
+     },
+     "bridge:bridge_capital_continent": {
+      "n": 8,
+      "top1": 0.625,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_capital_currency": {
+      "n": 12,
+      "top1": 0.8333333333333334,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_capital_language": {
+      "n": 9,
+      "top1": 0.5555555555555556,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_character_creator": {
+      "n": 4,
+      "top1": 0.25,
+      "top10": 0.5,
+      "median_rank": 4.0
+     },
+     "bridge:bridge_company_country": {
+      "n": 8,
+      "top1": 0.0,
+      "top10": 0.25,
+      "median_rank": 65.0
+     },
+     "bridge:bridge_concept": {
+      "n": 11,
+      "top1": 0.18181818181818182,
+      "top10": 1.0,
+      "median_rank": 3.0
+     },
+     "bridge:bridge_currency_capital": {
+      "n": 7,
+      "top1": 0.42857142857142855,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "bridge:bridge_currency_continent": {
+      "n": 5,
+      "top1": 0.2,
+      "top10": 0.8,
+      "median_rank": 3.0
+     },
+     "bridge:bridge_landmark_country": {
+      "n": 8,
+      "top1": 0.125,
+      "top10": 0.375,
+      "median_rank": 20.0
+     },
+     "bridge:bridge_person_arts_nationality": {
+      "n": 7,
+      "top1": 0.0,
+      "top10": 0.14285714285714285,
+      "median_rank": 27.0
+     },
+     "bridge:bridge_person_history_nationality": {
+      "n": 15,
+      "top1": 0.06666666666666667,
+      "top10": 0.3333333333333333,
+      "median_rank": 15.0
+     },
+     "bridge:bridge_person_science_nationality": {
+      "n": 14,
+      "top1": 0.0,
+      "top10": 0.14285714285714285,
+      "median_rank": 28.0
+     },
+     "bridge:bridge_person_sport_nationality": {
+      "n": 2,
+      "top1": 0.0,
+      "top10": 0.0,
+      "median_rank": 39.0
+     },
+     "bridge:bridge_person_writer_nationality": {
+      "n": 9,
+      "top1": 0.0,
+      "top10": 0.3333333333333333,
+      "median_rank": 18.0
+     },
+     "bridge:bridge_state_capital": {
+      "n": 17,
+      "top1": 0.4117647058823529,
+      "top10": 0.6470588235294118,
+      "median_rank": 4.0
+     },
+     "bridge:bridge_team_country": {
+      "n": 7,
+      "top1": 0.42857142857142855,
+      "top10": 0.5714285714285714,
+      "median_rank": 9.0
+     },
+     "ranks": [
+      1.0,
+      7.0,
+      1.0,
+      2.0,
+      4.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      5.0,
+      2.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      4.0,
+      2.0,
+      4.0,
+      13.0,
+      1.0,
+      3.0,
+      3.0,
+      1.0,
+      1.0,
+      4.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      5.0,
+      1.0,
+      1.0,
+      6.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      3.0,
+      4.0,
+      29.0,
+      1.0,
+      82.0,
+      121.0,
+      392.0,
+      65.0,
+      134.0,
+      10.0,
+      233.0,
+      5.0,
+      13.0,
+      3.0,
+      1.0,
+      7.0,
+      5.0,
+      1.0,
+      10.0,
+      2.0,
+      2.0,
+      4.0,
+      3.0,
+      4.0,
+      2.0,
+      1.0,
+      5.0,
+      1.0,
+      32.0,
+      20.0,
+      9.0,
+      60.0,
+      4.0,
+      36.0,
+      353.0,
+      7.0,
+      26.0,
+      27.0,
+      51.0,
+      27.0,
+      33.0,
+      14.0,
+      42.0,
+      13.0,
+      49.0,
+      12.0,
+      22.0,
+      1.0,
+      69.0,
+      29.0,
+      15.0,
+      2.0,
+      40.0,
+      3.0,
+      6.0,
+      15.0,
+      6.0,
+      18.0,
+      20.0,
+      21.0,
+      79.0,
+      56.0,
+      55.0,
+      39.0,
+      45.0,
+      114.0,
+      28.0,
+      27.0,
+      79.0,
+      5.0,
+      6.0,
+      39.0,
+      233.0,
+      11.0,
+      18.0,
+      4.0,
+      25.0,
+      56.0,
+      2.0,
+      30.0,
+      9.0,
+      23.0,
+      1.0,
+      1.0,
+      1.0,
+      9.0,
+      4.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      7.0,
+      30.0,
+      13.0,
+      28.0,
+      43.0,
+      50.0,
+      44.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      39.0,
+      80.0,
+      17.0,
+      9.0,
+      1.0,
+      1.0,
+      1.0,
+      10.0,
+      2.0,
+      1.0,
+      4.0,
+      4.0,
+      4.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      2.0,
+      2.0,
+      1.0,
+      2.0,
+      3.0,
+      1.0,
+      1.0,
+      6.0,
+      1.0,
+      2.0,
+      16.0,
+      4.0,
+      1.0,
+      1.0,
+      46.0,
+      16.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      4.0,
+      1.0,
+      28.0,
+      3.0,
+      1.0,
+      1.0,
+      7.0,
+      1.0,
+      6.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      7.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      4.0,
+      3.0,
+      1.0,
+      14.0,
+      3.0,
+      1.0,
+      11.0,
+      2.0,
+      1.0,
+      1.0,
+      3.0,
+      2.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      21.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      5.0,
+      1.0,
+      2.0,
+      2.0,
+      3.0,
+      98.0,
+      5.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      17.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      1.0,
+      2.0,
+      5.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      2.0,
+      1.0,
+      1.0
+     ],
+     "family": {
+      "n_unique": 184,
+      "unique_top1": 0.5706521739130435,
+      "n_family": 134,
+      "within_family_top1": 0.7089552238805971,
+      "within_family_chance": 0.28436207242177436,
+      "n_unique_ex_numeric": 183,
+      "unique_top1_ex_numeric": 0.5683060109289617,
+      "n_family_ex_numeric": 134,
+      "within_family_top1_ex_numeric": 0.7089552238805971,
+      "within_family_chance_ex_numeric": 0.28436207242177436,
+      "by_category": {
+       "animal": {
+        "n": 4,
+        "top1": 0.5,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "arts": {
+        "n": 2,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "bridge_capital_continent": {
+        "n": 8,
+        "top1": 0.625,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.75,
+        "n_family": 4,
+        "within_top1": 0.75,
+        "chance": 0.11843711843711843,
+        "numeric": false
+       },
+       "bridge_capital_currency": {
+        "n": 12,
+        "top1": 0.8333333333333334,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 1.0,
+        "n_family": 7,
+        "within_top1": 0.8571428571428571,
+        "chance": 0.286281179138322,
+        "numeric": false
+       },
+       "bridge_capital_language": {
+        "n": 9,
+        "top1": 0.5555555555555556,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 1.0,
+        "n_family": 4,
+        "within_top1": 1.0,
+        "chance": 0.11843711843711843,
+        "numeric": false
+       },
+       "bridge_character_creator": {
+        "n": 4,
+        "top1": 0.25,
+        "top10": 0.5,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 3,
+        "within_top1": 0.0,
+        "chance": 0.2976190476190476,
+        "numeric": false
+       },
+       "bridge_company_country": {
+        "n": 8,
+        "top1": 0.0,
+        "top10": 0.25,
+        "n_unique": 6,
+        "unique_top1": 0.0,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.375,
+        "numeric": false
+       },
+       "bridge_concept": {
+        "n": 11,
+        "top1": 0.18181818181818182,
+        "top10": 1.0,
+        "n_unique": 6,
+        "unique_top1": 0.16666666666666666,
+        "n_family": 5,
+        "within_top1": 0.6,
+        "chance": 0.45,
+        "numeric": false
+       },
+       "bridge_currency_capital": {
+        "n": 7,
+        "top1": 0.42857142857142855,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 0.6,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.18055555555555555,
+        "numeric": false
+       },
+       "bridge_currency_continent": {
+        "n": 5,
+        "top1": 0.2,
+        "top10": 0.8,
+        "n_unique": 3,
+        "unique_top1": 0.0,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.12698412698412698,
+        "numeric": false
+       },
+       "bridge_landmark_country": {
+        "n": 8,
+        "top1": 0.125,
+        "top10": 0.375,
+        "n_unique": 3,
+        "unique_top1": 0.0,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.3888888888888889,
+        "numeric": false
+       },
+       "bridge_person_arts_nationality": {
+        "n": 7,
+        "top1": 0.0,
+        "top10": 0.14285714285714285,
+        "n_unique": 6,
+        "unique_top1": 0.0,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "bridge_person_history_nationality": {
+        "n": 15,
+        "top1": 0.06666666666666667,
+        "top10": 0.3333333333333333,
+        "n_unique": 10,
+        "unique_top1": 0.1,
+        "n_family": 5,
+        "within_top1": 0.6,
+        "chance": 0.34523809523809523,
+        "numeric": false
+       },
+       "bridge_person_science_nationality": {
+        "n": 14,
+        "top1": 0.0,
+        "top10": 0.14285714285714285,
+        "n_unique": 7,
+        "unique_top1": 0.0,
+        "n_family": 7,
+        "within_top1": 0.42857142857142855,
+        "chance": 0.4523809523809524,
+        "numeric": false
+       },
+       "bridge_person_sport_nationality": {
+        "n": 2,
+        "top1": 0.0,
+        "top10": 0.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "bridge_person_writer_nationality": {
+        "n": 9,
+        "top1": 0.0,
+        "top10": 0.3333333333333333,
+        "n_unique": 4,
+        "unique_top1": 0.0,
+        "n_family": 5,
+        "within_top1": 0.6,
+        "chance": 0.3071428571428571,
+        "numeric": false
+       },
+       "bridge_state_capital": {
+        "n": 17,
+        "top1": 0.4117647058823529,
+        "top10": 0.6470588235294118,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 16,
+        "within_top1": 0.875,
+        "chance": 0.10964590964590964,
+        "numeric": false
+       },
+       "bridge_team_country": {
+        "n": 7,
+        "top1": 0.42857142857142855,
+        "top10": 0.5714285714285714,
+        "n_unique": 5,
+        "unique_top1": 0.4,
+        "n_family": 2,
+        "within_top1": 0.5,
+        "chance": 0.28846153846153844,
+        "numeric": false
+       },
+       "capital": {
+        "n": 4,
+        "top1": 0.75,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.14285714285714285,
+        "numeric": false
+       },
+       "character": {
+        "n": 4,
+        "top1": 0.75,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "chemistry": {
+        "n": 1,
+        "top1": 0.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "company": {
+        "n": 3,
+        "top1": 0.3333333333333333,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 0.5,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "compound": {
+        "n": 16,
+        "top1": 0.875,
+        "top10": 1.0,
+        "n_unique": 13,
+        "unique_top1": 0.9230769230769231,
+        "n_family": 3,
+        "within_top1": 0.6666666666666666,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "country_of_capital": {
+        "n": 12,
+        "top1": 0.9166666666666666,
+        "top10": 1.0,
+        "n_unique": 9,
+        "unique_top1": 0.8888888888888888,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.25132275132275134,
+        "numeric": false
+       },
+       "event": {
+        "n": 4,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "landmark": {
+        "n": 13,
+        "top1": 0.5384615384615384,
+        "top10": 1.0,
+        "n_unique": 8,
+        "unique_top1": 0.5,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "number_word": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": true
+       },
+       "person_arts": {
+        "n": 7,
+        "top1": 0.2857142857142857,
+        "top10": 0.5714285714285714,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 3,
+        "within_top1": 0.0,
+        "chance": 0.4444444444444444,
+        "numeric": false
+       },
+       "person_history": {
+        "n": 13,
+        "top1": 0.6923076923076923,
+        "top10": 1.0,
+        "n_unique": 9,
+        "unique_top1": 0.7777777777777778,
+        "n_family": 4,
+        "within_top1": 0.75,
+        "chance": 0.3958333333333333,
+        "numeric": false
+       },
+       "person_more": {
+        "n": 14,
+        "top1": 0.5,
+        "top10": 0.9285714285714286,
+        "n_unique": 9,
+        "unique_top1": 0.6666666666666666,
+        "n_family": 5,
+        "within_top1": 0.6,
+        "chance": 0.32857142857142857,
+        "numeric": false
+       },
+       "person_science": {
+        "n": 11,
+        "top1": 0.9090909090909091,
+        "top10": 1.0,
+        "n_unique": 8,
+        "unique_top1": 1.0,
+        "n_family": 3,
+        "within_top1": 0.6666666666666666,
+        "chance": 0.38888888888888884,
+        "numeric": false
+       },
+       "person_sport": {
+        "n": 5,
+        "top1": 0.4,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "person_writer": {
+        "n": 4,
+        "top1": 0.5,
+        "top10": 0.75,
+        "n_unique": 2,
+        "unique_top1": 0.5,
+        "n_family": 2,
+        "within_top1": 0.5,
+        "chance": 0.3214285714285714,
+        "numeric": false
+       },
+       "place": {
+        "n": 12,
+        "top1": 0.5833333333333334,
+        "top10": 0.9166666666666666,
+        "n_unique": 4,
+        "unique_top1": 0.75,
+        "n_family": 8,
+        "within_top1": 0.625,
+        "chance": 0.1730006105006105,
+        "numeric": false
+       },
+       "president": {
+        "n": 10,
+        "top1": 0.7,
+        "top10": 0.9,
+        "n_unique": 7,
+        "unique_top1": 0.7142857142857143,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.4166666666666667,
+        "numeric": false
+       },
+       "region": {
+        "n": 9,
+        "top1": 0.3333333333333333,
+        "top10": 0.8888888888888888,
+        "n_unique": 6,
+        "unique_top1": 0.3333333333333333,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.12169312169312169,
+        "numeric": false
+       },
+       "science": {
+        "n": 2,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "sport": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 0,
+        "unique_top1": null,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.25,
+        "numeric": false
+       },
+       "team": {
+        "n": 7,
+        "top1": 0.5714285714285714,
+        "top10": 0.8571428571428571,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 6,
+        "within_top1": 0.5,
+        "chance": 0.2756410256410256,
+        "numeric": false
+       },
+       "translation_spanish": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "us_state": {
+        "n": 10,
+        "top1": 0.7,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 8,
+        "within_top1": 1.0,
+        "chance": 0.11733821733821734,
+        "numeric": false
+       },
+       "us_state_capital": {
+        "n": 5,
+        "top1": 0.6,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 0.6,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       }
+      },
+      "answer": {
+       "n_unique": 112,
+       "unique_top1": 0.7410714285714286,
+       "n_family": 63,
+       "within_family_top1": 0.6984126984126984,
+       "within_family_chance": 0.3059392987964415,
+       "n_unique_ex_numeric": 111,
+       "unique_top1_ex_numeric": 0.7387387387387387,
+       "n_family_ex_numeric": 63,
+       "within_family_top1_ex_numeric": 0.6984126984126984,
+       "within_family_chance_ex_numeric": 0.3059392987964415
+      },
+      "bridge": {
+       "n_unique": 72,
+       "unique_top1": 0.3055555555555556,
+       "n_family": 71,
+       "within_family_top1": 0.7183098591549296,
+       "within_family_chance": 0.26521608282171655,
+       "n_unique_ex_numeric": 72,
+       "unique_top1_ex_numeric": 0.3055555555555556,
+       "n_family_ex_numeric": 71,
+       "within_family_top1_ex_numeric": 0.7183098591549296,
+       "within_family_chance_ex_numeric": 0.26521608282171655
+      }
+     },
+     "control_shuffled": {
+      "n": 314,
+      "top1": 0.012738853503184714,
+      "top10": 0.12420382165605096,
+      "median_rank": 80.0,
+      "family": {
+       "n_unique": 181,
+       "unique_top1": 0.0055248618784530384,
+       "n_family": 133,
+       "within_family_top1": 0.3383458646616541,
+       "within_family_chance": 0.28462043386855457,
+       "n_unique_ex_numeric": 181,
+       "unique_top1_ex_numeric": 0.0055248618784530384,
+       "n_family_ex_numeric": 133,
+       "within_family_top1_ex_numeric": 0.3383458646616541,
+       "within_family_chance_ex_numeric": 0.28462043386855457
+      }
+     },
+     "control_crosscat": {
+      "n": 318,
+      "top1": 0.0,
+      "top10": 0.018867924528301886,
+      "median_rank": 215.0,
+      "family": {
+       "n_unique": 184,
+       "unique_top1": 0.0,
+       "n_family": 134,
+       "within_family_top1": 0.26865671641791045,
+       "within_family_chance": 0.28436207242177436,
+       "n_unique_ex_numeric": 183,
+       "unique_top1_ex_numeric": 0.0,
+       "n_family_ex_numeric": 134,
+       "within_family_top1_ex_numeric": 0.26865671641791045,
+       "within_family_chance_ex_numeric": 0.28436207242177436
+      }
+     },
+     "control_random": {
+      "n": 318,
+      "top1": 0.0,
+      "top10": 0.02830188679245283,
+      "median_rank": 224.0,
+      "family": {
+       "n_unique": 184,
+       "unique_top1": 0.0,
+       "n_family": 134,
+       "within_family_top1": 0.2462686567164179,
+       "within_family_chance": 0.28436207242177436,
+       "n_unique_ex_numeric": 183,
+       "unique_top1_ex_numeric": 0.0,
+       "n_family_ex_numeric": 134,
+       "within_family_top1_ex_numeric": 0.2462686567164179,
+       "within_family_chance_ex_numeric": 0.28436207242177436
+      }
+     }
+    },
+    "first_lens": {
+     "all": {
+      "n": 318,
+      "top1": 0.3081761006289308,
+      "top10": 0.7012578616352201,
+      "median_rank": 4.0
+     },
+     "answer": {
+      "n": 175,
+      "top1": 0.41714285714285715,
+      "top10": 0.88,
+      "median_rank": 1.5
+     },
+     "answer:animal": {
+      "n": 4,
+      "top1": 0.25,
+      "top10": 0.75,
+      "median_rank": 2.0
+     },
+     "answer:arts": {
+      "n": 2,
+      "top1": 0.5,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:capital": {
+      "n": 4,
+      "top1": 0.75,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:character": {
+      "n": 4,
+      "top1": 0.25,
+      "top10": 0.75,
+      "median_rank": 2.0
+     },
+     "answer:chemistry": {
+      "n": 1,
+      "top1": 0.0,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "answer:company": {
+      "n": 3,
+      "top1": 0.3333333333333333,
+      "top10": 1.0,
+      "median_rank": 3.0
+     },
+     "answer:compound": {
+      "n": 16,
+      "top1": 0.625,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:country_of_capital": {
+      "n": 12,
+      "top1": 0.6666666666666666,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:event": {
+      "n": 4,
+      "top1": 0.75,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:landmark": {
+      "n": 13,
+      "top1": 0.3076923076923077,
+      "top10": 1.0,
+      "median_rank": 1.5
+     },
+     "answer:number_word": {
+      "n": 1,
+      "top1": 0.0,
+      "top10": 0.0,
+      "median_rank": 22.0
+     },
+     "answer:person_arts": {
+      "n": 7,
+      "top1": 0.2857142857142857,
+      "top10": 0.8571428571428571,
+      "median_rank": 2.0
+     },
+     "answer:person_history": {
+      "n": 13,
+      "top1": 0.5384615384615384,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_more": {
+      "n": 14,
+      "top1": 0.21428571428571427,
+      "top10": 0.7142857142857143,
+      "median_rank": 2.5
+     },
+     "answer:person_science": {
+      "n": 11,
+      "top1": 0.7272727272727273,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_sport": {
+      "n": 5,
+      "top1": 0.4,
+      "top10": 0.8,
+      "median_rank": 4.0
+     },
+     "answer:person_writer": {
+      "n": 4,
+      "top1": 0.25,
+      "top10": 1.0,
+      "median_rank": 3.5
+     },
+     "answer:place": {
+      "n": 12,
+      "top1": 0.25,
+      "top10": 0.8333333333333334,
+      "median_rank": 2.5
+     },
+     "answer:president": {
+      "n": 10,
+      "top1": 0.5,
+      "top10": 0.9,
+      "median_rank": 1.0
+     },
+     "answer:region": {
+      "n": 9,
+      "top1": 0.2222222222222222,
+      "top10": 0.5555555555555556,
+      "median_rank": 10.0
+     },
+     "answer:science": {
+      "n": 2,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:sport": {
+      "n": 1,
+      "top1": 0.0,
+      "top10": 1.0,
+      "median_rank": 2.5
+     },
+     "answer:team": {
+      "n": 7,
+      "top1": 0.14285714285714285,
+      "top10": 0.8571428571428571,
+      "median_rank": 2.0
+     },
+     "answer:translation_spanish": {
+      "n": 1,
+      "top1": 0.0,
+      "top10": 0.0,
+      "median_rank": 16.0
+     },
+     "answer:us_state": {
+      "n": 10,
+      "top1": 0.2,
+      "top10": 0.7,
+      "median_rank": 8.0
+     },
+     "answer:us_state_capital": {
+      "n": 5,
+      "top1": 0.6,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge": {
+      "n": 143,
+      "top1": 0.17482517482517482,
+      "top10": 0.4825174825174825,
+      "median_rank": 11.0
+     },
+     "bridge:bridge_capital_continent": {
+      "n": 8,
+      "top1": 0.5,
+      "top10": 0.875,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_capital_currency": {
+      "n": 12,
+      "top1": 0.4166666666666667,
+      "top10": 0.9166666666666666,
+      "median_rank": 1.5
+     },
+     "bridge:bridge_capital_language": {
+      "n": 9,
+      "top1": 0.3333333333333333,
+      "top10": 0.7777777777777778,
+      "median_rank": 3.0
+     },
+     "bridge:bridge_character_creator": {
+      "n": 4,
+      "top1": 0.25,
+      "top10": 0.5,
+      "median_rank": 6.0
+     },
+     "bridge:bridge_company_country": {
+      "n": 8,
+      "top1": 0.0,
+      "top10": 0.25,
+      "median_rank": 45.0
+     },
+     "bridge:bridge_concept": {
+      "n": 11,
+      "top1": 0.09090909090909091,
+      "top10": 0.8181818181818182,
+      "median_rank": 4.5
+     },
+     "bridge:bridge_currency_capital": {
+      "n": 7,
+      "top1": 0.7142857142857143,
+      "top10": 0.8571428571428571,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_currency_continent": {
+      "n": 5,
+      "top1": 0.4,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "bridge:bridge_landmark_country": {
+      "n": 8,
+      "top1": 0.0,
+      "top10": 0.5,
+      "median_rank": 9.0
+     },
+     "bridge:bridge_person_arts_nationality": {
+      "n": 7,
+      "top1": 0.0,
+      "top10": 0.14285714285714285,
+      "median_rank": 29.0
+     },
+     "bridge:bridge_person_history_nationality": {
+      "n": 15,
+      "top1": 0.13333333333333333,
+      "top10": 0.26666666666666666,
+      "median_rank": 19.5
+     },
+     "bridge:bridge_person_science_nationality": {
+      "n": 14,
+      "top1": 0.0,
+      "top10": 0.07142857142857142,
+      "median_rank": 33.0
+     },
+     "bridge:bridge_person_sport_nationality": {
+      "n": 2,
+      "top1": 0.0,
+      "top10": 0.0,
+      "median_rank": 48.0
+     },
+     "bridge:bridge_person_writer_nationality": {
+      "n": 9,
+      "top1": 0.0,
+      "top10": 0.1111111111111111,
+      "median_rank": 23.0
+     },
+     "bridge:bridge_state_capital": {
+      "n": 17,
+      "top1": 0.058823529411764705,
+      "top10": 0.29411764705882354,
+      "median_rank": 35.0
+     },
+     "bridge:bridge_team_country": {
+      "n": 7,
+      "top1": 0.14285714285714285,
+      "top10": 0.5714285714285714,
+      "median_rank": 6.0
+     },
+     "ranks": [
+      1.0,
+      14.0,
+      5.0,
+      7.0,
+      1.0,
+      1.0,
+      7.0,
+      1.0,
+      1.0,
+      95.0,
+      1.0,
+      1.0,
+      1.0,
+      14.0,
+      8.0,
+      72.0,
+      2.0,
+      1.0,
+      3.0,
+      1.0,
+      8.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      6.0,
+      2.0,
+      5.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      9.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      1.0,
+      7.0,
+      1.0,
+      22.0,
+      16.0,
+      9.0,
+      2.0,
+      1.0,
+      69.0,
+      1.5,
+      1.0,
+      5.0,
+      6.5,
+      5.5,
+      7.5,
+      1.5,
+      1.0,
+      1.0,
+      2.5,
+      6.0,
+      14.5,
+      1.0,
+      82.5,
+      45.0,
+      394.5,
+      80.0,
+      128.0,
+      25.0,
+      226.0,
+      5.0,
+      9.5,
+      2.0,
+      1.0,
+      5.5,
+      4.5,
+      4.5,
+      116.5,
+      3.0,
+      1.5,
+      6.0,
+      3.0,
+      12.0,
+      8.0,
+      1.0,
+      129.5,
+      3.5,
+      35.5,
+      3.0,
+      32.5,
+      9.0,
+      8.0,
+      30.0,
+      448.0,
+      14.0,
+      29.0,
+      11.0,
+      38.0,
+      29.0,
+      65.0,
+      4.0,
+      114.5,
+      25.0,
+      173.5,
+      15.0,
+      24.0,
+      1.0,
+      124.0,
+      27.0,
+      19.5,
+      1.0,
+      51.0,
+      18.0,
+      4.0,
+      19.0,
+      4.0,
+      18.0,
+      42.0,
+      32.5,
+      212.5,
+      31.0,
+      44.0,
+      33.0,
+      35.0,
+      244.5,
+      41.5,
+      20.0,
+      90.5,
+      19.0,
+      8.0,
+      48.0,
+      165.0,
+      40.5,
+      49.5,
+      18.0,
+      23.0,
+      20.0,
+      3.0,
+      84.5,
+      20.0,
+      40.0,
+      7.0,
+      7.0,
+      8.0,
+      15.0,
+      11.0,
+      7.0,
+      11.0,
+      40.0,
+      69.0,
+      35.0,
+      98.0,
+      80.0,
+      123.0,
+      200.0,
+      208.0,
+      99.0,
+      1.0,
+      5.5,
+      4.0,
+      1.0,
+      133.0,
+      111.0,
+      20.0,
+      6.0,
+      1.0,
+      12.0,
+      2.0,
+      4.5,
+      2.0,
+      1.0,
+      3.0,
+      9.0,
+      9.0,
+      1.5,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      1.0,
+      1.0,
+      1.0,
+      1.5,
+      1.0,
+      1.0,
+      1.5,
+      5.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.5,
+      1.0,
+      1.5,
+      1.0,
+      1.0,
+      1.5,
+      1.5,
+      3.0,
+      1.0,
+      5.0,
+      6.0,
+      1.0,
+      1.5,
+      5.0,
+      1.5,
+      1.0,
+      9.5,
+      1.0,
+      2.0,
+      2.0,
+      6.0,
+      1.0,
+      1.0,
+      14.5,
+      5.5,
+      4.5,
+      1.0,
+      1.0,
+      3.5,
+      1.0,
+      2.0,
+      1.5,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      20.0,
+      1.0,
+      28.5,
+      2.5,
+      1.0,
+      6.0,
+      11.0,
+      2.0,
+      9.0,
+      9.5,
+      1.5,
+      1.0,
+      2.0,
+      12.0,
+      1.0,
+      1.0,
+      1.5,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      9.0,
+      13.0,
+      4.0,
+      3.5,
+      6.0,
+      4.0,
+      1.0,
+      26.0,
+      26.0,
+      2.0,
+      1.0,
+      5.0,
+      4.0,
+      1.0,
+      2.0,
+      6.0,
+      1.0,
+      2.5,
+      2.5,
+      4.5,
+      26.0,
+      1.0,
+      1.0,
+      1.5,
+      9.0,
+      1.0,
+      1.5,
+      1.0,
+      1.0,
+      1.0,
+      14.0,
+      5.0,
+      6.0,
+      12.0,
+      15.0,
+      206.0,
+      10.0,
+      1.0,
+      1.0,
+      1.0,
+      2.5,
+      2.0,
+      2.0,
+      7.0,
+      2.0,
+      1.0,
+      24.0,
+      1.5,
+      10.0,
+      8.0,
+      8.0,
+      9.0,
+      12.0,
+      7.0,
+      17.0,
+      14.0,
+      1.0,
+      1.0,
+      1.0,
+      9.0,
+      2.0,
+      1.0,
+      1.0
+     ],
+     "family": {
+      "n_unique": 184,
+      "unique_top1": 0.532608695652174,
+      "n_family": 134,
+      "within_family_top1": 0.28436207242177436,
+      "within_family_chance": 0.28436207242177436,
+      "n_unique_ex_numeric": 183,
+      "unique_top1_ex_numeric": 0.5355191256830601,
+      "n_family_ex_numeric": 134,
+      "within_family_top1_ex_numeric": 0.28436207242177436,
+      "within_family_chance_ex_numeric": 0.28436207242177436,
+      "by_category": {
+       "animal": {
+        "n": 4,
+        "top1": 0.25,
+        "top10": 0.75,
+        "n_unique": 4,
+        "unique_top1": 0.25,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "arts": {
+        "n": 2,
+        "top1": 0.5,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 0.5,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "bridge_capital_continent": {
+        "n": 8,
+        "top1": 0.5,
+        "top10": 0.875,
+        "n_unique": 4,
+        "unique_top1": 1.0,
+        "n_family": 4,
+        "within_top1": 0.11843711843711843,
+        "chance": 0.11843711843711843,
+        "numeric": false
+       },
+       "bridge_capital_currency": {
+        "n": 12,
+        "top1": 0.4166666666666667,
+        "top10": 0.9166666666666666,
+        "n_unique": 5,
+        "unique_top1": 1.0,
+        "n_family": 7,
+        "within_top1": 0.286281179138322,
+        "chance": 0.286281179138322,
+        "numeric": false
+       },
+       "bridge_capital_language": {
+        "n": 9,
+        "top1": 0.3333333333333333,
+        "top10": 0.7777777777777778,
+        "n_unique": 5,
+        "unique_top1": 0.6,
+        "n_family": 4,
+        "within_top1": 0.11843711843711843,
+        "chance": 0.11843711843711843,
+        "numeric": false
+       },
+       "bridge_character_creator": {
+        "n": 4,
+        "top1": 0.25,
+        "top10": 0.5,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 3,
+        "within_top1": 0.2976190476190476,
+        "chance": 0.2976190476190476,
+        "numeric": false
+       },
+       "bridge_company_country": {
+        "n": 8,
+        "top1": 0.0,
+        "top10": 0.25,
+        "n_unique": 6,
+        "unique_top1": 0.0,
+        "n_family": 2,
+        "within_top1": 0.375,
+        "chance": 0.375,
+        "numeric": false
+       },
+       "bridge_concept": {
+        "n": 11,
+        "top1": 0.09090909090909091,
+        "top10": 0.8181818181818182,
+        "n_unique": 6,
+        "unique_top1": 0.16666666666666666,
+        "n_family": 5,
+        "within_top1": 0.45,
+        "chance": 0.45,
+        "numeric": false
+       },
+       "bridge_currency_capital": {
+        "n": 7,
+        "top1": 0.7142857142857143,
+        "top10": 0.8571428571428571,
+        "n_unique": 5,
+        "unique_top1": 1.0,
+        "n_family": 2,
+        "within_top1": 0.18055555555555555,
+        "chance": 0.18055555555555555,
+        "numeric": false
+       },
+       "bridge_currency_continent": {
+        "n": 5,
+        "top1": 0.4,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 0.6666666666666666,
+        "n_family": 2,
+        "within_top1": 0.12698412698412698,
+        "chance": 0.12698412698412698,
+        "numeric": false
+       },
+       "bridge_landmark_country": {
+        "n": 8,
+        "top1": 0.0,
+        "top10": 0.5,
+        "n_unique": 3,
+        "unique_top1": 0.0,
+        "n_family": 5,
+        "within_top1": 0.3888888888888889,
+        "chance": 0.3888888888888889,
+        "numeric": false
+       },
+       "bridge_person_arts_nationality": {
+        "n": 7,
+        "top1": 0.0,
+        "top10": 0.14285714285714285,
+        "n_unique": 6,
+        "unique_top1": 0.0,
+        "n_family": 1,
+        "within_top1": 0.3333333333333333,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "bridge_person_history_nationality": {
+        "n": 15,
+        "top1": 0.13333333333333333,
+        "top10": 0.26666666666666666,
+        "n_unique": 10,
+        "unique_top1": 0.2,
+        "n_family": 5,
+        "within_top1": 0.34523809523809523,
+        "chance": 0.34523809523809523,
+        "numeric": false
+       },
+       "bridge_person_science_nationality": {
+        "n": 14,
+        "top1": 0.0,
+        "top10": 0.07142857142857142,
+        "n_unique": 7,
+        "unique_top1": 0.0,
+        "n_family": 7,
+        "within_top1": 0.4523809523809524,
+        "chance": 0.4523809523809524,
+        "numeric": false
+       },
+       "bridge_person_sport_nationality": {
+        "n": 2,
+        "top1": 0.0,
+        "top10": 0.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 1,
+        "within_top1": 0.3333333333333333,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "bridge_person_writer_nationality": {
+        "n": 9,
+        "top1": 0.0,
+        "top10": 0.1111111111111111,
+        "n_unique": 4,
+        "unique_top1": 0.0,
+        "n_family": 5,
+        "within_top1": 0.3071428571428571,
+        "chance": 0.3071428571428571,
+        "numeric": false
+       },
+       "bridge_state_capital": {
+        "n": 17,
+        "top1": 0.058823529411764705,
+        "top10": 0.29411764705882354,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 16,
+        "within_top1": 0.10964590964590964,
+        "chance": 0.10964590964590964,
+        "numeric": false
+       },
+       "bridge_team_country": {
+        "n": 7,
+        "top1": 0.14285714285714285,
+        "top10": 0.5714285714285714,
+        "n_unique": 5,
+        "unique_top1": 0.2,
+        "n_family": 2,
+        "within_top1": 0.28846153846153844,
+        "chance": 0.28846153846153844,
+        "numeric": false
+       },
+       "capital": {
+        "n": 4,
+        "top1": 0.75,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 0.14285714285714285,
+        "chance": 0.14285714285714285,
+        "numeric": false
+       },
+       "character": {
+        "n": 4,
+        "top1": 0.25,
+        "top10": 0.75,
+        "n_unique": 3,
+        "unique_top1": 0.3333333333333333,
+        "n_family": 1,
+        "within_top1": 0.5,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "chemistry": {
+        "n": 1,
+        "top1": 0.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "company": {
+        "n": 3,
+        "top1": 0.3333333333333333,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 0.5,
+        "n_family": 1,
+        "within_top1": 0.3333333333333333,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "compound": {
+        "n": 16,
+        "top1": 0.625,
+        "top10": 1.0,
+        "n_unique": 13,
+        "unique_top1": 0.7692307692307693,
+        "n_family": 3,
+        "within_top1": 0.5,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "country_of_capital": {
+        "n": 12,
+        "top1": 0.6666666666666666,
+        "top10": 1.0,
+        "n_unique": 9,
+        "unique_top1": 0.8888888888888888,
+        "n_family": 3,
+        "within_top1": 0.25132275132275134,
+        "chance": 0.25132275132275134,
+        "numeric": false
+       },
+       "event": {
+        "n": 4,
+        "top1": 0.75,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 0.5,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "landmark": {
+        "n": 13,
+        "top1": 0.3076923076923077,
+        "top10": 1.0,
+        "n_unique": 8,
+        "unique_top1": 0.5,
+        "n_family": 5,
+        "within_top1": 0.5,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "number_word": {
+        "n": 1,
+        "top1": 0.0,
+        "top10": 0.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": true
+       },
+       "person_arts": {
+        "n": 7,
+        "top1": 0.2857142857142857,
+        "top10": 0.8571428571428571,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 3,
+        "within_top1": 0.4444444444444444,
+        "chance": 0.4444444444444444,
+        "numeric": false
+       },
+       "person_history": {
+        "n": 13,
+        "top1": 0.5384615384615384,
+        "top10": 1.0,
+        "n_unique": 9,
+        "unique_top1": 0.7777777777777778,
+        "n_family": 4,
+        "within_top1": 0.3958333333333333,
+        "chance": 0.3958333333333333,
+        "numeric": false
+       },
+       "person_more": {
+        "n": 14,
+        "top1": 0.21428571428571427,
+        "top10": 0.7142857142857143,
+        "n_unique": 9,
+        "unique_top1": 0.3333333333333333,
+        "n_family": 5,
+        "within_top1": 0.32857142857142857,
+        "chance": 0.32857142857142857,
+        "numeric": false
+       },
+       "person_science": {
+        "n": 11,
+        "top1": 0.7272727272727273,
+        "top10": 1.0,
+        "n_unique": 8,
+        "unique_top1": 1.0,
+        "n_family": 3,
+        "within_top1": 0.38888888888888884,
+        "chance": 0.38888888888888884,
+        "numeric": false
+       },
+       "person_sport": {
+        "n": 5,
+        "top1": 0.4,
+        "top10": 0.8,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 1,
+        "within_top1": 0.3333333333333333,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "person_writer": {
+        "n": 4,
+        "top1": 0.25,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 0.5,
+        "n_family": 2,
+        "within_top1": 0.3214285714285714,
+        "chance": 0.3214285714285714,
+        "numeric": false
+       },
+       "place": {
+        "n": 12,
+        "top1": 0.25,
+        "top10": 0.8333333333333334,
+        "n_unique": 4,
+        "unique_top1": 0.75,
+        "n_family": 8,
+        "within_top1": 0.1730006105006105,
+        "chance": 0.1730006105006105,
+        "numeric": false
+       },
+       "president": {
+        "n": 10,
+        "top1": 0.5,
+        "top10": 0.9,
+        "n_unique": 7,
+        "unique_top1": 0.7142857142857143,
+        "n_family": 3,
+        "within_top1": 0.4166666666666667,
+        "chance": 0.4166666666666667,
+        "numeric": false
+       },
+       "region": {
+        "n": 9,
+        "top1": 0.2222222222222222,
+        "top10": 0.5555555555555556,
+        "n_unique": 6,
+        "unique_top1": 0.3333333333333333,
+        "n_family": 3,
+        "within_top1": 0.12169312169312169,
+        "chance": 0.12169312169312169,
+        "numeric": false
+       },
+       "science": {
+        "n": 2,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "sport": {
+        "n": 1,
+        "top1": 0.0,
+        "top10": 1.0,
+        "n_unique": 0,
+        "unique_top1": null,
+        "n_family": 1,
+        "within_top1": 0.25,
+        "chance": 0.25,
+        "numeric": false
+       },
+       "team": {
+        "n": 7,
+        "top1": 0.14285714285714285,
+        "top10": 0.8571428571428571,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 6,
+        "within_top1": 0.2756410256410256,
+        "chance": 0.2756410256410256,
+        "numeric": false
+       },
+       "translation_spanish": {
+        "n": 1,
+        "top1": 0.0,
+        "top10": 0.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "us_state": {
+        "n": 10,
+        "top1": 0.2,
+        "top10": 0.7,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 8,
+        "within_top1": 0.11733821733821734,
+        "chance": 0.11733821733821734,
+        "numeric": false
+       },
+       "us_state_capital": {
+        "n": 5,
+        "top1": 0.6,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 0.6,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       }
+      },
+      "answer": {
+       "n_unique": 112,
+       "unique_top1": 0.6517857142857143,
+       "n_family": 63,
+       "within_family_top1": 0.3059392987964415,
+       "within_family_chance": 0.3059392987964415,
+       "n_unique_ex_numeric": 111,
+       "unique_top1_ex_numeric": 0.6576576576576577,
+       "n_family_ex_numeric": 63,
+       "within_family_top1_ex_numeric": 0.3059392987964415,
+       "within_family_chance_ex_numeric": 0.3059392987964415
+      },
+      "bridge": {
+       "n_unique": 72,
+       "unique_top1": 0.3472222222222222,
+       "n_family": 71,
+       "within_family_top1": 0.26521608282171655,
+       "within_family_chance": 0.26521608282171655,
+       "n_unique_ex_numeric": 72,
+       "unique_top1_ex_numeric": 0.3472222222222222,
+       "n_family_ex_numeric": 71,
+       "within_family_top1_ex_numeric": 0.26521608282171655,
+       "within_family_chance_ex_numeric": 0.26521608282171655
+      }
+     },
+     "control_shuffled": {
+      "n": 314,
+      "top1": 0.0031847133757961785,
+      "top10": 0.10828025477707007,
+      "median_rank": 88.0,
+      "family": {
+       "n_unique": 181,
+       "unique_top1": 0.0055248618784530384,
+       "n_family": 133,
+       "within_family_top1": 0.28462043386855457,
+       "within_family_chance": 0.28462043386855457,
+       "n_unique_ex_numeric": 181,
+       "unique_top1_ex_numeric": 0.0055248618784530384,
+       "n_family_ex_numeric": 133,
+       "within_family_top1_ex_numeric": 0.28462043386855457,
+       "within_family_chance_ex_numeric": 0.28462043386855457
+      }
+     },
+     "control_crosscat": {
+      "n": 318,
+      "top1": 0.0031446540880503146,
+      "top10": 0.025157232704402517,
+      "median_rank": 224.0,
+      "family": {
+       "n_unique": 184,
+       "unique_top1": 0.005434782608695652,
+       "n_family": 134,
+       "within_family_top1": 0.28436207242177436,
+       "within_family_chance": 0.28436207242177436,
+       "n_unique_ex_numeric": 183,
+       "unique_top1_ex_numeric": 0.00546448087431694,
+       "n_family_ex_numeric": 134,
+       "within_family_top1_ex_numeric": 0.28436207242177436,
+       "within_family_chance_ex_numeric": 0.28436207242177436
+      }
+     },
+     "control_random": {
+      "n": 318,
+      "top1": 0.0,
+      "top10": 0.03773584905660377,
+      "median_rank": 227.0,
+      "family": {
+       "n_unique": 184,
+       "unique_top1": 0.0,
+       "n_family": 134,
+       "within_family_top1": 0.28436207242177436,
+       "within_family_chance": 0.28436207242177436,
+       "n_unique_ex_numeric": 183,
+       "unique_top1_ex_numeric": 0.0,
+       "n_family_ex_numeric": 134,
+       "within_family_top1_ex_numeric": 0.28436207242177436,
+       "within_family_chance_ex_numeric": 0.28436207242177436
+      }
+     }
+    },
+    "mean_lens": {
+     "all": {
+      "n": 318,
+      "top1": 0.5723270440251572,
+      "top10": 0.8427672955974843,
+      "median_rank": 1.0
+     },
+     "answer": {
+      "n": 175,
+      "top1": 0.7771428571428571,
+      "top10": 0.9714285714285714,
+      "median_rank": 1.0
+     },
+     "answer:animal": {
+      "n": 4,
+      "top1": 0.75,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:arts": {
+      "n": 2,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:capital": {
+      "n": 4,
+      "top1": 0.75,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:character": {
+      "n": 4,
+      "top1": 0.5,
+      "top10": 0.75,
+      "median_rank": 1.0
+     },
+     "answer:chemistry": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:company": {
+      "n": 3,
+      "top1": 0.3333333333333333,
+      "top10": 1.0,
+      "median_rank": 3.0
+     },
+     "answer:compound": {
+      "n": 16,
+      "top1": 0.9375,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:country_of_capital": {
+      "n": 12,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:event": {
+      "n": 4,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:landmark": {
+      "n": 13,
+      "top1": 0.7692307692307693,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:number_word": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_arts": {
+      "n": 7,
+      "top1": 0.5714285714285714,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_history": {
+      "n": 13,
+      "top1": 0.6923076923076923,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_more": {
+      "n": 14,
+      "top1": 0.7142857142857143,
+      "top10": 0.9285714285714286,
+      "median_rank": 1.0
+     },
+     "answer:person_science": {
+      "n": 11,
+      "top1": 0.9090909090909091,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:person_sport": {
+      "n": 5,
+      "top1": 0.4,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "answer:person_writer": {
+      "n": 4,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:place": {
+      "n": 12,
+      "top1": 0.75,
+      "top10": 0.9166666666666666,
+      "median_rank": 1.0
+     },
+     "answer:president": {
+      "n": 10,
+      "top1": 0.7,
+      "top10": 0.9,
+      "median_rank": 1.0
+     },
+     "answer:region": {
+      "n": 9,
+      "top1": 0.5555555555555556,
+      "top10": 0.8888888888888888,
+      "median_rank": 1.0
+     },
+     "answer:science": {
+      "n": 2,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:sport": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:team": {
+      "n": 7,
+      "top1": 0.8571428571428571,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:translation_spanish": {
+      "n": 1,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:us_state": {
+      "n": 10,
+      "top1": 1.0,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "answer:us_state_capital": {
+      "n": 5,
+      "top1": 0.4,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "bridge": {
+      "n": 143,
+      "top1": 0.32167832167832167,
+      "top10": 0.6853146853146853,
+      "median_rank": 5.0
+     },
+     "bridge:bridge_capital_continent": {
+      "n": 8,
+      "top1": 0.375,
+      "top10": 1.0,
+      "median_rank": 2.0
+     },
+     "bridge:bridge_capital_currency": {
+      "n": 12,
+      "top1": 0.5833333333333334,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_capital_language": {
+      "n": 9,
+      "top1": 0.6666666666666666,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_character_creator": {
+      "n": 4,
+      "top1": 0.25,
+      "top10": 0.25,
+      "median_rank": 12.0
+     },
+     "bridge:bridge_company_country": {
+      "n": 8,
+      "top1": 0.0,
+      "top10": 0.0,
+      "median_rank": 115.0
+     },
+     "bridge:bridge_concept": {
+      "n": 11,
+      "top1": 0.2727272727272727,
+      "top10": 0.9090909090909091,
+      "median_rank": 2.0
+     },
+     "bridge:bridge_currency_capital": {
+      "n": 7,
+      "top1": 0.7142857142857143,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_currency_continent": {
+      "n": 5,
+      "top1": 0.2,
+      "top10": 0.8,
+      "median_rank": 9.0
+     },
+     "bridge:bridge_landmark_country": {
+      "n": 8,
+      "top1": 0.125,
+      "top10": 0.5,
+      "median_rank": 10.0
+     },
+     "bridge:bridge_person_arts_nationality": {
+      "n": 7,
+      "top1": 0.14285714285714285,
+      "top10": 0.42857142857142855,
+      "median_rank": 15.0
+     },
+     "bridge:bridge_person_history_nationality": {
+      "n": 15,
+      "top1": 0.2,
+      "top10": 0.5333333333333333,
+      "median_rank": 10.0
+     },
+     "bridge:bridge_person_science_nationality": {
+      "n": 14,
+      "top1": 0.07142857142857142,
+      "top10": 0.2857142857142857,
+      "median_rank": 14.0
+     },
+     "bridge:bridge_person_sport_nationality": {
+      "n": 2,
+      "top1": 0.0,
+      "top10": 0.0,
+      "median_rank": 24.0
+     },
+     "bridge:bridge_person_writer_nationality": {
+      "n": 9,
+      "top1": 0.1111111111111111,
+      "top10": 0.6666666666666666,
+      "median_rank": 3.0
+     },
+     "bridge:bridge_state_capital": {
+      "n": 17,
+      "top1": 0.5294117647058824,
+      "top10": 1.0,
+      "median_rank": 1.0
+     },
+     "bridge:bridge_team_country": {
+      "n": 7,
+      "top1": 0.5714285714285714,
+      "top10": 0.7142857142857143,
+      "median_rank": 1.0
+     },
+     "ranks": [
+      1.0,
+      6.0,
+      1.0,
+      2.0,
+      10.0,
+      5.0,
+      1.0,
+      7.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      9.0,
+      14.0,
+      1.0,
+      10.0,
+      8.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      3.0,
+      2.0,
+      2.0,
+      1.0,
+      1.0,
+      4.0,
+      1.0,
+      42.0,
+      12.0,
+      44.0,
+      227.0,
+      329.0,
+      115.0,
+      174.0,
+      20.0,
+      276.0,
+      11.0,
+      23.0,
+      1.0,
+      1.0,
+      9.0,
+      7.0,
+      1.0,
+      6.0,
+      2.0,
+      2.0,
+      2.0,
+      5.0,
+      36.0,
+      3.0,
+      1.0,
+      5.0,
+      1.0,
+      38.0,
+      54.0,
+      7.0,
+      3.0,
+      10.0,
+      36.0,
+      171.0,
+      1.0,
+      7.0,
+      15.0,
+      25.0,
+      23.0,
+      26.0,
+      7.0,
+      26.0,
+      10.0,
+      29.0,
+      9.0,
+      24.0,
+      1.0,
+      91.0,
+      4.0,
+      2.0,
+      1.0,
+      18.0,
+      1.0,
+      3.0,
+      28.0,
+      26.0,
+      10.0,
+      10.0,
+      13.0,
+      29.0,
+      13.0,
+      23.0,
+      38.0,
+      50.0,
+      76.0,
+      14.0,
+      44.0,
+      34.0,
+      1.0,
+      2.0,
+      24.0,
+      99.0,
+      2.0,
+      3.0,
+      1.0,
+      27.0,
+      10.0,
+      2.0,
+      14.0,
+      3.0,
+      18.0,
+      1.0,
+      1.0,
+      1.0,
+      5.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      5.0,
+      5.0,
+      8.0,
+      4.0,
+      7.0,
+      9.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      86.0,
+      19.0,
+      5.0,
+      1.0,
+      7.0,
+      1.0,
+      36.0,
+      1.0,
+      1.0,
+      9.0,
+      3.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      1.0,
+      1.0,
+      3.0,
+      3.0,
+      1.0,
+      1.0,
+      8.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      10.0,
+      7.0,
+      7.0,
+      2.0,
+      1.0,
+      26.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      9.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      4.0,
+      2.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      22.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0,
+      17.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      1.0,
+      1.0,
+      1.0,
+      5.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      30.0,
+      4.0,
+      4.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      8.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      5.0,
+      2.0,
+      2.0,
+      1.0
+     ],
+     "family": {
+      "n_unique": 184,
+      "unique_top1": 0.6413043478260869,
+      "n_family": 134,
+      "within_family_top1": 0.8880597014925373,
+      "within_family_chance": 0.28436207242177436,
+      "n_unique_ex_numeric": 183,
+      "unique_top1_ex_numeric": 0.639344262295082,
+      "n_family_ex_numeric": 134,
+      "within_family_top1_ex_numeric": 0.8880597014925373,
+      "within_family_chance_ex_numeric": 0.28436207242177436,
+      "by_category": {
+       "animal": {
+        "n": 4,
+        "top1": 0.75,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.75,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "arts": {
+        "n": 2,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "bridge_capital_continent": {
+        "n": 8,
+        "top1": 0.375,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.25,
+        "n_family": 4,
+        "within_top1": 0.75,
+        "chance": 0.11843711843711843,
+        "numeric": false
+       },
+       "bridge_capital_currency": {
+        "n": 12,
+        "top1": 0.5833333333333334,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 1.0,
+        "n_family": 7,
+        "within_top1": 1.0,
+        "chance": 0.286281179138322,
+        "numeric": false
+       },
+       "bridge_capital_language": {
+        "n": 9,
+        "top1": 0.6666666666666666,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 1.0,
+        "n_family": 4,
+        "within_top1": 1.0,
+        "chance": 0.11843711843711843,
+        "numeric": false
+       },
+       "bridge_character_creator": {
+        "n": 4,
+        "top1": 0.25,
+        "top10": 0.25,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 3,
+        "within_top1": 0.6666666666666666,
+        "chance": 0.2976190476190476,
+        "numeric": false
+       },
+       "bridge_company_country": {
+        "n": 8,
+        "top1": 0.0,
+        "top10": 0.0,
+        "n_unique": 6,
+        "unique_top1": 0.0,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.375,
+        "numeric": false
+       },
+       "bridge_concept": {
+        "n": 11,
+        "top1": 0.2727272727272727,
+        "top10": 0.9090909090909091,
+        "n_unique": 6,
+        "unique_top1": 0.3333333333333333,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.45,
+        "numeric": false
+       },
+       "bridge_currency_capital": {
+        "n": 7,
+        "top1": 0.7142857142857143,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 1.0,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.18055555555555555,
+        "numeric": false
+       },
+       "bridge_currency_continent": {
+        "n": 5,
+        "top1": 0.2,
+        "top10": 0.8,
+        "n_unique": 3,
+        "unique_top1": 0.0,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.12698412698412698,
+        "numeric": false
+       },
+       "bridge_landmark_country": {
+        "n": 8,
+        "top1": 0.125,
+        "top10": 0.5,
+        "n_unique": 3,
+        "unique_top1": 0.0,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.3888888888888889,
+        "numeric": false
+       },
+       "bridge_person_arts_nationality": {
+        "n": 7,
+        "top1": 0.14285714285714285,
+        "top10": 0.42857142857142855,
+        "n_unique": 6,
+        "unique_top1": 0.16666666666666666,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "bridge_person_history_nationality": {
+        "n": 15,
+        "top1": 0.2,
+        "top10": 0.5333333333333333,
+        "n_unique": 10,
+        "unique_top1": 0.3,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.34523809523809523,
+        "numeric": false
+       },
+       "bridge_person_science_nationality": {
+        "n": 14,
+        "top1": 0.07142857142857142,
+        "top10": 0.2857142857142857,
+        "n_unique": 7,
+        "unique_top1": 0.14285714285714285,
+        "n_family": 7,
+        "within_top1": 0.8571428571428571,
+        "chance": 0.4523809523809524,
+        "numeric": false
+       },
+       "bridge_person_sport_nationality": {
+        "n": 2,
+        "top1": 0.0,
+        "top10": 0.0,
+        "n_unique": 1,
+        "unique_top1": 0.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "bridge_person_writer_nationality": {
+        "n": 9,
+        "top1": 0.1111111111111111,
+        "top10": 0.6666666666666666,
+        "n_unique": 4,
+        "unique_top1": 0.25,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.3071428571428571,
+        "numeric": false
+       },
+       "bridge_state_capital": {
+        "n": 17,
+        "top1": 0.5294117647058824,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 16,
+        "within_top1": 0.9375,
+        "chance": 0.10964590964590964,
+        "numeric": false
+       },
+       "bridge_team_country": {
+        "n": 7,
+        "top1": 0.5714285714285714,
+        "top10": 0.7142857142857143,
+        "n_unique": 5,
+        "unique_top1": 0.6,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.28846153846153844,
+        "numeric": false
+       },
+       "capital": {
+        "n": 4,
+        "top1": 0.75,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.14285714285714285,
+        "numeric": false
+       },
+       "character": {
+        "n": 4,
+        "top1": 0.5,
+        "top10": 0.75,
+        "n_unique": 3,
+        "unique_top1": 0.6666666666666666,
+        "n_family": 1,
+        "within_top1": 0.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "chemistry": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "company": {
+        "n": 3,
+        "top1": 0.3333333333333333,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 0.5,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "compound": {
+        "n": 16,
+        "top1": 0.9375,
+        "top10": 1.0,
+        "n_unique": 13,
+        "unique_top1": 0.9230769230769231,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "country_of_capital": {
+        "n": 12,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 9,
+        "unique_top1": 1.0,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.25132275132275134,
+        "numeric": false
+       },
+       "event": {
+        "n": 4,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 3,
+        "unique_top1": 1.0,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "landmark": {
+        "n": 13,
+        "top1": 0.7692307692307693,
+        "top10": 1.0,
+        "n_unique": 8,
+        "unique_top1": 0.75,
+        "n_family": 5,
+        "within_top1": 1.0,
+        "chance": 0.5,
+        "numeric": false
+       },
+       "number_word": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": true
+       },
+       "person_arts": {
+        "n": 7,
+        "top1": 0.5714285714285714,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.75,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.4444444444444444,
+        "numeric": false
+       },
+       "person_history": {
+        "n": 13,
+        "top1": 0.6923076923076923,
+        "top10": 1.0,
+        "n_unique": 9,
+        "unique_top1": 0.7777777777777778,
+        "n_family": 4,
+        "within_top1": 0.75,
+        "chance": 0.3958333333333333,
+        "numeric": false
+       },
+       "person_more": {
+        "n": 14,
+        "top1": 0.7142857142857143,
+        "top10": 0.9285714285714286,
+        "n_unique": 9,
+        "unique_top1": 0.7777777777777778,
+        "n_family": 5,
+        "within_top1": 0.8,
+        "chance": 0.32857142857142857,
+        "numeric": false
+       },
+       "person_science": {
+        "n": 11,
+        "top1": 0.9090909090909091,
+        "top10": 1.0,
+        "n_unique": 8,
+        "unique_top1": 0.875,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.38888888888888884,
+        "numeric": false
+       },
+       "person_sport": {
+        "n": 5,
+        "top1": 0.4,
+        "top10": 1.0,
+        "n_unique": 4,
+        "unique_top1": 0.5,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.3333333333333333,
+        "numeric": false
+       },
+       "person_writer": {
+        "n": 4,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 2,
+        "within_top1": 1.0,
+        "chance": 0.3214285714285714,
+        "numeric": false
+       },
+       "place": {
+        "n": 12,
+        "top1": 0.75,
+        "top10": 0.9166666666666666,
+        "n_unique": 4,
+        "unique_top1": 1.0,
+        "n_family": 8,
+        "within_top1": 0.625,
+        "chance": 0.1730006105006105,
+        "numeric": false
+       },
+       "president": {
+        "n": 10,
+        "top1": 0.7,
+        "top10": 0.9,
+        "n_unique": 7,
+        "unique_top1": 0.8571428571428571,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.4166666666666667,
+        "numeric": false
+       },
+       "region": {
+        "n": 9,
+        "top1": 0.5555555555555556,
+        "top10": 0.8888888888888888,
+        "n_unique": 6,
+        "unique_top1": 0.3333333333333333,
+        "n_family": 3,
+        "within_top1": 1.0,
+        "chance": 0.12169312169312169,
+        "numeric": false
+       },
+       "science": {
+        "n": 2,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "sport": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 0,
+        "unique_top1": null,
+        "n_family": 1,
+        "within_top1": 1.0,
+        "chance": 0.25,
+        "numeric": false
+       },
+       "team": {
+        "n": 7,
+        "top1": 0.8571428571428571,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 6,
+        "within_top1": 0.8333333333333334,
+        "chance": 0.2756410256410256,
+        "numeric": false
+       },
+       "translation_spanish": {
+        "n": 1,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 1,
+        "unique_top1": 1.0,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       },
+       "us_state": {
+        "n": 10,
+        "top1": 1.0,
+        "top10": 1.0,
+        "n_unique": 2,
+        "unique_top1": 1.0,
+        "n_family": 8,
+        "within_top1": 1.0,
+        "chance": 0.11733821733821734,
+        "numeric": false
+       },
+       "us_state_capital": {
+        "n": 5,
+        "top1": 0.4,
+        "top10": 1.0,
+        "n_unique": 5,
+        "unique_top1": 0.4,
+        "n_family": 0,
+        "within_top1": null,
+        "chance": null,
+        "numeric": false
+       }
+      },
+      "answer": {
+       "n_unique": 112,
+       "unique_top1": 0.8035714285714286,
+       "n_family": 63,
+       "within_family_top1": 0.8888888888888888,
+       "within_family_chance": 0.3059392987964415,
+       "n_unique_ex_numeric": 111,
+       "unique_top1_ex_numeric": 0.8018018018018018,
+       "n_family_ex_numeric": 63,
+       "within_family_top1_ex_numeric": 0.8888888888888888,
+       "within_family_chance_ex_numeric": 0.3059392987964415
+      },
+      "bridge": {
+       "n_unique": 72,
+       "unique_top1": 0.3888888888888889,
+       "n_family": 71,
+       "within_family_top1": 0.8873239436619719,
+       "within_family_chance": 0.26521608282171655,
+       "n_unique_ex_numeric": 72,
+       "unique_top1_ex_numeric": 0.3888888888888889,
+       "n_family_ex_numeric": 71,
+       "within_family_top1_ex_numeric": 0.8873239436619719,
+       "within_family_chance_ex_numeric": 0.26521608282171655
+      }
+     },
+     "control_shuffled": {
+      "n": 314,
+      "top1": 0.0031847133757961785,
+      "top10": 0.1592356687898089,
+      "median_rank": 67.0,
+      "family": {
+       "n_unique": 181,
+       "unique_top1": 0.0,
+       "n_family": 133,
+       "within_family_top1": 0.38345864661654133,
+       "within_family_chance": 0.28462043386855457,
+       "n_unique_ex_numeric": 181,
+       "unique_top1_ex_numeric": 0.0,
+       "n_family_ex_numeric": 133,
+       "within_family_top1_ex_numeric": 0.38345864661654133,
+       "within_family_chance_ex_numeric": 0.28462043386855457
+      }
+     },
+     "control_crosscat": {
+      "n": 318,
+      "top1": 0.0,
+      "top10": 0.0220125786163522,
+      "median_rank": 232.0,
+      "family": {
+       "n_unique": 184,
+       "unique_top1": 0.0,
+       "n_family": 134,
+       "within_family_top1": 0.27611940298507465,
+       "within_family_chance": 0.28436207242177436,
+       "n_unique_ex_numeric": 183,
+       "unique_top1_ex_numeric": 0.0,
+       "n_family_ex_numeric": 134,
+       "within_family_top1_ex_numeric": 0.27611940298507465,
+       "within_family_chance_ex_numeric": 0.28436207242177436
+      }
+     },
+     "control_random": {
+      "n": 318,
+      "top1": 0.0,
+      "top10": 0.015723270440251572,
+      "median_rank": 236.0,
+      "family": {
+       "n_unique": 184,
+       "unique_top1": 0.0,
+       "n_family": 134,
+       "within_family_top1": 0.23134328358208955,
+       "within_family_chance": 0.28436207242177436,
+       "n_unique_ex_numeric": 183,
+       "unique_top1_ex_numeric": 0.0,
+       "n_family_ex_numeric": 134,
+       "within_family_top1_ex_numeric": 0.23134328358208955,
+       "within_family_chance_ex_numeric": 0.28436207242177436
+      }
+     }
+    }
+   },
+   "n_shuffled_dropped": 4,
+   "n_crosscat_dropped": 0,
+   "by_position": {
+    "firsthop": {
+     "pure": {
+      "n": 30,
+      "bridge": {
+       "n": 30,
+       "top1": 0.4666666666666667,
+       "top10": 0.8333333333333334,
+       "median_rank": 2.0
+      },
+      "ranks": [
+       2.0,
+       3.0,
+       3.0,
+       3.0,
+       1.0,
+       1.0,
+       3.0,
+       1.0,
+       2.0,
+       4.0,
+       1.0,
+       2.0,
+       1.0,
+       3.0,
+       3.0,
+       12.0,
+       1.0,
+       65.0,
+       1.0,
+       1.0,
+       4.0,
+       1.0,
+       1.0,
+       76.0,
+       1.0,
+       102.0,
+       1.0,
+       12.0,
+       1.0,
+       1.0
+      ],
+      "family": {
+       "n_unique": 19,
+       "unique_top1": 0.7368421052631579,
+       "n_family": 11,
+       "within_family_top1": 0.8181818181818182,
+       "within_family_chance": 0.1222111222111222,
+       "n_unique_ex_numeric": 19,
+       "unique_top1_ex_numeric": 0.7368421052631579,
+       "n_family_ex_numeric": 11,
+       "within_family_top1_ex_numeric": 0.8181818181818182,
+       "within_family_chance_ex_numeric": 0.1222111222111222
+      },
+      "bridge_last_same_items": {
+       "n": 30,
+       "top1": 0.43333333333333335,
+       "top10": 0.9,
+       "median_rank": 2.0
+      },
+      "by_category": {
+       "bridge_capital_continent": {
+        "firsthop": {
+         "n": 8,
+         "top1": 0.375,
+         "top10": 1.0,
+         "median_rank": 2.0
+        },
+        "last": {
+         "n": 8,
+         "top1": 0.5,
+         "top10": 0.875,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_capital_currency": {
+        "firsthop": {
+         "n": 4,
+         "top1": 0.25,
+         "top10": 1.0,
+         "median_rank": 2.0
+        },
+        "last": {
+         "n": 4,
+         "top1": 1.0,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_capital_language": {
+        "firsthop": {
+         "n": 9,
+         "top1": 0.4444444444444444,
+         "top10": 0.7777777777777778,
+         "median_rank": 3.0
+        },
+        "last": {
+         "n": 9,
+         "top1": 0.3333333333333333,
+         "top10": 1.0,
+         "median_rank": 2.0
+        }
+       },
+       "bridge_currency_capital": {
+        "firsthop": {
+         "n": 4,
+         "top1": 0.75,
+         "top10": 0.75,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 4,
+         "top1": 0.25,
+         "top10": 1.0,
+         "median_rank": 2.0
+        }
+       },
+       "bridge_currency_continent": {
+        "firsthop": {
+         "n": 5,
+         "top1": 0.6,
+         "top10": 0.6,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 5,
+         "top1": 0.2,
+         "top10": 0.6,
+         "median_rank": 8.0
+        }
+       }
+      },
+      "control_shuffled": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.1,
+       "median_rank": 112.0,
+       "family": {
+        "n_unique": 19,
+        "unique_top1": 0.0,
+        "n_family": 11,
+        "within_family_top1": 0.18181818181818182,
+        "within_family_chance": 0.1222111222111222,
+        "n_unique_ex_numeric": 19,
+        "unique_top1_ex_numeric": 0.0,
+        "n_family_ex_numeric": 11,
+        "within_family_top1_ex_numeric": 0.18181818181818182,
+        "within_family_chance_ex_numeric": 0.1222111222111222
+       }
+      },
+      "control_crosscat": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.06666666666666667,
+       "median_rank": 136.0,
+       "family": {
+        "n_unique": 19,
+        "unique_top1": 0.0,
+        "n_family": 11,
+        "within_family_top1": 0.09090909090909091,
+        "within_family_chance": 0.1222111222111222,
+        "n_unique_ex_numeric": 19,
+        "unique_top1_ex_numeric": 0.0,
+        "n_family_ex_numeric": 11,
+        "within_family_top1_ex_numeric": 0.09090909090909091,
+        "within_family_chance_ex_numeric": 0.1222111222111222
+       }
+      },
+      "control_random": {
+       "n": 30,
+       "top1": 0.03333333333333333,
+       "top10": 0.06666666666666667,
+       "median_rank": 255.0
+      }
+     },
+     "hybrid_nm": {
+      "n": 30,
+      "bridge": {
+       "n": 30,
+       "top1": 0.5666666666666667,
+       "top10": 0.9,
+       "median_rank": 1.0
+      },
+      "ranks": [
+       1.0,
+       3.0,
+       2.0,
+       2.0,
+       1.0,
+       1.0,
+       2.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       3.0,
+       2.0,
+       3.0,
+       1.0,
+       37.0,
+       2.0,
+       1.0,
+       3.0,
+       1.0,
+       1.0,
+       12.0,
+       1.0,
+       16.0,
+       1.0,
+       2.0,
+       1.0,
+       1.0
+      ],
+      "family": {
+       "n_unique": 19,
+       "unique_top1": 0.8421052631578947,
+       "n_family": 11,
+       "within_family_top1": 0.8181818181818182,
+       "within_family_chance": 0.1222111222111222,
+       "n_unique_ex_numeric": 19,
+       "unique_top1_ex_numeric": 0.8421052631578947,
+       "n_family_ex_numeric": 11,
+       "within_family_top1_ex_numeric": 0.8181818181818182,
+       "within_family_chance_ex_numeric": 0.1222111222111222
+      },
+      "bridge_last_same_items": {
+       "n": 30,
+       "top1": 0.5666666666666667,
+       "top10": 0.9666666666666667,
+       "median_rank": 1.0
+      },
+      "by_category": {
+       "bridge_capital_continent": {
+        "firsthop": {
+         "n": 8,
+         "top1": 0.5,
+         "top10": 1.0,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 8,
+         "top1": 0.625,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_capital_currency": {
+        "firsthop": {
+         "n": 4,
+         "top1": 1.0,
+         "top10": 1.0,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 4,
+         "top1": 1.0,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_capital_language": {
+        "firsthop": {
+         "n": 9,
+         "top1": 0.3333333333333333,
+         "top10": 0.8888888888888888,
+         "median_rank": 2.0
+        },
+        "last": {
+         "n": 9,
+         "top1": 0.5555555555555556,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_currency_capital": {
+        "firsthop": {
+         "n": 4,
+         "top1": 0.75,
+         "top10": 0.75,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 4,
+         "top1": 0.5,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_currency_continent": {
+        "firsthop": {
+         "n": 5,
+         "top1": 0.6,
+         "top10": 0.8,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 5,
+         "top1": 0.2,
+         "top10": 0.8,
+         "median_rank": 3.0
+        }
+       }
+      },
+      "control_shuffled": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.1,
+       "median_rank": 124.0,
+       "family": {
+        "n_unique": 19,
+        "unique_top1": 0.0,
+        "n_family": 11,
+        "within_family_top1": 0.09090909090909091,
+        "within_family_chance": 0.1222111222111222,
+        "n_unique_ex_numeric": 19,
+        "unique_top1_ex_numeric": 0.0,
+        "n_family_ex_numeric": 11,
+        "within_family_top1_ex_numeric": 0.09090909090909091,
+        "within_family_chance_ex_numeric": 0.1222111222111222
+       }
+      },
+      "control_crosscat": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.06666666666666667,
+       "median_rank": 159.0,
+       "family": {
+        "n_unique": 19,
+        "unique_top1": 0.0,
+        "n_family": 11,
+        "within_family_top1": 0.09090909090909091,
+        "within_family_chance": 0.1222111222111222,
+        "n_unique_ex_numeric": 19,
+        "unique_top1_ex_numeric": 0.0,
+        "n_family_ex_numeric": 11,
+        "within_family_top1_ex_numeric": 0.09090909090909091,
+        "within_family_chance_ex_numeric": 0.1222111222111222
+       }
+      },
+      "control_random": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.03333333333333333,
+       "median_rank": 211.0
+      }
+     },
+     "first_lens": {
+      "n": 30,
+      "bridge": {
+       "n": 30,
+       "top1": 0.6,
+       "top10": 0.8666666666666667,
+       "median_rank": 1.0
+      },
+      "ranks": [
+       1.0,
+       8.0,
+       6.0,
+       59.0,
+       1.0,
+       1.0,
+       7.0,
+       1.0,
+       1.0,
+       36.0,
+       1.0,
+       1.0,
+       1.0,
+       8.0,
+       5.0,
+       55.0,
+       1.0,
+       1.0,
+       3.0,
+       1.0,
+       7.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       191.0,
+       1.0,
+       7.0,
+       1.0,
+       1.0
+      ],
+      "family": {
+       "n_unique": 19,
+       "unique_top1": 0.9473684210526315,
+       "n_family": 11,
+       "within_family_top1": 0.1222111222111222,
+       "within_family_chance": 0.1222111222111222,
+       "n_unique_ex_numeric": 19,
+       "unique_top1_ex_numeric": 0.9473684210526315,
+       "n_family_ex_numeric": 11,
+       "within_family_top1_ex_numeric": 0.1222111222111222,
+       "within_family_chance_ex_numeric": 0.1222111222111222
+      },
+      "bridge_last_same_items": {
+       "n": 30,
+       "top1": 0.5333333333333333,
+       "top10": 0.8666666666666667,
+       "median_rank": 1.0
+      },
+      "by_category": {
+       "bridge_capital_continent": {
+        "firsthop": {
+         "n": 8,
+         "top1": 0.5,
+         "top10": 0.875,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 8,
+         "top1": 0.5,
+         "top10": 0.875,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_capital_currency": {
+        "firsthop": {
+         "n": 4,
+         "top1": 0.75,
+         "top10": 0.75,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 4,
+         "top1": 0.75,
+         "top10": 0.75,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_capital_language": {
+        "firsthop": {
+         "n": 9,
+         "top1": 0.4444444444444444,
+         "top10": 0.8888888888888888,
+         "median_rank": 3.0
+        },
+        "last": {
+         "n": 9,
+         "top1": 0.3333333333333333,
+         "top10": 0.7777777777777778,
+         "median_rank": 3.0
+        }
+       },
+       "bridge_currency_capital": {
+        "firsthop": {
+         "n": 4,
+         "top1": 1.0,
+         "top10": 1.0,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 4,
+         "top1": 1.0,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_currency_continent": {
+        "firsthop": {
+         "n": 5,
+         "top1": 0.6,
+         "top10": 0.8,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 5,
+         "top1": 0.4,
+         "top10": 1.0,
+         "median_rank": 2.0
+        }
+       }
+      },
+      "control_shuffled": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.0,
+       "median_rank": 132.0,
+       "family": {
+        "n_unique": 19,
+        "unique_top1": 0.0,
+        "n_family": 11,
+        "within_family_top1": 0.1222111222111222,
+        "within_family_chance": 0.1222111222111222,
+        "n_unique_ex_numeric": 19,
+        "unique_top1_ex_numeric": 0.0,
+        "n_family_ex_numeric": 11,
+        "within_family_top1_ex_numeric": 0.1222111222111222,
+        "within_family_chance_ex_numeric": 0.1222111222111222
+       }
+      },
+      "control_crosscat": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.06666666666666667,
+       "median_rank": 103.0,
+       "family": {
+        "n_unique": 19,
+        "unique_top1": 0.0,
+        "n_family": 11,
+        "within_family_top1": 0.1222111222111222,
+        "within_family_chance": 0.1222111222111222,
+        "n_unique_ex_numeric": 19,
+        "unique_top1_ex_numeric": 0.0,
+        "n_family_ex_numeric": 11,
+        "within_family_top1_ex_numeric": 0.1222111222111222,
+        "within_family_chance_ex_numeric": 0.1222111222111222
+       }
+      },
+      "control_random": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.03333333333333333,
+       "median_rank": 212.0
+      }
+     },
+     "mean_lens": {
+      "n": 30,
+      "bridge": {
+       "n": 30,
+       "top1": 0.8,
+       "top10": 1.0,
+       "median_rank": 1.0
+      },
+      "ranks": [
+       1.0,
+       2.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       4.0,
+       2.0,
+       3.0,
+       1.0,
+       1.0,
+       1.0,
+       2.0,
+       1.0,
+       2.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0
+      ],
+      "family": {
+       "n_unique": 19,
+       "unique_top1": 0.7894736842105263,
+       "n_family": 11,
+       "within_family_top1": 1.0,
+       "within_family_chance": 0.1222111222111222,
+       "n_unique_ex_numeric": 19,
+       "unique_top1_ex_numeric": 0.7894736842105263,
+       "n_family_ex_numeric": 11,
+       "within_family_top1_ex_numeric": 1.0,
+       "within_family_chance_ex_numeric": 0.1222111222111222
+      },
+      "bridge_last_same_items": {
+       "n": 30,
+       "top1": 0.6,
+       "top10": 0.9666666666666667,
+       "median_rank": 1.0
+      },
+      "by_category": {
+       "bridge_capital_continent": {
+        "firsthop": {
+         "n": 8,
+         "top1": 0.875,
+         "top10": 1.0,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 8,
+         "top1": 0.375,
+         "top10": 1.0,
+         "median_rank": 2.0
+        }
+       },
+       "bridge_capital_currency": {
+        "firsthop": {
+         "n": 4,
+         "top1": 1.0,
+         "top10": 1.0,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 4,
+         "top1": 1.0,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_capital_language": {
+        "firsthop": {
+         "n": 9,
+         "top1": 0.6666666666666666,
+         "top10": 1.0,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 9,
+         "top1": 0.6666666666666666,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_currency_capital": {
+        "firsthop": {
+         "n": 4,
+         "top1": 0.75,
+         "top10": 1.0,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 4,
+         "top1": 1.0,
+         "top10": 1.0,
+         "median_rank": 1.0
+        }
+       },
+       "bridge_currency_continent": {
+        "firsthop": {
+         "n": 5,
+         "top1": 0.8,
+         "top10": 1.0,
+         "median_rank": 1.0
+        },
+        "last": {
+         "n": 5,
+         "top1": 0.2,
+         "top10": 0.8,
+         "median_rank": 9.0
+        }
+       }
+      },
+      "control_shuffled": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.13333333333333333,
+       "median_rank": 111.0,
+       "family": {
+        "n_unique": 19,
+        "unique_top1": 0.0,
+        "n_family": 11,
+        "within_family_top1": 0.09090909090909091,
+        "within_family_chance": 0.1222111222111222,
+        "n_unique_ex_numeric": 19,
+        "unique_top1_ex_numeric": 0.0,
+        "n_family_ex_numeric": 11,
+        "within_family_top1_ex_numeric": 0.09090909090909091,
+        "within_family_chance_ex_numeric": 0.1222111222111222
+       }
+      },
+      "control_crosscat": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.06666666666666667,
+       "median_rank": 85.0,
+       "family": {
+        "n_unique": 19,
+        "unique_top1": 0.0,
+        "n_family": 11,
+        "within_family_top1": 0.09090909090909091,
+        "within_family_chance": 0.1222111222111222,
+        "n_unique_ex_numeric": 19,
+        "unique_top1_ex_numeric": 0.0,
+        "n_family_ex_numeric": 11,
+        "within_family_top1_ex_numeric": 0.09090909090909091,
+        "within_family_chance_ex_numeric": 0.1222111222111222
+       }
+      },
+      "control_random": {
+       "n": 30,
+       "top1": 0.0,
+       "top10": 0.03333333333333333,
+       "median_rank": 194.0
+      }
+     }
+    }
+   },
+   "queries": [
+    {
+     "id": "curated:bridge_capital_continent:81ec2da8",
+     "kind": "bridge",
+     "category": "bridge_capital_continent",
+     "string": " Saudi Arabia"
+    },
+    {
+     "id": "curated:bridge_capital_continent:93a91dbe",
+     "kind": "bridge",
+     "category": "bridge_capital_continent",
+     "string": " South Korea"
+    },
+    {
+     "id": "curated:bridge_capital_continent:b3f1daff",
+     "kind": "bridge",
+     "category": "bridge_capital_continent",
+     "string": " North Korea"
+    },
+    {
+     "id": "curated:bridge_capital_continent:030d21fa",
+     "kind": "bridge",
+     "category": "bridge_capital_continent",
+     "string": " North Macedonia"
+    },
+    {
+     "id": "curated:bridge_capital_continent:3f0e9ca5",
+     "kind": "bridge",
+     "category": "bridge_capital_continent",
+     "string": " Czech Republic"
+    },
+    {
+     "id": "curated:bridge_capital_continent:54e5243a",
+     "kind": "bridge",
+     "category": "bridge_capital_continent",
+     "string": " Sierra Leone"
+    },
+    {
+     "id": "curated:bridge_capital_continent:90463889",
+     "kind": "bridge",
+     "category": "bridge_capital_continent",
+     "string": " New Zealand"
+    },
+    {
+     "id": "curated:bridge_capital_continent:8568e022",
+     "kind": "bridge",
+     "category": "bridge_capital_continent",
+     "string": " Papua New Guinea"
+    },
+    {
+     "id": "curated:bridge_capital_currency:ac64ae1e",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " Saudi Arabia"
+    },
+    {
+     "id": "curated:bridge_capital_currency:14c07c43",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " North Macedonia"
+    },
+    {
+     "id": "curated:bridge_capital_currency:0b24ee21",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " Czech Republic"
+    },
+    {
+     "id": "curated:bridge_capital_currency:d23a3acb",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " Papua New Guinea"
+    },
+    {
+     "id": "curated:bridge_capital_language:c7bff3bd",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " Saudi Arabia"
+    },
+    {
+     "id": "curated:bridge_capital_language:43396af7",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " South Korea"
+    },
+    {
+     "id": "curated:bridge_capital_language:14773fb0",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " North Korea"
+    },
+    {
+     "id": "curated:bridge_capital_language:95d4d673",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " North Macedonia"
+    },
+    {
+     "id": "curated:bridge_capital_language:cde4c2f7",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " Sierra Leone"
+    },
+    {
+     "id": "curated:bridge_capital_language:f4919dad",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " Costa Rica"
+    },
+    {
+     "id": "curated:bridge_capital_language:7a870e05",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " El Salvador"
+    },
+    {
+     "id": "curated:bridge_capital_language:e9cf071f",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " Dominican Republic"
+    },
+    {
+     "id": "curated:bridge_capital_language:9c947b17",
+     "kind": "bridge",
+     "category": "bridge_capital_language",
+     "string": " New Zealand"
+    },
+    {
+     "id": "curated:bridge_currency_capital:f4cc7623",
+     "kind": "bridge",
+     "category": "bridge_currency_capital",
+     "string": " Czech Republic"
+    },
+    {
+     "id": "curated:bridge_currency_capital:27e98ec4",
+     "kind": "bridge",
+     "category": "bridge_currency_capital",
+     "string": " Sierra Leone"
+    },
+    {
+     "id": "curated:bridge_currency_capital:13385389",
+     "kind": "bridge",
+     "category": "bridge_currency_capital",
+     "string": " Costa Rica"
+    },
+    {
+     "id": "curated:bridge_currency_capital:48367711",
+     "kind": "bridge",
+     "category": "bridge_currency_capital",
+     "string": " Papua New Guinea"
+    },
+    {
+     "id": "curated:bridge_currency_continent:8ad64efe",
+     "kind": "bridge",
+     "category": "bridge_currency_continent",
+     "string": " North Macedonia"
+    },
+    {
+     "id": "curated:bridge_currency_continent:63dbece9",
+     "kind": "bridge",
+     "category": "bridge_currency_continent",
+     "string": " Czech Republic"
+    },
+    {
+     "id": "curated:bridge_currency_continent:48998706",
+     "kind": "bridge",
+     "category": "bridge_currency_continent",
+     "string": " South Africa"
+    },
+    {
+     "id": "curated:bridge_currency_continent:8b73838e",
+     "kind": "bridge",
+     "category": "bridge_currency_continent",
+     "string": " Sierra Leone"
+    },
+    {
+     "id": "curated:bridge_currency_continent:6170dd8d",
+     "kind": "bridge",
+     "category": "bridge_currency_continent",
+     "string": " Papua New Guinea"
+    },
+    {
+     "id": "curated:capital:26f587ca",
+     "kind": "answer",
+     "category": "capital",
+     "string": " Mexico City"
+    },
+    {
+     "id": "curated:capital:2e00def4",
+     "kind": "answer",
+     "category": "capital",
+     "string": " Guatemala City"
+    },
+    {
+     "id": "curated:capital:fd9ecd7c",
+     "kind": "answer",
+     "category": "capital",
+     "string": " San Salvador"
+    },
+    {
+     "id": "curated:capital:9b116315",
+     "kind": "answer",
+     "category": "capital",
+     "string": " Buenos Aires"
+    },
+    {
+     "id": "curated:country_of_capital:c0035f0f",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Sri Lanka"
+    },
+    {
+     "id": "curated:country_of_capital:d002a5a0",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Saudi Arabia"
+    },
+    {
+     "id": "curated:country_of_capital:28f48dbd",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " North Korea"
+    },
+    {
+     "id": "curated:country_of_capital:b1a64a85",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Costa Rica"
+    },
+    {
+     "id": "curated:country_of_capital:1f71c9a4",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " El Salvador"
+    },
+    {
+     "id": "curated:country_of_capital:37227a2c",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Papua New Guinea"
+    },
+    {
+     "id": "curated:number_word:39694521",
+     "kind": "answer",
+     "category": "number_word",
+     "string": " one hundred"
+    },
+    {
+     "id": "curated:translation_spanish:52d2f7d2",
+     "kind": "answer",
+     "category": "translation_spanish",
+     "string": "por favor"
+    },
+    {
+     "id": "phrase:animal:c1b1a3f5",
+     "kind": "answer",
+     "category": "animal",
+     "string": " blue whale"
+    },
+    {
+     "id": "phrase:animal:c6fe4d33",
+     "kind": "answer",
+     "category": "animal",
+     "string": " polar bear"
+    },
+    {
+     "id": "phrase:animal:ad86e9d3",
+     "kind": "answer",
+     "category": "animal",
+     "string": " bald eagle"
+    },
+    {
+     "id": "phrase:animal:31404fad",
+     "kind": "answer",
+     "category": "animal",
+     "string": " great white shark"
+    },
+    {
+     "id": "phrase:arts:344960e5",
+     "kind": "answer",
+     "category": "arts",
+     "string": " Captain America"
+    },
+    {
+     "id": "phrase:arts:6f5de603",
+     "kind": "answer",
+     "category": "arts",
+     "string": " Sherlock Holmes"
+    },
+    {
+     "id": "phrase:bridge_capital_currency:251f7dbf",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " South Africa"
+    },
+    {
+     "id": "phrase:bridge_capital_currency:3c342c2d",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " United States"
+    },
+    {
+     "id": "phrase:bridge_capital_currency:a053eebf",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " United Kingdom"
+    },
+    {
+     "id": "phrase:bridge_capital_currency:136854a2",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " United Arab Emirates"
+    },
+    {
+     "id": "phrase:bridge_capital_currency:3de9e669",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " Cape Verde"
+    },
+    {
+     "id": "phrase:bridge_capital_currency:f555092f",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " Ivory Coast"
+    },
+    {
+     "id": "phrase:bridge_capital_currency:0dbacf1d",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " Solomon Islands"
+    },
+    {
+     "id": "phrase:bridge_capital_currency:4ce0013d",
+     "kind": "bridge",
+     "category": "bridge_capital_currency",
+     "string": " Saint Lucia"
+    },
+    {
+     "id": "phrase:bridge_character_creator:10052638",
+     "kind": "bridge",
+     "category": "bridge_character_creator",
+     "string": " James Bond"
+    },
+    {
+     "id": "phrase:bridge_character_creator:624fe5c4",
+     "kind": "bridge",
+     "category": "bridge_character_creator",
+     "string": " Peter Pan"
+    },
+    {
+     "id": "phrase:bridge_character_creator:dfcfd6a2",
+     "kind": "bridge",
+     "category": "bridge_character_creator",
+     "string": " Charlie Brown"
+    },
+    {
+     "id": "phrase:bridge_character_creator:03b62d05",
+     "kind": "bridge",
+     "category": "bridge_character_creator",
+     "string": " Tom Sawyer"
+    },
+    {
+     "id": "phrase:bridge_company_country:2fabcbd0",
+     "kind": "bridge",
+     "category": "bridge_company_country",
+     "string": " Home Depot"
+    },
+    {
+     "id": "phrase:bridge_company_country:9804d8cf",
+     "kind": "bridge",
+     "category": "bridge_company_country",
+     "string": " General Motors"
+    },
+    {
+     "id": "phrase:bridge_company_country:b2dd2b8b",
+     "kind": "bridge",
+     "category": "bridge_company_country",
+     "string": " Goldman Sachs"
+    },
+    {
+     "id": "phrase:bridge_company_country:a30e4146",
+     "kind": "bridge",
+     "category": "bridge_company_country",
+     "string": " Wells Fargo"
+    },
+    {
+     "id": "phrase:bridge_company_country:8f18c194",
+     "kind": "bridge",
+     "category": "bridge_company_country",
+     "string": " Virgin Atlantic"
+    },
+    {
+     "id": "phrase:bridge_company_country:dc065140",
+     "kind": "bridge",
+     "category": "bridge_company_country",
+     "string": " Harley Davidson"
+    },
+    {
+     "id": "phrase:bridge_company_country:2234fbd3",
+     "kind": "bridge",
+     "category": "bridge_company_country",
+     "string": " Kentucky Fried Chicken"
+    },
+    {
+     "id": "phrase:bridge_company_country:48d6d497",
+     "kind": "bridge",
+     "category": "bridge_company_country",
+     "string": " American Express"
+    },
+    {
+     "id": "phrase:bridge_concept:a73f0178",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " carbon dioxide"
+    },
+    {
+     "id": "phrase:bridge_concept:3987b4bd",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " sodium chloride"
+    },
+    {
+     "id": "phrase:bridge_concept:becae30b",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " World War II"
+    },
+    {
+     "id": "phrase:bridge_concept:c1967337",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " World War I"
+    },
+    {
+     "id": "phrase:bridge_concept:9bf60253",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " Black Death"
+    },
+    {
+     "id": "phrase:bridge_concept:ebe54388",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " American Civil War"
+    },
+    {
+     "id": "phrase:bridge_concept:77561e24",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " Cuban Missile Crisis"
+    },
+    {
+     "id": "phrase:bridge_concept:64374214",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " Harry Potter"
+    },
+    {
+     "id": "phrase:bridge_concept:d770f419",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " Jurassic Park"
+    },
+    {
+     "id": "phrase:bridge_concept:e76a68ca",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " Star Wars"
+    },
+    {
+     "id": "phrase:bridge_concept:2c532afa",
+     "kind": "bridge",
+     "category": "bridge_concept",
+     "string": " Swan Lake"
+    },
+    {
+     "id": "phrase:bridge_currency_capital:5aa9c8e6",
+     "kind": "bridge",
+     "category": "bridge_currency_capital",
+     "string": " South Africa"
+    },
+    {
+     "id": "phrase:bridge_currency_capital:da431ed4",
+     "kind": "bridge",
+     "category": "bridge_currency_capital",
+     "string": " Saudi Arabia"
+    },
+    {
+     "id": "phrase:bridge_currency_capital:b3852f6d",
+     "kind": "bridge",
+     "category": "bridge_currency_capital",
+     "string": " United Arab Emirates"
+    },
+    {
+     "id": "phrase:bridge_landmark_country:1789baf4",
+     "kind": "bridge",
+     "category": "bridge_landmark_country",
+     "string": " Mount Everest"
+    },
+    {
+     "id": "phrase:bridge_landmark_country:585a0d33",
+     "kind": "bridge",
+     "category": "bridge_landmark_country",
+     "string": " Golden Gate Bridge"
+    },
+    {
+     "id": "phrase:bridge_landmark_country:317ffd9e",
+     "kind": "bridge",
+     "category": "bridge_landmark_country",
+     "string": " Sydney Opera House"
+    },
+    {
+     "id": "phrase:bridge_landmark_country:86cdedf8",
+     "kind": "bridge",
+     "category": "bridge_landmark_country",
+     "string": " Grand Canyon"
+    },
+    {
+     "id": "phrase:bridge_landmark_country:8b6e0653",
+     "kind": "bridge",
+     "category": "bridge_landmark_country",
+     "string": " Great Barrier Reef"
+    },
+    {
+     "id": "phrase:bridge_landmark_country:bba0e2ac",
+     "kind": "bridge",
+     "category": "bridge_landmark_country",
+     "string": " Buckingham Palace"
+    },
+    {
+     "id": "phrase:bridge_landmark_country:5edaa22a",
+     "kind": "bridge",
+     "category": "bridge_landmark_country",
+     "string": " White House"
+    },
+    {
+     "id": "phrase:bridge_landmark_country:c6f354a1",
+     "kind": "bridge",
+     "category": "bridge_landmark_country",
+     "string": " Red Square"
+    },
+    {
+     "id": "phrase:bridge_person_arts_nationality:b31fc624",
+     "kind": "bridge",
+     "category": "bridge_person_arts_nationality",
+     "string": " Pablo Picasso"
+    },
+    {
+     "id": "phrase:bridge_person_arts_nationality:f5b44164",
+     "kind": "bridge",
+     "category": "bridge_person_arts_nationality",
+     "string": " Walt Disney"
+    },
+    {
+     "id": "phrase:bridge_person_arts_nationality:c2e3fdb4",
+     "kind": "bridge",
+     "category": "bridge_person_arts_nationality",
+     "string": " Johann Sebastian Bach"
+    },
+    {
+     "id": "phrase:bridge_person_arts_nationality:ad27c70e",
+     "kind": "bridge",
+     "category": "bridge_person_arts_nationality",
+     "string": " Michael Jackson"
+    },
+    {
+     "id": "phrase:bridge_person_arts_nationality:a32fb6ef",
+     "kind": "bridge",
+     "category": "bridge_person_arts_nationality",
+     "string": " Freddie Mercury"
+    },
+    {
+     "id": "phrase:bridge_person_arts_nationality:525e1f18",
+     "kind": "bridge",
+     "category": "bridge_person_arts_nationality",
+     "string": " Steven Spielberg"
+    },
+    {
+     "id": "phrase:bridge_person_arts_nationality:538349bb",
+     "kind": "bridge",
+     "category": "bridge_person_arts_nationality",
+     "string": " Leonardo da Vinci"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:15e9de29",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " George Washington"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:242d5a77",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Abraham Lincoln"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:4f90da14",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Thomas Jefferson"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:c6420b27",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Benjamin Franklin"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:687684ba",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Winston Churchill"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:f537b685",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Julius Caesar"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:cd63ba8f",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Martin Luther King"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:62351978",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Nelson Mandela"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:1d1f486e",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Christopher Columbus"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:8cf346c6",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Marco Polo"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:9306bd23",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " James Cook"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:adf1366f",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Mother Teresa"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:0abb236f",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Queen Victoria"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:f0b14110",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Joan of Arc"
+    },
+    {
+     "id": "phrase:bridge_person_history_nationality:66e84168",
+     "kind": "bridge",
+     "category": "bridge_person_history_nationality",
+     "string": " Alexander the Great"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:1390f364",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Isaac Newton"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:acee2cf6",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Albert Einstein"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:3d33f7b7",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Charles Darwin"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:ab352953",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Thomas Edison"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:654dcc99",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Alexander Fleming"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:00bed4c1",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Alan Turing"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:d03492e8",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Neil Armstrong"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:342d46ae",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Steve Jobs"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:103dea59",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Bill Gates"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:897c6a0e",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Henry Ford"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:dbfdce48",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Alexander Graham Bell"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:abaef977",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Joseph John Thomson"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:356030c2",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Alfred Nobel"
+    },
+    {
+     "id": "phrase:bridge_person_science_nationality:932fc31c",
+     "kind": "bridge",
+     "category": "bridge_person_science_nationality",
+     "string": " Johannes Kepler"
+    },
+    {
+     "id": "phrase:bridge_person_sport_nationality:b3133388",
+     "kind": "bridge",
+     "category": "bridge_person_sport_nationality",
+     "string": " Michael Jordan"
+    },
+    {
+     "id": "phrase:bridge_person_sport_nationality:d6d9c0ac",
+     "kind": "bridge",
+     "category": "bridge_person_sport_nationality",
+     "string": " Tiger Woods"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:4b8f3340",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " William Shakespeare"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:9dfe0907",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " Charles Dickens"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:2ae48ac1",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " Karl Marx"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:9b1dcd6e",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " Adam Smith"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:65c73cce",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " John Locke"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:4fa24193",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " Friedrich Nietzsche"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:f5bf6d87",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " George Orwell"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:b560a227",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " Edgar Allan Poe"
+    },
+    {
+     "id": "phrase:bridge_person_writer_nationality:cb34b3f8",
+     "kind": "bridge",
+     "category": "bridge_person_writer_nationality",
+     "string": " James Joyce"
+    },
+    {
+     "id": "phrase:bridge_state_capital:a81aa1dd",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " New York"
+    },
+    {
+     "id": "phrase:bridge_state_capital:5e352a0c",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " New Jersey"
+    },
+    {
+     "id": "phrase:bridge_state_capital:7ec7ca26",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " New Jersey"
+    },
+    {
+     "id": "phrase:bridge_state_capital:40275e90",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " New Mexico"
+    },
+    {
+     "id": "phrase:bridge_state_capital:9fbc5e27",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " New Mexico"
+    },
+    {
+     "id": "phrase:bridge_state_capital:2b6172b0",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " New Hampshire"
+    },
+    {
+     "id": "phrase:bridge_state_capital:53b223f8",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " New Hampshire"
+    },
+    {
+     "id": "phrase:bridge_state_capital:068fe08a",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " North Carolina"
+    },
+    {
+     "id": "phrase:bridge_state_capital:857c2327",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " North Carolina"
+    },
+    {
+     "id": "phrase:bridge_state_capital:df3d1e68",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " South Carolina"
+    },
+    {
+     "id": "phrase:bridge_state_capital:98c2e642",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " South Carolina"
+    },
+    {
+     "id": "phrase:bridge_state_capital:98002cee",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " North Dakota"
+    },
+    {
+     "id": "phrase:bridge_state_capital:cb2389ff",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " North Dakota"
+    },
+    {
+     "id": "phrase:bridge_state_capital:ec8d610b",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " South Dakota"
+    },
+    {
+     "id": "phrase:bridge_state_capital:1eadfc0b",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " South Dakota"
+    },
+    {
+     "id": "phrase:bridge_state_capital:a216597b",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " West Virginia"
+    },
+    {
+     "id": "phrase:bridge_state_capital:df28ae00",
+     "kind": "bridge",
+     "category": "bridge_state_capital",
+     "string": " Rhode Island"
+    },
+    {
+     "id": "phrase:bridge_team_country:11095dcc",
+     "kind": "bridge",
+     "category": "bridge_team_country",
+     "string": " Manchester United"
+    },
+    {
+     "id": "phrase:bridge_team_country:48a7dc0f",
+     "kind": "bridge",
+     "category": "bridge_team_country",
+     "string": " Real Madrid"
+    },
+    {
+     "id": "phrase:bridge_team_country:a1358813",
+     "kind": "bridge",
+     "category": "bridge_team_country",
+     "string": " Bayern Munich"
+    },
+    {
+     "id": "phrase:bridge_team_country:126146f0",
+     "kind": "bridge",
+     "category": "bridge_team_country",
+     "string": " Inter Milan"
+    },
+    {
+     "id": "phrase:bridge_team_country:d4650f37",
+     "kind": "bridge",
+     "category": "bridge_team_country",
+     "string": " All Blacks"
+    },
+    {
+     "id": "phrase:bridge_team_country:aa42d7e4",
+     "kind": "bridge",
+     "category": "bridge_team_country",
+     "string": " New York Yankees"
+    },
+    {
+     "id": "phrase:bridge_team_country:f0da6aa4",
+     "kind": "bridge",
+     "category": "bridge_team_country",
+     "string": " Montreal Canadiens"
+    },
+    {
+     "id": "phrase:character:ad84b6ef",
+     "kind": "answer",
+     "category": "character",
+     "string": " Bruce Wayne"
+    },
+    {
+     "id": "phrase:character:39cf4ca9",
+     "kind": "answer",
+     "category": "character",
+     "string": " Clark Kent"
+    },
+    {
+     "id": "phrase:character:275b1659",
+     "kind": "answer",
+     "category": "character",
+     "string": " Indiana Jones"
+    },
+    {
+     "id": "phrase:character:33441e1d",
+     "kind": "answer",
+     "category": "character",
+     "string": " Tom and Jerry"
+    },
+    {
+     "id": "phrase:chemistry:e86077f3",
+     "kind": "answer",
+     "category": "chemistry",
+     "string": " carbon dioxide"
+    },
+    {
+     "id": "phrase:company:aa2263e1",
+     "kind": "answer",
+     "category": "company",
+     "string": " Burger King"
+    },
+    {
+     "id": "phrase:company:921aaaa7",
+     "kind": "answer",
+     "category": "company",
+     "string": " Red Bull"
+    },
+    {
+     "id": "phrase:company:b08c5c4b",
+     "kind": "answer",
+     "category": "company",
+     "string": " Air France"
+    },
+    {
+     "id": "phrase:compound:020fe218",
+     "kind": "answer",
+     "category": "compound",
+     "string": " air conditioner"
+    },
+    {
+     "id": "phrase:compound:0db83a30",
+     "kind": "answer",
+     "category": "compound",
+     "string": " credit score"
+    },
+    {
+     "id": "phrase:compound:1095b610",
+     "kind": "answer",
+     "category": "compound",
+     "string": " immune system"
+    },
+    {
+     "id": "phrase:compound:234cdb8b",
+     "kind": "answer",
+     "category": "compound",
+     "string": " Supreme Court"
+    },
+    {
+     "id": "phrase:compound:244a102d",
+     "kind": "answer",
+     "category": "compound",
+     "string": " real estate"
+    },
+    {
+     "id": "phrase:compound:557fce4d",
+     "kind": "answer",
+     "category": "compound",
+     "string": " post office"
+    },
+    {
+     "id": "phrase:compound:8ab47e4b",
+     "kind": "answer",
+     "category": "compound",
+     "string": " art gallery"
+    },
+    {
+     "id": "phrase:compound:8b341b5f",
+     "kind": "answer",
+     "category": "compound",
+     "string": " middle class"
+    },
+    {
+     "id": "phrase:compound:98c3257f",
+     "kind": "answer",
+     "category": "compound",
+     "string": " Good Friday"
+    },
+    {
+     "id": "phrase:compound:ae2bf664",
+     "kind": "answer",
+     "category": "compound",
+     "string": " vice president"
+    },
+    {
+     "id": "phrase:compound:b039dad5",
+     "kind": "answer",
+     "category": "compound",
+     "string": " greenhouse effect"
+    },
+    {
+     "id": "phrase:compound:c491e434",
+     "kind": "answer",
+     "category": "compound",
+     "string": " movie theater"
+    },
+    {
+     "id": "phrase:compound:ea24c8c6",
+     "kind": "answer",
+     "category": "compound",
+     "string": " common sense"
+    },
+    {
+     "id": "phrase:compound:f4482f50",
+     "kind": "answer",
+     "category": "compound",
+     "string": " House of Representatives"
+    },
+    {
+     "id": "phrase:compound:fa3b0bb6",
+     "kind": "answer",
+     "category": "compound",
+     "string": " leap year"
+    },
+    {
+     "id": "phrase:compound:fc8aa13b",
+     "kind": "answer",
+     "category": "compound",
+     "string": " credit card"
+    },
+    {
+     "id": "phrase:country_of_capital:0dc73f1f",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " South Africa"
+    },
+    {
+     "id": "phrase:country_of_capital:603b5787",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Sri Lanka"
+    },
+    {
+     "id": "phrase:country_of_capital:4eba91e0",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Puerto Rico"
+    },
+    {
+     "id": "phrase:country_of_capital:ed202931",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Papua New Guinea"
+    },
+    {
+     "id": "phrase:country_of_capital:9cdea84f",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Ivory Coast"
+    },
+    {
+     "id": "phrase:country_of_capital:7fa9c643",
+     "kind": "answer",
+     "category": "country_of_capital",
+     "string": " Saint Lucia"
+    },
+    {
+     "id": "phrase:event:619f3917",
+     "kind": "answer",
+     "category": "event",
+     "string": " Cold War"
+    },
+    {
+     "id": "phrase:event:f283e346",
+     "kind": "answer",
+     "category": "event",
+     "string": " Black Death"
+    },
+    {
+     "id": "phrase:event:0c86f381",
+     "kind": "answer",
+     "category": "event",
+     "string": " Industrial Revolution"
+    },
+    {
+     "id": "phrase:event:bb2f1eb9",
+     "kind": "answer",
+     "category": "event",
+     "string": " Vietnam War"
+    },
+    {
+     "id": "phrase:landmark:7b359363",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Mount Everest"
+    },
+    {
+     "id": "phrase:landmark:e4a2a1f1",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Mount Fuji"
+    },
+    {
+     "id": "phrase:landmark:ab933096",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Mont Blanc"
+    },
+    {
+     "id": "phrase:landmark:52c28554",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Atlantic Ocean"
+    },
+    {
+     "id": "phrase:landmark:5009b1e1",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Indian Ocean"
+    },
+    {
+     "id": "phrase:landmark:2b9066a7",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Arctic Ocean"
+    },
+    {
+     "id": "phrase:landmark:50ced8f2",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Mediterranean Sea"
+    },
+    {
+     "id": "phrase:landmark:ac22d392",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Lake Superior"
+    },
+    {
+     "id": "phrase:landmark:5cf62467",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Persian Gulf"
+    },
+    {
+     "id": "phrase:landmark:573a4240",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Panama Canal"
+    },
+    {
+     "id": "phrase:landmark:2112092c",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Statue of Liberty"
+    },
+    {
+     "id": "phrase:landmark:388e4f6f",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Golden Gate Bridge"
+    },
+    {
+     "id": "phrase:landmark:cdbcd8f7",
+     "kind": "answer",
+     "category": "landmark",
+     "string": " Sydney Opera House"
+    },
+    {
+     "id": "phrase:person_arts:83c2eb37",
+     "kind": "answer",
+     "category": "person_arts",
+     "string": " Walt Disney"
+    },
+    {
+     "id": "phrase:person_arts:cace1edd",
+     "kind": "answer",
+     "category": "person_arts",
+     "string": " Michael Jackson"
+    },
+    {
+     "id": "phrase:person_arts:312050e8",
+     "kind": "answer",
+     "category": "person_arts",
+     "string": " Freddie Mercury"
+    },
+    {
+     "id": "phrase:person_arts:917a5a2d",
+     "kind": "answer",
+     "category": "person_arts",
+     "string": " Steven Spielberg"
+    },
+    {
+     "id": "phrase:person_arts:3b8ba80b",
+     "kind": "answer",
+     "category": "person_arts",
+     "string": " Marilyn Monroe"
+    },
+    {
+     "id": "phrase:person_arts:e0284aab",
+     "kind": "answer",
+     "category": "person_arts",
+     "string": " Frank Lloyd Wright"
+    },
+    {
+     "id": "phrase:person_arts:ebee57f5",
+     "kind": "answer",
+     "category": "person_arts",
+     "string": " Frank Lloyd Wright"
+    },
+    {
+     "id": "phrase:person_history:acfae6f6",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " George Washington"
+    },
+    {
+     "id": "phrase:person_history:8eb25efa",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Abraham Lincoln"
+    },
+    {
+     "id": "phrase:person_history:4d428ee9",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Abraham Lincoln"
+    },
+    {
+     "id": "phrase:person_history:c26beeda",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Thomas Jefferson"
+    },
+    {
+     "id": "phrase:person_history:1655383d",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Benjamin Franklin"
+    },
+    {
+     "id": "phrase:person_history:62ae5ccb",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Nelson Mandela"
+    },
+    {
+     "id": "phrase:person_history:f51a2a44",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Christopher Columbus"
+    },
+    {
+     "id": "phrase:person_history:f5ed1558",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Marco Polo"
+    },
+    {
+     "id": "phrase:person_history:8e546488",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Mother Teresa"
+    },
+    {
+     "id": "phrase:person_history:3e78b3d0",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Queen Victoria"
+    },
+    {
+     "id": "phrase:person_history:b05d9db6",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Joan of Arc"
+    },
+    {
+     "id": "phrase:person_history:e637ee10",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Joan of Arc"
+    },
+    {
+     "id": "phrase:person_history:4553e988",
+     "kind": "answer",
+     "category": "person_history",
+     "string": " Alexander the Great"
+    },
+    {
+     "id": "phrase:person_more:00687cce",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " James Cameron"
+    },
+    {
+     "id": "phrase:person_more:09ee9cb4",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Paul McCartney"
+    },
+    {
+     "id": "phrase:person_more:14fb4a8d",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Robert the Bruce"
+    },
+    {
+     "id": "phrase:person_more:263249a6",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Robert Frost"
+    },
+    {
+     "id": "phrase:person_more:2d92903f",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Johnny Cash"
+    },
+    {
+     "id": "phrase:person_more:3f9a4e64",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Lady Gaga"
+    },
+    {
+     "id": "phrase:person_more:40bcf42b",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " David Beckham"
+    },
+    {
+     "id": "phrase:person_more:55e09d62",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Warren Buffett"
+    },
+    {
+     "id": "phrase:person_more:80ebde32",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Julia Roberts"
+    },
+    {
+     "id": "phrase:person_more:d967ae25",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " William Wallace"
+    },
+    {
+     "id": "phrase:person_more:df7294df",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Bill Gates"
+    },
+    {
+     "id": "phrase:person_more:e9ce55b1",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Lance Armstrong"
+    },
+    {
+     "id": "phrase:person_more:ec062d6e",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Taylor Swift"
+    },
+    {
+     "id": "phrase:person_more:f3a37fa4",
+     "kind": "answer",
+     "category": "person_more",
+     "string": " Edward Jenner"
+    },
+    {
+     "id": "phrase:person_science:b8081e52",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Isaac Newton"
+    },
+    {
+     "id": "phrase:person_science:e03a609f",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Albert Einstein"
+    },
+    {
+     "id": "phrase:person_science:a3d3506b",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Charles Darwin"
+    },
+    {
+     "id": "phrase:person_science:1c1ae0f9",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Nikola Tesla"
+    },
+    {
+     "id": "phrase:person_science:4a3f098e",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Alexander Fleming"
+    },
+    {
+     "id": "phrase:person_science:1b5e20ce",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Neil Armstrong"
+    },
+    {
+     "id": "phrase:person_science:2278525f",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Steve Jobs"
+    },
+    {
+     "id": "phrase:person_science:79a269e5",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Alexander Graham Bell"
+    },
+    {
+     "id": "phrase:person_science:f1b32845",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Alfred Nobel"
+    },
+    {
+     "id": "phrase:person_science:87065035",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Johannes Kepler"
+    },
+    {
+     "id": "phrase:person_science:5af2fc55",
+     "kind": "answer",
+     "category": "person_science",
+     "string": " Johannes Kepler"
+    },
+    {
+     "id": "phrase:person_sport:3a9f7bcd",
+     "kind": "answer",
+     "category": "person_sport",
+     "string": " Serena Williams"
+    },
+    {
+     "id": "phrase:person_sport:9a203bc3",
+     "kind": "answer",
+     "category": "person_sport",
+     "string": " Cristiano Ronaldo"
+    },
+    {
+     "id": "phrase:person_sport:fd65f05d",
+     "kind": "answer",
+     "category": "person_sport",
+     "string": " Tiger Woods"
+    },
+    {
+     "id": "phrase:person_sport:c04c1492",
+     "kind": "answer",
+     "category": "person_sport",
+     "string": " Tiger Woods"
+    },
+    {
+     "id": "phrase:person_sport:c643b2aa",
+     "kind": "answer",
+     "category": "person_sport",
+     "string": " Michael Phelps"
+    },
+    {
+     "id": "phrase:person_writer:df4841af",
+     "kind": "answer",
+     "category": "person_writer",
+     "string": " Charles Dickens"
+    },
+    {
+     "id": "phrase:person_writer:d0cc3193",
+     "kind": "answer",
+     "category": "person_writer",
+     "string": " John Locke"
+    },
+    {
+     "id": "phrase:person_writer:e805d494",
+     "kind": "answer",
+     "category": "person_writer",
+     "string": " Oscar Wilde"
+    },
+    {
+     "id": "phrase:person_writer:648dbccc",
+     "kind": "answer",
+     "category": "person_writer",
+     "string": " Edgar Allan Poe"
+    },
+    {
+     "id": "phrase:place:2c56c094",
+     "kind": "answer",
+     "category": "place",
+     "string": " New York"
+    },
+    {
+     "id": "phrase:place:4cdeb0ab",
+     "kind": "answer",
+     "category": "place",
+     "string": " New Orleans"
+    },
+    {
+     "id": "phrase:place:81d3ced3",
+     "kind": "answer",
+     "category": "place",
+     "string": " Los Angeles"
+    },
+    {
+     "id": "phrase:place:6d725c06",
+     "kind": "answer",
+     "category": "place",
+     "string": " Las Vegas"
+    },
+    {
+     "id": "phrase:place:d833c26d",
+     "kind": "answer",
+     "category": "place",
+     "string": " San Antonio"
+    },
+    {
+     "id": "phrase:place:9d81c829",
+     "kind": "answer",
+     "category": "place",
+     "string": " San Diego"
+    },
+    {
+     "id": "phrase:place:e09dc2a6",
+     "kind": "answer",
+     "category": "place",
+     "string": " Abu Dhabi"
+    },
+    {
+     "id": "phrase:place:1a1641be",
+     "kind": "answer",
+     "category": "place",
+     "string": " Ho Chi Minh City"
+    },
+    {
+     "id": "phrase:place:b7fef9af",
+     "kind": "answer",
+     "category": "place",
+     "string": " South Australia"
+    },
+    {
+     "id": "phrase:place:9482399e",
+     "kind": "answer",
+     "category": "place",
+     "string": " Nova Scotia"
+    },
+    {
+     "id": "phrase:place:b7c67d7f",
+     "kind": "answer",
+     "category": "place",
+     "string": " United Nations"
+    },
+    {
+     "id": "phrase:place:e627d0d2",
+     "kind": "answer",
+     "category": "place",
+     "string": " United Kingdom"
+    },
+    {
+     "id": "phrase:president:ace04bc1",
+     "kind": "answer",
+     "category": "president",
+     "string": " George Washington"
+    },
+    {
+     "id": "phrase:president:c8e0329f",
+     "kind": "answer",
+     "category": "president",
+     "string": " Gerald Ford"
+    },
+    {
+     "id": "phrase:president:c43b19d4",
+     "kind": "answer",
+     "category": "president",
+     "string": " Ronald Reagan"
+    },
+    {
+     "id": "phrase:president:b8f33d1c",
+     "kind": "answer",
+     "category": "president",
+     "string": " Barack Obama"
+    },
+    {
+     "id": "phrase:president:ac87eb3a",
+     "kind": "answer",
+     "category": "president",
+     "string": " Donald Trump"
+    },
+    {
+     "id": "phrase:president:b0efda33",
+     "kind": "answer",
+     "category": "president",
+     "string": " Joe Biden"
+    },
+    {
+     "id": "phrase:president:06a93f0c",
+     "kind": "answer",
+     "category": "president",
+     "string": " Margaret Thatcher"
+    },
+    {
+     "id": "phrase:president:6815ff3a",
+     "kind": "answer",
+     "category": "president",
+     "string": " Tony Blair"
+    },
+    {
+     "id": "phrase:president:7b21b8e8",
+     "kind": "answer",
+     "category": "president",
+     "string": " Vladimir Putin"
+    },
+    {
+     "id": "phrase:president:bfc32f52",
+     "kind": "answer",
+     "category": "president",
+     "string": " Adolf Hitler"
+    },
+    {
+     "id": "phrase:region:e6541529",
+     "kind": "answer",
+     "category": "region",
+     "string": " Wall Street"
+    },
+    {
+     "id": "phrase:region:f327c60d",
+     "kind": "answer",
+     "category": "region",
+     "string": " Southern Ocean"
+    },
+    {
+     "id": "phrase:region:1f393539",
+     "kind": "answer",
+     "category": "region",
+     "string": " North Pole"
+    },
+    {
+     "id": "phrase:region:4b584bf8",
+     "kind": "answer",
+     "category": "region",
+     "string": " South Pole"
+    },
+    {
+     "id": "phrase:region:e6a16216",
+     "kind": "answer",
+     "category": "region",
+     "string": " Great Plains"
+    },
+    {
+     "id": "phrase:region:1baf90fc",
+     "kind": "answer",
+     "category": "region",
+     "string": " Madison Square Garden"
+    },
+    {
+     "id": "phrase:region:f8b0414f",
+     "kind": "answer",
+     "category": "region",
+     "string": " High Line"
+    },
+    {
+     "id": "phrase:region:09f1bc14",
+     "kind": "answer",
+     "category": "region",
+     "string": " English Channel"
+    },
+    {
+     "id": "phrase:region:53fe0d36",
+     "kind": "answer",
+     "category": "region",
+     "string": " Isle of Man"
+    },
+    {
+     "id": "phrase:science:6171c580",
+     "kind": "answer",
+     "category": "science",
+     "string": " Milky Way"
+    },
+    {
+     "id": "phrase:science:1057bf10",
+     "kind": "answer",
+     "category": "science",
+     "string": " wind turbine"
+    },
+    {
+     "id": "phrase:sport:8ed685e3",
+     "kind": "answer",
+     "category": "sport",
+     "string": " American football"
+    },
+    {
+     "id": "phrase:team:6ec8c415",
+     "kind": "answer",
+     "category": "team",
+     "string": " Los Angeles Lakers"
+    },
+    {
+     "id": "phrase:team:cdf32683",
+     "kind": "answer",
+     "category": "team",
+     "string": " Boston Celtics"
+    },
+    {
+     "id": "phrase:team:70beebcb",
+     "kind": "answer",
+     "category": "team",
+     "string": " New York Yankees"
+    },
+    {
+     "id": "phrase:team:7c9bc992",
+     "kind": "answer",
+     "category": "team",
+     "string": " Boston Red Sox"
+    },
+    {
+     "id": "phrase:team:e8492b29",
+     "kind": "answer",
+     "category": "team",
+     "string": " Dallas Cowboys"
+    },
+    {
+     "id": "phrase:team:5feb8817",
+     "kind": "answer",
+     "category": "team",
+     "string": " New England Patriots"
+    },
+    {
+     "id": "phrase:team:0bff7d49",
+     "kind": "answer",
+     "category": "team",
+     "string": " Kansas City Chiefs"
+    },
+    {
+     "id": "phrase:us_state:a8ef21c2",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " New Jersey"
+    },
+    {
+     "id": "phrase:us_state:ddf9a1c2",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " New Mexico"
+    },
+    {
+     "id": "phrase:us_state:53fce331",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " New Hampshire"
+    },
+    {
+     "id": "phrase:us_state:9e1a1055",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " North Carolina"
+    },
+    {
+     "id": "phrase:us_state:5029f30e",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " South Carolina"
+    },
+    {
+     "id": "phrase:us_state:e12feb3e",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " South Carolina"
+    },
+    {
+     "id": "phrase:us_state:edb2f1a4",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " North Dakota"
+    },
+    {
+     "id": "phrase:us_state:e3c13cc2",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " West Virginia"
+    },
+    {
+     "id": "phrase:us_state:fb20908c",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " Rhode Island"
+    },
+    {
+     "id": "phrase:us_state:2c3d8acd",
+     "kind": "answer",
+     "category": "us_state",
+     "string": " Rhode Island"
+    },
+    {
+     "id": "phrase:us_state_capital:8ef75378",
+     "kind": "answer",
+     "category": "us_state_capital",
+     "string": " Oklahoma City"
+    },
+    {
+     "id": "phrase:us_state_capital:0722f80d",
+     "kind": "answer",
+     "category": "us_state_capital",
+     "string": " Jefferson City"
+    },
+    {
+     "id": "phrase:us_state_capital:4f4dc49b",
+     "kind": "answer",
+     "category": "us_state_capital",
+     "string": " Carson City"
+    },
+    {
+     "id": "phrase:us_state_capital:f4dc530f",
+     "kind": "answer",
+     "category": "us_state_capital",
+     "string": " Baton Rouge"
+    },
+    {
+     "id": "phrase:us_state_capital:444035f5",
+     "kind": "answer",
+     "category": "us_state_capital",
+     "string": " Des Moines"
+    }
+   ],
+   "chance_top1": 0.0020491803278688526,
+   "seconds": 13101.677691698074
+  }
+ }
+}

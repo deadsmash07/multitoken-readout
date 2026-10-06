@@ -1,0 +1,750 @@
+# Pre-registration of the reformulated hypotheses R0-R8 (sjlens), written before any Day-1 job is launched.
+#
+# Source: docs/REFORMULATION_AND_PLAN.md table 3.4 (hypotheses, statistics, nulls, pass / kill) and section 6
+# (designs, layers, sizes, day plan). Nothing below may be changed after the first held-out job runs; changes are
+# appended as dated amendments at the end of this file with the reason.
+#
+# Two rules that bind every entry:
+#   items:  headline numbers are computed on the HELD-OUT half of data/h2a_split.json (434 answer ids). Any choice
+#           (alpha, carrier frame, layer for a "best layer" claim, vote rule, normaliser) is made on the TUNING half
+#           (433 ids) or fixed a priori in this file. Bridge items are not in the split (they are not answer items);
+#           bridge numbers are reported on all gated bridges and are descriptive, never a pass/kill on their own.
+#   stats:  every rate is reported with a 1,000-resample item-level bootstrap 95 % CI. Where several layers are
+#           tested for one hypothesis, the pass claim uses Holm across layers at family alpha = 0.05.
+
+meta:
+  written: 2026-09-25, before the Day-1 jobs
+  items_file: data/h2a_items.json          # 1198 items: 867 answer, 331 bridge
+  split_file: data/h2a_split.json          # seed 0, 433 tuning / 434 heldout answer ids
+  contexts: runs/contexts/qwen3_T128_256.pt # 256 generic carriers + 256 background records, T = 128
+  models:
+    - Qwen/Qwen3-1.7B   # 28 blocks; depth marks L11 / L17 / L22 = 39 / 61 / 79 %
+    - Qwen/Qwen3-14B    # 40 blocks; depth marks L16 / L24 / L32 = 40 / 60 / 80 %
+  dtype: bf16-mixed on 14B (bf16 weights, fp32 activations; G2 measured mixed = fp32 exactly for Qwen3), fp32 on 1.7B
+  gating:
+    answer: greedy continuation reproduces item["pieces"] exactly
+    bridge: a tokenisation of the target is a greedy prefix, or is contained TOKEN-WISE in the first 6 greedy tokens
+            (patch P1: no substring matches), AND the item is not a bridge_leak
+    bridge_leak: the greedy output contains the bridge string, or the target starts with the bridge's first piece;
+                 these items are excluded from bridge headline numbers and reported as a separate count
+  min_p1_chars: 0 by default; the 1-character-first-piece subset (360 items, audit A13) is reported separately
+  bootstrap: 1000 item-level resamples, percentile 95 % CI
+  multiplicity: Holm across layers within a hypothesis
+
+# ---------------------------------------------------------------------------------------------------------------
+R1:
+  name: locality (is s2 recoverable from h placed at gap 1?)
+  script: scripts/x1_gap1_patch.py
+  day: 1 (1.7B), 2 (14B)
+  items: gated ANSWER items, held-out half; tuning half only for smoke / timing
+  statistic: |
+    For item i with first two pieces (s1, s2) and h = residual at the last prompt token at layer l:
+    patch h into each of n_ctx generic carriers at the carrier's LAST context position (index tau-1, i.e. gap 1 to
+    the position that predicts s2), append s1, and read log p(. | c, s1) at the s1 position through the true head
+    log_softmax(lm_head(norm(h_L))). Delta log p(w) = patched - clean, averaged over carriers. Report the rank of s2
+    over the full vocabulary (top-1, top-10, median) and the mean Delta log p(s2).
+  layers: 1.7B 14, 18, 22, 26; 14B 16, 24, 32, 36
+  alphas: [0.3, 1.0]   # add mode; scale = alpha * (mean carrier source-residual norm) / ||h||, i.e. ||delta|| = alpha * mean||h_t||
+  modes: [add, replace]  # replace overwrites the carrier residual at tau-1 with h (no scale choice)
+  carriers: 64 contexts from runs/contexts/qwen3_T128_256.pt, chunked; frames: plain (default) and answer
+            ("... The answer is" before s1), the second is a pre-declared secondary arm, not a tuning knob
+  vote_rule: none (the statistic is the mean Delta log p over carriers, then one rank per item)
+  controls:
+    shuffled_h: h of another gated item of the SAME category, derangement with fixed seed 0
+    random_dir: Gaussian direction, norm-matched to ||h||, seed 0
+  reference_arm: far-gap G8 statistic on the same items (sources 16..tau-2), for continuity with the kill of H2a
+  pass: s2 top-10 >= 0.30 at some layer AND both controls <= 0.05 at that layer (Holm across the 4 layers)
+  kill: s2 top-10 <= 0.05 at every layer and within 2 points of the controls, on BOTH models
+  reported_anyway: per-category tables, mean Delta log p(s2), the rank of s1 in the lens readout D h per item
+                   (kappa / precondition bookkeeping), p1_chars
+
+R2:
+  name: linearity at the right gap (does the tangent suffice?)
+  script: scripts/x1_gap1_patch.py (linear arm)
+  day: 1
+  items: same as R1 (held-out half)
+  statistic: |
+    Exact JVP of the same readout with a one-position mask at tau-1 and prefix [s1]
+    (lens/forward.py jvp_exact / jvp_step with mode "lp" for log-probs, "z" for pseudo-logits; patch P4's jvp_gap).
+    Rank of s2 over the vocabulary, same reporting as R1.
+  decision_rule: "linear suffices" iff JVP s2 top-10 >= 0.8 x the finite-alpha (alpha = 1, add) top-10 at the same layer
+  null: beta(alpha) = R_alpha / (alpha R'_0) = 1
+  pass: decision, not a pass/kill; report beta(alpha) per item where the finite arm is non-degenerate
+  kill: none
+
+R3:
+  name: verbalisation by the model's own decoder (patchscope)
+  script: scripts/x3_patchscope.py
+  day: 1 (1.7B), 3 (14B)
+  items: gated ANSWER items (held-out half) for the headline; gated bridges reported separately
+  statistic: |
+    Patch h into a fixed carrier prompt at the patch position (replace, and optionally norm-matched add), greedy-decode
+    6 tokens, cut the generation at the carrier's stop marker, and exact-string match against the item's string after
+    normalisation (strip, collapse internal whitespace, casefold; cut() and norm() in the script). Majority vote
+    across carriers: an item counts as recovered iff more than half of the carriers of that kind emit the string.
+  stop_markers:   # fixed a priori. Without them the identity carrier's own format ("<x> -> <x>; ...") would make the
+    identity: [";", "->", "\n"]   # exact match fail even on a perfect verbalisation, i.e. R3 would fail vacuously.
+    describe: [".", ";", "\n"]
+  secondary: prefix match (the raw generation starts with the string) and first-piece match, both on the UNCUT
+             generation, are reported beside the exact number and are not subject to the pass / kill line
+  carriers:
+    identity: "cat -> cat; 1135 -> 1135; hello -> hello; ?" with the patch at the "?" token
+    describe: "Syria: Country in the Middle East. Leonardo DiCaprio: American actor. Samsung: South Korean
+               multinational corporation. x:" with the patch at x
+    n_carriers: 8 per kind, fixed variant list in the script (different few-shot examples), never tuned on items
+  target_layer: the same layer as the source by default; --target-layer is an explicitly reported variant
+  layers: 1.7B 10, 14, 18, 22, 25, 27; 14B 12, 16, 24, 32, 36, 38
+  positions: answers at the last prompt token; bridges also with --positions all (every prompt position), reporting
+             the best position per item AND the per-position profile (the best-position number is a selection and is
+             labelled as such)
+  controls: shuffled h within category (expected ~0), norm-matched random direction
+  pass: answers exact-string recall >= 0.30 at the best layer with both controls <= 0.05
+  kill: < 0.05 at every layer on BOTH models
+  reported_anyway: per layer / carrier kind / category; prefix-match and first-piece-match rates as secondary
+
+R4:
+  name: concept vs bag (do phrase vectors add anything over a bag of piece rows?)
+  script: scripts/e14_dictionary.py (patch P2), probe arm X4 on days 2-3
+  day: 2-3 (Day 1 only fixes the statistic and the controls)
+  items: gated queries; answer queries restricted to the held-out half for the headline (--split heldout)
+  statistic: within-first-piece-family top-1, digit / year / number categories excluded, for hybrid_nm vs mean_lens
+             (bag) vs pure vs first_lens; chance = mean 1 / family size
+  controls: shuffled-h within category (permuted queries, derangement, seed 0), norm-matched random direction
+  pass: hybrid_nm >= mean_lens + 0.05 on the held-out within-family statistic (else: drop phrase vectors, keep the bag)
+  kill: none
+  note: the all-candidate top-1 is reported but is mostly first-piece identification (C2); the unique-first-piece
+        subset is reported separately to make that explicit
+
+R5:
+  name: disposition ceiling for latent content (where are bridges readable?)
+  script: scripts/x3_patchscope.py --kinds bridge --positions all; scripts/e14_dictionary.py
+  day: 1 (1.7B scan), 3 (14B)
+  items: gated bridge items (all; not in the answer split), by category
+  statistic: bridge top-1 of the dictionary vs the first-piece row vs the patchscope at the last token and at the
+             best / profiled source positions, by category and model size
+  pass: patchscope at non-last (first-hop) positions beats the last-token dictionary by >= 0.15 on PERSON bridges at 14B
+  kill: none (this is a decision about where to read)
+
+R6:
+  name: sensitivity is not binding
+  statistic: Spearman between per-item kappa(s1) (or, on Day 1, the cheap proxy logged by X1: the rank of s1 in D h
+             and the per-item Delta log p) and the R1 s2 rank
+  null: 0
+  pass: report only
+  kill: none
+
+R7:
+  name: phrase-level certificate
+  day: 3 (X7)
+  statistic: empirical FPR of the split-conformal threshold on the dictionary's max-z and on the patchscope's
+             R_alpha-z at q = 0.05 / 0.01, on >= 2,000 background activations from >= 64 records
+  pass: within q +- 2 sqrt(q (1-q) / N_eff) with N_eff = number of RECORDS (not activations)
+  kill: none (a miss means the split is fixed, not the hypothesis)
+
+R0:
+  name: gap decomposition at scale
+  script: scripts/phase_a_local.py --do E7 (+ scripts/e7b_gap0_alignment.py --tokens)
+  day: 1 (14B L16, L24), 2 (L32, L36)
+  statistic: ||G_g|| profile, rho_frob and rho_exact, the norm-weighted future sum S = sum_{g>=1} (1 - g/|T|) ||G_g||
+             and the gap-1 / gaps 1-5 / gaps >= 20 shares of it (C16); per-token gap-0 share and cos(gap-0, rest) for
+             50 words + 50 fragments at 40 / 60 / 80 % depth
+  pass: descriptive, report only
+  kill: none
+
+R8:
+  name: J-lens characterisation
+  statistic: as R0 / G10 on 1.7B, 14B and one non-Qwen released lens; gap 1 share of the future term; the Bonferroni
+             FPR against the conformal one
+  claims_to_check: J-lens = logit lens + a long-range future term; gap 1 < 20 % of the future term;
+                   Bonferroni FPR >= 5x nominal
+  pass: report only
+  kill: none
+
+# ---------------------------------------------------------------------------------------------------------------
+day1_scope:
+  # What Day 1 actually decides. Everything else above is registered so that later days cannot re-choose it.
+  - R1 and R2 on Qwen3-1.7B at L14 / L18 / L22 / L26 (held-out half, 64 carriers, alphas 0.3 and 1, add and replace)
+  - R3 on Qwen3-1.7B (answers; bridges with the position scan) at layers 10, 14, 18, 22, 25, 27
+  - R0 / R8 on Qwen3-14B: the E7 gap profile at L16 and L24 in bf16-mixed
+  decision_after_day2: R1 or R3 passes on either model -> the dial paper; both kill on both models -> the analysis paper
+
+# Amendments after the Day-1 results (25 Sep 2026, docs/ANALYSIS_DAY1.md). Each entry names what changed, why, and
+# whether it touches a pass / kill line. The original entries above are untouched; the R1 / R3 verdicts stay as
+# registered and the new lines are labelled SECONDARY or descriptive. Free parameters of the new arms (target layer,
+# carrier variants) are fixed here or chosen on the TUNING half; headline numbers stay on the HELD-OUT half.
+amendments:
+  - id: A1
+    date: "2026-09-25 (, before any wave-2 job)"
+    what: |
+      shuffled-h control = within-category derangement that never pairs an item with itself or with an item of
+      the SAME string; items without a valid partner (singleton categories, duplicate-only strings) are dropped
+      from the control comparison and their count is reported (n_shuffled_dropped). Seeded per (seed, category).
+    why: |
+      ANALYSIS_DAY1 C1 - 5 of 278 Day-1 partners were the item itself or the same string (control inflated <= 1.8 pts).
+    affects: |
+      R1, R3, R4 controls (scripts/e12_second_token.py shuffled_perm, used by x1 / x3 / e14 / x4). No line changes.
+  - id: A2
+    date: "2026-09-25"
+    what: |
+      a third control, crosscat = h of a gated item of a DIFFERENT category (cross-category derangement, seeded,
+      never the same string), run through every arm beside shuffled and random.
+    why: |
+      ANALYSIS_DAY1 section 2 - the same-category control absorbs the s1 x category prior (the correct null for the
+      item-level claim); the cross-category control is the null for "h carries the category" and separates the two
+      levels in one table. Reported beside the registered controls; the R1 / R3 pass clauses keep "both controls
+      <= 0.05" over the registered pair (shuffled, random); crosscat is reported, not part of the pass test.
+    affects: |
+      X1, X3, E14, X4 (control column). No line changes.
+  - id: A3
+    date: "2026-09-25"
+    what: |
+      X1 logs three rank statistics per row - rank_s2 (rank of s2 in Delta log p, the registered readout statistic),
+      rank_s2_abs (rank of s2 in the PATCHED mean log-prob: does the model now predict s2?), rank_s2_clean (rank of
+      s2 in the clean carrier + s1 distribution, no patch; the s1-only baseline; identical across arms) with
+      logp_s2_patched / logp_s2_clean; summaries give top-1 / top-10 / median with bootstrap CIs for all three, and
+      paired real-minus-control differences (top-10, top-1; Delta-rank and absolute rank) with paired item-level
+      bootstrap CIs and exact McNemar counts.
+    why: |
+      ANALYSIS_DAY1 C6 - "recovers s2" needs the absolute and clean ranks; they are forward-only, one line each.
+    affects: |
+      R1 reporting. The registered R1 statistic (rank_s2) and verdict are unchanged.
+  - id: A4
+    date: "2026-09-25"
+    what: |
+      X1 target-layer patching (N1): h read at the source layer l is patched into the carrier AFTER block l'
+      (l' in {same, 4, 8, 12, 16} on 1.7B), still at position tau-1, modes replace and replace_nm (h rescaled to
+      the mean carrier residual norm at l'); arms keyed ":t<l'>". Sources 18 / 22 / 26 (1.7B). The two best
+      (source, target) cells, chosen on the 1.7B HELD-OUT grid, are then run on 14B (N3 placeholder in
+      jobs/wave2.txt) and labelled as a selection. Third-piece arm (":p3"): s3 given s1 s2, items with >= 3 pieces.
+    lines: |
+      N1 (proposed in ANALYSIS_DAY1 section 5, SECONDARY): pass if some cell has real top-10 >= 0.50 and
+      real - same-category >= 0.25 with the paired CI lower bound >= 0.15 (Holm over the 15 cells); kill if no cell
+      improves real - same-category by >= 0.05 over the same-layer cell. Does not replace R1.
+    why: |
+      ANALYSIS_DAY1 C3 - same-layer patching lets the s1 position read h only through blocks l+1..L (2 at L26).
+  - id: A5
+    date: "2026-09-25"
+    what: |
+      X3 v2 carriers (fixed lists in scripts/x3_patchscope.py, never tuned on items): identity2 (8 variants with
+      MULTI-token exemplars, e.g. "Kuala Lumpur -> Kuala Lumpur; hippopotamus -> hippopotamus; 1945 -> 1945; ?",
+      patch at "?", stops ";" "->" newline) and describe2 (8 variants "Syria -> Syria is a country in the Middle
+      East. ... ? ->", patch at the "?" ENTITY SLOT which is not the last token, stops " is " " was " " ->" ";" "."
+      newline; checked on CPU with the real 1.7B: a literal entity in the slot gives "<entity> is <description>"
+      for all 8 variants). --gen 8; target layers {same, 2, 4, 8}; positions: answers at the last token; bridges at
+      the last token and at the FIRST-HOP entity's last token (e12.firsthop_pos: the token before the template tail
+      " is" / " is the" / " was"; curated templates only, others skipped and counted). Day-1 carriers unchanged.
+      C2 fix: the first-piece flag is token-level (first generated token, skipping a leading whitespace token,
+      equals s1's token id) and the headline first-piece number is restricted to p1_chars >= 2 (vote_first_p1ge2);
+      the raw rate is still reported.
+    lines: |
+      R3 unchanged (exact majority >= 0.30 at the best layer with both registered controls <= 0.05; kill < 0.05
+      at every layer on both models), now over the v2 carriers as well; any-carrier and per-piece-count tables
+      secondary. R5 unchanged (first-hop patchscope beats the last-token dictionary by >= 0.15 on person bridges
+      at 14B), now testable with describe2 at the first-hop position.
+    why: |
+      ANALYSIS_DAY1 C4 / C5 / C8 (describe carrier dead by design, single-word exemplars, identity copy at mid-prompt positions).
+  - id: A6
+    date: "2026-09-25"
+    what: |
+      SECONDARY effect-size line for R1 (labelled secondary in every summary; the registered R1 verdict is kept
+      beside it): real minus same-category shuffled top-10 >= 0.20 with the 95 % paired bootstrap lower bound
+      >= 0.10 at some layer (Holm across layers), and real minus random >= 0.30.
+    why: |
+      ANALYSIS_DAY1 section 3 - the registered pass clause ("both controls <= 0.05") cannot be met by a
+         same-category control on this item set (51 % of items have an s1 that fixes s2). On Day-1 data the line is met
+         at L22 only (L18 lower bound 0.068); wave 2 re-tests it with the fixed derangement.
+  - id: A7
+    date: "2026-09-25"
+    what: |
+      X4 probe ceiling (scripts/x4_probe.py): multinomial logistic regression (torch, L-BFGS, L2 chosen by 5-fold CV
+      on the tuning half) from h at the last prompt token to (a) the s2 token over the observed s2 vocabulary and
+      (b) the full string (within-first-piece-family top-1 as in E14), trained on TUNING, evaluated on HELD-OUT;
+      (c) bridges: h -> bridge string among bridge strings, 5-fold CV by item (bridges are not in the split), at the
+      last token and the first-hop position. Control: shuffled training labels (same L2). Layers 1.7B 10 / 14 / 18 /
+      22 / 26, 14B 16 / 24 / 32 / 36.
+    lines: |
+      pass if held-out (a) top-10 >= 0.30 with the shuffled-label control <= 0.05 at some layer (Holm). Decision:
+      probe >> linear JVP (0.094 at L22) means the reader was the limit; probe ~ JVP means the representation is
+      non-linear. No kill.
+  - id: A8
+    date: "2026-09-25"
+    what: |
+      item sets. (1) data/single_items.json + single_split.json (make_h2a_items.py --single): the 1-token strings of
+      the same curated templates (the Anthropic source directory is not available locally, so curated only);
+      answer gating = greedy first token equals the token; descriptive only - X3 identity2, E14, X4 (bridges) and
+      the plain J-lens / logit-lens top-k readout (scripts/x5_reader_topk.py) calibrate each reader per category.
+      (2) data/phrase_items.json + phrase_split.json (--phrases, track B): strings whose every piece is a whole word
+      token (609 answer / 218 bridge candidates before gating; ambiguous first words New / South / North / San /
+      United / West ..., people as first + last name, chemistry names, events, landmarks, US states, cities, teams,
+      companies, common compounds; `shared_s1_group` = the first word). Track A = data/h2a_items.json (sub-word
+      multi-token) and track B are reported side by side for every reader on both models (jobs/wave2.txt tags
+      w2A_* / w2B_*; every results.json carries "track").
+    lines: |
+      the registered R1 / R3 / R4 lines apply to track B exactly as to track A (held-out half of phrase_split.json);
+      the single-token set has no pass / kill. The J-lens "bag" baseline on track B (both words in the plain lens
+      top-10, and their order) is descriptive.
+  - id: A9
+    date: "2026-09-25"
+    what: |
+      N6 bridge readers at the first-hop position: E14 (--positions last,firsthop; mean-of-rows / hybrid / pure /
+      first-piece rows at the first-hop entity's last token, same controls), X4 (c) at the first-hop position, X3
+      describe2 at the first-hop position (A5). Person and country bridges reported separately.
+    lines: |
+      R5 as registered (+0.15 over the last-token dictionary on person bridges at 14B); everything else descriptive.
+
+# A10 (2026-09-26, after wave-2 partial results; reason: docs/ANALYSIS_WAVE2.md W5/W6 and walltime)
+# - X3 v2 on 14B trimmed: carriers identity2 only (describe2 is inert: generations identical for real / shuffled /
+#   random h, W5); targets same,4; modes replace,replace_nm; controls shuffled,random (crosscat adds nothing to an
+#   exact-match control); layers 32 / 36 / 38 (L24 reads nothing on any instrument). Tags w2t_*. R3 lines unchanged.
+# - describe2 results in b04 / b05 (1.7B) are reported but labelled "reader inert" and excluded from R3 / R5 verdicts.
+# - X1 v2 grid (N1): replace_nm cells whose real top-10 < same-layer random + .05 are excluded from the Holm family (W6).
+# - X4 class probes (A7) retired as invalid (W1 leak in bridge folds; W2 class-sparse ceiling); to be replaced by a
+#   vocabulary-space probe with entity-grouped splits (to be registered as A11 before it runs).
+
+# A11 (2026-09-26, BEFORE any P2 / P3 / P6 job; reason: docs/ANALYSIS_WAVE2.md section 6 P2 / P3 / P6, A10's
+# retirement of the X4 class probes, and the user's requirement that every new reader is compared with the ORIGINAL
+# released J-lens and the logit lens on the same items with the same scoring, and eventually on WorkspaceBench's own
+# items with its own regex scorer. Every internal variant (mean_lens bag, hybrid phrase vectors, our chain baselines)
+# is a diagnostic, never "the baseline".)
+#
+# P2  vocabulary-space probes (scripts/x6_future_probe.py; jobs/p2p3.txt p2_*)
+#   (i) Future-Lens-style ridge map A_k: h_t^(l) -> the final-layer residual at t + k - 1 (its logits predict token
+#       t + k), k = 1 (reference, beside the plain logit lens), 2 (s2 from h at the last prompt token, s1 NOT given),
+#       3 (s3). Trained on generic wikitext records only (runs/contexts/qwen3_T128_256.pt + qwen3_T128_B.pt, ctx + bg,
+#       ~89k pairs per layer); lambda per (l, k) by held-out-record NLL over {1e-3..10} x mean diag(S_xx). Never on items.
+#       Items: gated HELD-OUT answers (tracks A, B) / all gated answers (S). Statistic: rank of s2 over the full
+#       vocabulary through the model's own norm + lm_head; top-1 / top-10 / median with item-level bootstrap CIs;
+#       the chained pair (s1 top-1 by the logit lens AND s2 top-1 by the k = 2 probe) beside it.
+#       Controls through the same probe: shuffled-h (A1), crosscat (A2), norm-matched random. Baselines on the same
+#       items: rank of s2 in the ORIGINAL released J-lens (bench cosine readout AND raw D h) and in the logit lens.
+#       Layers 1.7B 14 / 18 / 22 / 26; 14B 24 / 32 / 36.
+#       pass: held-out s2 top-10 >= 0.30 with both shuffled controls (same-cat, crosscat) <= 0.10 at some layer, Holm
+#             across layers; kill: s2 top-10 <= the logit lens's s2 top-10 + 0.05 at every layer (report the J-lens too).
+#   (ii) entity-grouped bridge probe: target = the bridge string's FIRST token through the same vocabulary readout, from
+#       h at the first-hop entity's last token (e12.firsthop_pos) and, separately, at the last prompt token; A initialised
+#       at the layer's k = 1 wikitext probe, fine-tuned by cross-entropy through the frozen head with lambda_b ||A - A0||^2
+#       (Adam, 200 steps), lambda_b by an inner GROUPED 4-fold CV; K = 5 folds grouped by union-find over (bridge string,
+#       first-hop token text) so no entity or first-hop token sits in both train and test (the W1 leak). Control:
+#       permuted training labels. Baselines at the same position: logit lens and J-lens rank of the bridge's first token.
+#       pass: PERSON-bridge top-10 >= 0.30 at the first-hop position at some layer (entity-grouped); kill: <= 0.05 on
+#             both models. Country / element bridges descriptive (lexical capital -> country shortcuts, N6 caveat).
+#
+# P3  unconditional chain reader, WorkspaceBench-style (scripts/x7_chain_reader.py; jobs/p2p3.txt p3_* / p3s_*)
+#   Input: activations at the item's last prompt token only - h_read at the read layer l and h_first at the first layer.
+#   PRIMARY reader (a two-vector reader, declared as such): first-piece candidates = top-5 of the LOGIT LENS at the
+#   deepest layer (1.7B 26, 14B 38), continuation by the gap-1 boost (X1 finite replace, 64 / 32 carriers) at read
+#   layers {18, 22, 26} / {32, 36}; SECONDARY, bench-faithful single-vector reader: first piece = the released J-lens
+#   (bench cosine readout) at the SAME layer as the boost. Beam width 5, <= 4 pieces, beam score = the SUM of the
+#   per-step boosts Delta log p (nats), a prefix whose last boost is < 0 is never extended, tokens restricted to the
+#   allowed vocabulary (no specials / whitespace-only / newline / pure punctuation except - ' . / &). No space-initial
+#   stop (word phrases and the bench's targets are multi-word). Samples: N = 10 = the first reader's top-1 token +
+#   the nine highest-score prefix strings; N = 1 = the highest-score prefix whose every step boost >= tau, else the
+#   first reader's top-1 token; tau is chosen ONCE on the TUNING half (p3_tune*: argmax exact N = 1 over the grid
+#   0..6 by 0.25 at L22 / L32, real condition) and applied to the held-out runs; 14B uses the 1.7B tau of its track
+#   unless p3_tuneA_14b is run. Scoring: exact string after the bench's fold (NFKD, no combining marks, casefold,
+#   whitespace collapsed) per layer and ANY layer over the run layers. Controls: shuffled-h (A1) and crosscat (A2)
+#   through the whole reader (both vectors from the partner). Split by "s1 fixes s2" (clean carrier + true s1 puts s2 at
+#   rank 1) and clean rank <= 10; the teacher-forced X1 row (boost of s2 given the true s1) is logged as continuity.
+#   Baselines in the SAME row format, on the same items, layers and scoring, the ORIGINAL J-lens first:
+#     jlens_bag10 = the bench's J-lens arm (released lens, cosine readout, 10 tokens = 10 samples; can pass only
+#     one-token strings), logitlens_bag10, jlens_chain / logitlens_chain (the plain-lens ordered-bag chain: first
+#     candidates = top-5 of the lens, next pieces = the bag's remaining tokens in rank order; N = 1 = ordered top-1 +
+#     top-2), and jlens_chain_x / logitlens_chain_x (first pieces from the deep layer as in the primary reader,
+#     continuation from the read layer's bag) - the last differs from the primary P3 only in the continuation reader.
+#     X3 identity2 exact strings from the wave-2 runs (P1c) are reported beside them, not re-run.
+#   pass: P3 exact (N = 10, any layer over the run layers) >= 0.30 on track B held-out and >= 0.15 on track A held-out
+#         with both shuffled controls <= 0.05; kill: P3 exact (N = 10, any layer) <= the best ORIGINAL J-lens baseline
+#         (jlens_bag10, jlens_chain, jlens_chain_x) + 0.05 on BOTH tracks. N = 1 and any-prefix rates, the secondary
+#         reader and track S are reported, not lines. Reported beside the "s1 fixes s2" baseline on every track.
+#
+# P6  WorkspaceBench pilot on the bench's own items (scripts/x8_wsbench_items.py; jobs/p6_wsbench.txt) - REPORT ONLY.
+#   Items: the six multi-token banks (basic_readout_mt, multihop_mt, multilingual_mt, typo_mt, multilingual_typo,
+#   multilingual_multihop) vendored verbatim from camilablank/workspace-bench commit 92d763e (2026-09-23) under
+#   data/wsbench/; prompts, plain render, read site (the final prompt token), unit forms, probe_token_lens stamps and the
+#   contract block as shipped. Gate on OUR model (documented tolerance vs the bench's greedy + 8/10 chat gate): greedy
+#   plain continuation contains target / target_alts under the bench's own matcher, every bridge question (chat
+#   template, thinking off) greedy-contains an answer, optional 10-draw sampled consistency >= 0.8 (p6_gate10_*).
+#   Scorer: wsbench.multitoken.regex (the bench's module when its checkout is on PYTHONPATH, else the vendored port
+#   sjlens/wsbench_regex.py pinned to the bench's goldens: 42 matcher pairs, hit_forms, grid, scored_units of all 598
+#   items). Token bags are scored RAW (one token = one sample): the bench's `regex-raw` column, where its J-lens arm
+#   scores 0.00 on every mt family by construction. The bench's headline for token arms (`mt-regex-summarized`, an LLM
+#   summarizer turns the bag into prose first) needs Gemini via OpenRouter and is NOT computed here; every arm is
+#   written in the bench's readouts contract with the `wsbench judge` commands (runs/<tag>/judge_cmds.sh) so the
+#   summarized number can be added later by whoever holds a key. Arms: the ORIGINAL J-lens (the bench's JLens class /
+#   formula: cosine readout, top-10), the logit lens, the plain-lens chains, P3 (N = 10 and N = 1), X3 identity2, each
+#   with a within-subfamily shuffled-h control; layers 14B {16, 24, 32, 36, 38} (P3 / X3 at 32, 36; first piece L38),
+#   1.7B {10, 14, 18, 22, 26} (P3 / X3 at 18, 22; first piece L26); Qwen3.6-27B through the HF-hooks backend
+#   (sjlens/model/backend.py) once its weights / lens are on the HPC (bench grid 20..60). No pass / kill line: a pilot;
+#   the number to read is P3 / X3 pass rate vs the J-lens and logit-lens raw-regex rates on the same gated items, with
+#   the bench's own prompt-only floors (0.59 / 0.69 / 0.42 / 0.67 / 0.45 / 0.66, 27B, evals/baselines/README.md)
+#   quoted as the text-leakage caveat, never as a bar our models were measured against.
+#
+# Shared: every rate with a 1,000-resample item-level bootstrap 95 % CI; paired real - control differences with paired
+# CIs and exact McNemar counts; tuning half only for tau; held-out half for every P2 / P3 headline; the X5 J-lens readout
+# now reports the bench's cosine convention (jlens_cos) beside the raw dot product (jlens) so "the original J-lens" is
+# the bench's. Nothing above may change after the first p2_* / p3_* / p6_* job runs; later changes are new amendments.
+#
+# A11a (2026-09-26, before any P3 job ran; reason: bench fidelity, user rule "compare with the original J-lens under the
+# bench's contract"): PRIMARY and SECONDARY readers of P3 are SWAPPED. PRIMARY = the bench-faithful SINGLE-VECTOR reader
+# (tags p3s_*): first piece = the released J-lens (bench cosine readout) at the SAME layer as the boost, continuation by
+# the gap-1 boost at that layer, i.e. the reader sees exactly one vector h and one layer index, like the bench's
+# Method.read(h, layer). The pass / kill lines of A11-P3 apply to p3s_*. The two-vector reader (logit lens at the deepest
+# layer + boost at the read layer; tags p3_*) is SECONDARY / descriptive, reported but not a line.
+#
+# A11b (2026-09-26, after X1 v2 grid source L22 showed early-target patching makes the patched model predict s2 (+.24
+# absolute top-1 over same-category at t4, held-out, POST HOC choice of target): x7 gains --target-layer (the block
+# after which h is patched; the read vector still comes from the read layer). The target for the PRIMARY single-vector
+# reader is chosen ONCE on the TUNING half from {same, 4, 8} (p3s_tune{A,B}_1p7b[_t4|_t8], argmax exact N = 10 at L22),
+# then applied to held-out. Held-out t4 runs (p3s_*_t4) are launched in parallel for time; if tuning picks another
+# target those are reported as secondary and the chosen target is rerun. Pass / kill lines of A11-P3 unchanged.
+#
+# A11c (2026-09-26 23:10, chosen on the TUNING half only -- p3s_tune{A,B}_1p7b_t4, BEFORE any held-out P3 result was
+# read): the P3 sample ranking is changed from the SUM of step boosts (which always prefers longer prefixes: exact N = 10
+# = 0.000 on both tuning tracks although the true string is a stored prefix for .10 / .26 of items) to the LAST-STEP
+# boost of each multi-piece prefix (tuning exact N = 10: A .050, B .155; mean / min tie). Samples = the first reader's
+# top-1 token + the nine best prefixes under this rule. Applied to held-out runs OFFLINE from the stored prefixes (no
+# rerun). Recorded bottleneck: the released J-lens puts the true first piece in its top-5 for only .19 (A) / .29 (B) of
+# tuning items at L22, which caps the single-vector P3 reader.
+#
+# A12 (2026-09-270, BEFORE any identity3 / P6-X3 job ran; reason: FULL_REPORT 4.11 (b), bug 18 - the identity2
+# carrier exemplars overlap the item strings, contrary to the comment in scripts/x3_patchscope.py):
+# - X3 carriers: a new fixed set `identity3` (scripts/x3_patchscope.py IDENTITY3; the identity2 FORMAT - a two-word place
+#   name, a 3-4-piece word, a 4-digit number, "A -> A; B -> B; C -> C; ?", patch at "?", greedy 8 tokens, cut at ";" / "->" /
+#   newline, majority-of-8 and any-of-8 exact string) whose 24 exemplars were chosen so that NONE equals or is contained in
+#   any item string, target or pieces-join of data/h2a_items.json, data/phrase_items.json, data/single_items.json, or any
+#   target / target_alt / intermediate / unit form / match string / bridge answer of the six data/wsbench/*.json banks
+#   (case-folded, whitespace-collapsed). The check is code (x3.carrier_overlap / assert_no_overlap), asserted at import
+#   time and at run time; tests/test_n0_tiny.py pins it and pins that the same check DETECTS identity2's overlap.
+#   Why: carrier_overlap("identity2") finds 21 of its 24 exemplars in the item files (1066, 1492, 1789, 1815, 1912, 1945,
+#   1969, Kuala Lumpur, New Delhi, Schmetterling, Sri Lanka, Tchaikovsky, chimpanzee, hippopotamus, molybdenum, rhinoceros
+#   in h2a_items; Buenos Aires, Los Angeles, Rio de Janeiro, San Francisco in phrase_items; Addis Ababa a single_items
+#   target); only 2024, bibliothèque and praseodymium are clean. For the year exemplars the hit is a copy from the one
+#   carrier that contains the year; for Kuala Lumpur / Sri Lanka / chimpanzee all 8 carriers hit, i.e. priming.
+# - identity2 is kept UNCHANGED in the code (frozen) so the reported wave-2 runs (w2A_x3v2_*, w2t_A_x3_14b_*) stay
+#   reproducible; their results are reported WITH the overlapping items excluded as a SENSITIVITY ANALYSIS (7 of 278 held-out
+#   track-A items on 1.7B, 8 of 342 on 14B; effect <= .014 on the headline cells: 1.7B L22 t8 .232 / .428, 14B L36 t4
+#   .293 / .680). Every NEW X3 run (jobs/x3_identity3.txt, tags w3_*) and every P6 X3 arm uses identity3.
+# - R3 / R5 lines UNCHANGED (majority exact >= 0.30 with controls <= 0.05 at the best layer; kill < 0.05 everywhere; R5 as
+#   registered). The identity3 reruns of the 4.11 best cells (1.7B L22 / L25 at targets same,4,8; 14B L32 / L36 at same,4;
+#   14B track B answers + bridges and the single-token set at L32 / L36; controls shuffled, crosscat, random) are the
+#   paper's headline X3 numbers; the target choice is inside the A5 grid, the best cell is reported as a selection.
+# - P6 (A11) X3 arm amended: x8_wsbench_items.py patches h from EVERY read layer of the grid (14B 16,24,32,36,38; 1.7B
+#   10,14,18,22,25,27) into the identity3 carrier AFTER block t for t in {same, 4, 8} (--x3-target-layer; arms
+#   x3_identity3 / x3_identity3_t4 / x3_identity3_t8), 8 carriers = 8 prose samples per cell, scored with the bench's
+#   regex under its any-sample / any-layer rule, beside the original J-lens (bench cosine readout, top-10) and the logit
+#   lens on the SAME cells (every token / bag arm also reports its pass rate restricted to the read layers). Still a
+#   report-only pilot; the N1 decision rule (>= 0.10 on basic_readout_mt with shuffled <= 0.02 -> 27B) is a decision rule,
+#   not a pass / kill line.
+# - P3 ranking (A11c) is now the code DEFAULT: --rank last in x7_chain_reader.py and x8_wsbench_items.py (sum and mean
+#   remain available; --rescore honours --rank from the stored prefixes). tau is OPTIONAL: with no --tau / --tau-from the
+#   N = 1 sample is the best multi-piece prefix under --rank (else the first reader's top-1 token); --fit-tau on a tuning run
+#   still writes tau.json. x8 writes every P3 / chain prefix to runs/<tag>/prefixes/ so the bench samples can be re-ranked
+#   offline; P3 in P6 is optional (--readers) and is not queued (FULL_REPORT 4.15; N3 redesign first).
+
+# A14 (27 Sep 2026, 19:10; written BEFORE the control re-runs): X3 partner-position fix.
+# Found by an internal code audit and confirmed at scripts/x3_patchscope.py:453 (pre-fix):
+# shuffled / crosscat control vectors were taken at the ORIGINAL item's source index min(pos, partner_len-1), i.e. a non-final
+# partner token whenever the partner prompt is longer (70/171 pairs on w3_B L32). Fix: controls use the partner's own last token
+# (rule last) or the partner's own first-hop token (rule firsthop; pairs without one are skipped). Real and random rows are unchanged.
+# Re-run: jobs/x3_controls_fix.txt (w3c_*; same seed and partners, --no-real). R3 is re-evaluated as registered, pairing the w3_*
+# real rows with the w3c_* control rows; the pre-fix controls are reported as superseded. If any corrected control exceeds 0.05 on a
+# cell, that cell's R3 pass is withdrawn.
+
+# A15 (28 Sep 2026, 16:20; written BEFORE any wave-4 job; = draft "A13" of docs/ANALYSIS_WAVE3.md 6-E1,
+# renumbered because A13 / A14 were already used): forward-looking Patchscope arms for the bench's PREDICTION-site read
+# (basic_readout_mt reads " the" / " is": the answer is what the model says NEXT, not what the position represents).
+# Hypothesis: a carrier that lets the model CONTINUE from the patched state verbalises the target where the identity
+# carrier (a representation reader) does not; predicted from ANALYSIS_WAVE3 4.5: gated-immediate basic items move from
+# identity3 t4 .107 (3 / 28) towards >= .3, the eventual items stay near 0.
+# Readers (scripts/x8_wsbench_items.py --readers; carriers are FIXED lists in scripts/x3_patchscope.py, asserted item-free at
+# import time in both directions and as whole words in the carrier text against the three item files and the six banks incl.
+# typo_word; never tuned on items), all prompt-blind, one vector h at one read layer:
+#   x3c        CONTINUATION: 8 neutral prefixes (x3.CONTINUATION: 4 generic sentences ending mid-clause, 4 answer frames); h
+#              REPLACES the residual at the carrier's last token after block t; greedy 12 tokens; the raw generation (no cut)
+#              is one prose sample; 8 samples per cell.
+#   x3s_ll / x3s_jl   lens-SEEDED teacher-forced continuation: first-piece candidates = top-5 tokens (specials excluded) of the
+#              LOGIT LENS (x3s_ll) or of the bench's cosine J-lens (x3s_jl, the "J-lens-derived" variant) at the read layer;
+#              for each candidate and each of the 2 answer frames (x3.CONTINUATION_SEED) h is patched at the frame's last
+#              token after block t, the candidate appended, greedy 10 more tokens; sample = candidate + continuation; 5 x 2 =
+#              10 samples per cell (the bench's token top-10 budget; ANALYSIS_WAVE3 7.4 - registered at 10, not 8, because
+#              the sample IS the bench's token budget; x3c and identity3_long stay at 8).
+#   x3_identity3_long   the identity3 format with 3-4-word exemplars (x3.IDENTITY3_LONG), patch at "?", greedy 8, cut at the
+#              identity stops; 8 samples per cell. Tests the early-close truncation of ANALYSIS_WAVE3 4.8 (E5d folded in).
+#   x3_<kind>_uncut     diagnostic (no extra generation): the UNCUT generations of every identity kind scored as the bench
+#              scores prose (regex anywhere in the sample). Report-only; the registered X3 P6 number stays the cut one.
+# Model Qwen3-14B (bf16-mixed, min backend), read layers {24, 32, 36}, targets {same, 4, 8} (multihop: {4, 8}), gate 48 as in
+# p6g48 (the gated sets of ANALYSIS_WAVE3 2d), control = shuffled-h within subfamily (A1). Scored with the bench regex
+# (vendored port, goldens-pinned) under its any-sample / any-layer rule, on ALL GATED items and on the GATED-IMMEDIATE subset
+# (gate row flag `immediate`: the folded greedy continuation starts with the target / an alias after an optional article;
+# re-derived for the p6g48 runs from the stored greedy text: basic 28 / 63, verified against the hand count).
+# Items: basic_readout_mt (the decision family; n 63 / 28), multihop_mt (target unit - OPTIONAL in the contract, report-only),
+# typo_mt (correction unit, report-only); continuity on our track-B held-out (x3_patchscope.py, 175 items, L32 t4 only,
+# carriers identity3_long + continuation, controls shuffled / crosscat / random).
+# PASS: some arm of {x3c, x3s_ll, x3s_jl, x3_identity3_long} reaches bench pass >= .15 on gated-immediate basic_readout_mt (n 28)
+#       AND >= .10 on all gated (n 63) with its shuffled control <= .02, at the PRE-NAMED cell (L32, t4); the other (layer,
+#       target) cells and arms are a sensitivity table, reported in full, never the verdict (no Holm: one pre-named cell per
+#       arm; over the 4 arms the pass is declared per arm, and the paper names which arms pass).
+# KILL: every arm <= .05 on all gated basic_readout_mt at every cell -> the prediction-site hypothesis is wrong or unreachable
+#       by prompt-blind generation; the bench ambition for basic_readout is dropped and the paper is the analysis paper.
+# Report-only: multihop target-unit rate, typo correction-unit rate, the eventual (gated, not immediate) subset, the _uncut
+#       diagnostic, and the track-B continuity (identity3_long majority exact must stay >= .40 at L32 t4 - else the long
+#       exemplars cost more than they give and identity3 remains the paper's carrier; continuation is a prefix-rate row).
+# Jobs: jobs/wave4.txt w4_e1_* (14B, 6 one-GPU lines, ~35 A100-h); smokes smk_w4_x3c / x3s / x3long / trackB_cont first.
+
+# A16 (28 Sep 2026, 16:20; BEFORE any wave-4 job; = draft "A14" of ANALYSIS_WAVE3 6-E2): P6 UNGATED, three denominators.
+# Purpose: the bench's published numbers are over all 100 items of each family; ours must have the same denominator to be quoted
+# beside them. x8_wsbench_items.py --no-gate reads and scores EVERY item; the gate is still run and recorded per item (with the
+# `immediate` flag), so ONE run yields the three denominators in results.json["table"][arm][family]:
+#   pass_all        all items read (100 per family; the number comparable to the bench's regex-raw column and, after the
+#                   summarizer, its mt-regex-summarized column);
+#   pass_gated      the 48-token-gated subset (ours, as in p6g48);
+#   pass_immediate  gated AND immediate (the honest set for a final-token reader).
+# Readers: jlens (bench cosine readout, top-10), logitlens, jlens_chain / logitlens_chain, X3 identity3 same / t4 / t8 at read
+# layers {16, 24, 32, 36, 38} (the bench's any-layer rule over our grid), 8 carriers, 8 tokens, shuffled control; families
+# basic_readout_mt, multihop_mt, typo_mt on Qwen3-14B; multilingual_mt / multilingual_typo / multilingual_multihop token and
+# chain arms only (X3 is 0 by contract there; the all-100 row is needed for the bench table). If an A15 arm passes, it is added
+# to the all-100 lines as a further arm (same cells), reported with the same three denominators.
+# Report only (A11): no pass / kill line; the N1 decision rule for the 27B is unchanged and applies to the gated basic_readout
+# number. The paper's bench table shows all three denominators; the abstract quotes the all-100 number (ANALYSIS_WAVE3 7.1).
+# Jobs: jobs/wave4.txt w4_e2_14b_basic / _multihop / _typo / _ml_tokens (~25 A100-h). The existing p6g48 results are rescored
+# offline (--rescore) to carry the same table fields (pass_all = None for gated runs: not bench-comparable).
+
+# A17 (28 Sep 2026, 16:20; BEFORE any wave-4 job; = draft "A15" of ANALYSIS_WAVE3 6-E3): spelling-correction carrier for the
+# typo families. Hypothesis: at the last piece of a misspelt word the residual represents the INTENDED word (the model goes on
+# to use it correctly), but an identity carrier copies the surface piece; a carrier whose format is "misspelling -> correct
+# spelling" verbalises the correction.
+# Reader: x3.SPELLFIX (8 fixed variants, e.g. "recieve -> receive; definately -> definitely; occurence -> occurrence; ?"),
+# patch at "?", targets {same, 4, 8}, read layers {24, 32, 36}, greedy 8, identity stops, 8 samples per cell; exemplars
+# (both sides) checked against the bench typo_words, targets, aliases, unit forms and our item strings (none of the bench's
+# words; asserted at import time). Items: typo_mt and multilingual_typo, all 100 under A16's --no-gate (three denominators),
+# Qwen3-14B, shuffled control within subfamily.
+# Secondary (POST HOC per-position profile, labelled as such): identity3 and spellfix at EVERY piece of the typo span
+# (--x3-positions span; arms _off<k> = k tokens from the end; controls use the partner's token at the same offset from its
+# end, clipped, as A14), on the 25 gated typo_mt items, to see whether an earlier piece holds the whole word.
+# PASS: spellfix correction-unit pass >= .20 on the gated typo_mt set (n 25) with shuffled <= .02 at some (layer, target) -
+#       the grid is 9 cells, so the pass is claimed only if it also holds at the pre-named cell (L32, t4) OR survives Holm
+#       over the 9 cells (item-level bootstrap CIs; controls are ~0 so only the point estimate vs .20 is tested).
+# KILL: <= .04 (= identity3's .040) at every cell -> the correction is not verbalisable from the final token by a prompt-blind
+#       carrier; typo is reported as a negative with the per-position profile.
+# Jobs: jobs/wave4.txt w4_e3_14b_typo_spell / _mltypo_spell / _typo_span (~15 A100-h).
+
+# A18 (28 Sep 2026, 16:20; E5a of ANALYSIS_WAVE3 6 and the summarised token-arm column; CPU / API only): two report-only
+# rescoring columns, neither touches a registered verdict.
+# (a) Bench rule on our own items: scripts/e5a_bench_rule_rescore.py applies the bench's matcher (unicode_word_matcher of the
+#     item string, word boundary after fold, numbers in answer position) ANYWHERE in the UNCUT generation of each of the 8
+#     identity3 carriers stored in runs/w3_*/results.json, majority-of-8 and any-of-8, per (layer, arm, control), with the
+#     paired difference to the registered cut-then-exact rule (R3 / A12) and bootstrap CIs. Reported beside the registered
+#     majority number, labelled "bench rule" (ANALYSIS_WAVE3 7.5); it never replaces it. Output runs/e5a_rescore/.
+# (b) The bench's mt-regex-summarized column for the token arms (the released J-lens, the logit lens): the bench's own
+#     protocol (commit 92d763e: summarizer.py interp-v1 prompt and schema, judge_config DEFAULT_JUDGE google/gemini-3.8-flash
+#     with reasoning effort minimal, no temperature, max_tokens 8000; the interpretation is ONE more sample beside the raw
+#     tokens under the same regex contract) reproduced with a DIRECT Gemini key in scripts/wsbench_judge_gemini.py because
+#     the bench's llm.py accepts OpenRouter keys only. Model id gemini-3.8-flash, thinkingLevel minimal (any API-forced
+#     downgrade is recorded in results.json["config_used"]). Applied to every token arm of the P6 runs (p6g48 gated and A16
+#     all-100), same three denominators. This is the number quoted in the bench table's J-lens-summarised column beside the
+#     published 27B 0.24 / 0.08 / 0.17; our summarised number is on our model and our read cells and is labelled so. The key
+#     is read from a chmod-600 file at run time and never enters the repo, the logs or the results.
+
+# ===================================================================================================================
+# Wave 5 amendments A19-A25 (29 Sep 2026, 13:30; written BEFORE any wave-5 job (sets 2-8 of
+# docs/ANALYSIS_WAVE4.md section 10) was submitted; set 1 (w5_x3c_14b_basic_all / typo_all / 27b_basic, the two E3
+# lines, the Gemini judge) was already queued under A15-A18 and is not touched). Jobs: jobs/wave5.txt. Tests:
+# tests/test_wave5_tiny.py. The only number computed before these lines were written is the CPU recount of A20 (c)
+# on the stored wave-4 generations; it is quoted there as a starting point, not as a result of a new run.
+# Conventions as in A15: PRE-NAMED cell = the verdict; other cells = a sensitivity table, reported in full, never the
+# verdict; every rate with a 1,000-resample item-level bootstrap CI (and Wilson for the bench numbers).
+
+# A19 (set 3; 27B full bench with the continuation carrier; CONDITIONAL on the pilot; the parent's A19 as drafted in
+# ANALYSIS_WAVE4 section 10, extended).
+# Code: x8_wsbench_items.py gains --x3-layers (A19): the x3 read layers no longer follow --p3-layers (the coupling that
+#   made e4_27b_tscan read X3 at L48 only); default = the old coupling, so every earlier job line is unchanged.
+# Pilot (already queued under A15, exploratory): w5_x3c_27b_basic = 40 basic_readout items gated by the 27B, read L52 /
+#   L56 of 64, targets same / 4 / 8 / 16, x3c (12 tokens, 8 carriers), shuffled control. PRE-NAMED pilot cell: L52, t8.
+# Decision rule (a decision, not a pass line), read from the pilot's results.json["table"] and per-layer rows:
+#   (a) SIGNAL: the pre-named cell reads bench pass >= .10 on the pilot's gated-immediate subset with shuffled 0 at that
+#       cell  -> the three FULL lines run (jobs/wave5.txt, marked CONDITIONAL): basic_readout_mt, multihop_mt, typo_mt,
+#       all 100 items (--no-gate, three denominators), read L52 / L56 (--x3-layers), token grid 40 / 48 / 52 / 56, targets
+#       same / 4 / 8 / 16, readers x3c + x3 identity3 + jlens (the bench's Qwen3.6-27B n1000 lens, cosine readout) +
+#       logitlens, shuffled control, HF-hooks backend bf16 (labelled as such; parity LOG 21:00 28 Sep); then the Gemini
+#       judge on the token arms (A18 b). The N1 rule (A11 / A12) applies to the all-100 basic_readout x3c number at the
+#       PRE-NAMED cell (L52, t8): pass_all >= .10 with shuffled <= .02 -> the bench table is a headline table; the other
+#       cells (L56, t4 / t16, same) are sensitivity. The multihop / typo lines are report-only (bridge unit required;
+#       correction unit) exactly as on the 14B.
+#   (b) WEAK SIGNAL: (a) fails but some x3c cell of the pilot reads >= .10 on gated-immediate, or >= .05 on all gated,
+#       with shuffled <= .02 at that cell -> only the basic_readout full line runs, labelled exploratory; its result is a
+#       sensitivity table with no headline claim (the cell was chosen after seeing the pilot).
+#   (c) NO SIGNAL: every pilot cell < .05 on all gated, or the samples are blank as in e4_27b_tscan -> none of the full
+#       lines runs; the 27B is reported as a negative with the target scan (ANALYSIS_WAVE4 7) and the bench claim is
+#       14B-only. No Holm anywhere in A19: one pre-named cell decides; (b) is explicitly post hoc.
+
+# A20 (set 2; the missing controls for the prose arms + the primary-string-only column; ~4 A100-h + CPU).
+# Hypothesis under test: the A15 pass of x3c (and the A16 identity3 numbers) is carried by h, not by the carrier text or
+#   by a generic frame: (i) a carrier generated with NO h produces no bench target; (ii) a norm-matched random vector
+#   reads nothing; (iii) an h of another SUBFAMILY reads nothing (the crosscat null: "h carries the family", A2).
+# Code (x8_wsbench_items.py --controls shuffled,crosscat,random,nopatch): crosscat = e12.cross_perm over subfamilies
+#   (never the same target; unpaired items dropped and counted), random = Gaussian with the norm of the item's own h at
+#   the same (layer, position), seeded per family; nopatch = every x3-type carrier decoded once with no patch and the
+#   SAME samples written for every item (arm <prefix>_nopatch[_uncut]), so the bench scorer says which items' targets
+#   the bare carrier already produces; results.json["families"][f]["nopatch_withdrawal"][arm] lists the items each
+#   real arm loses to it and the pass rate after withdrawal (table column pass_after_nopatch_withdrawal). Every arm also
+#   carries `primary_only` (R.primary_units: the FIRST creditable form per unit and language - the item's target /
+#   intermediate - no aliases; table columns pass_primary_*; --rescore --rescore-out re-scores an old run into a new dir).
+# Run: w5_ctrl_14b_basic_typo (jobs/wave5.txt): Qwen3-14B, basic_readout_mt + typo_mt, the p6g48 gate (48 tokens; 63 / 28
+#   and 25 / 0), read L32 only, targets 4 and 8, readers x3c (12 tokens) and x3 identity3 (8 tokens, cut + _uncut), 8
+#   carriers, controls shuffled / crosscat / random / nopatch, bench regex, per-layer pass. PRE-NAMED cell: L32 t4 (as A15).
+# Lines (decisions about A15's pass; no new pass line):
+#   WITHDRAWN if, at the pre-named cell on basic_readout: the random-h or crosscat-h control reads > .02 on all gated
+#     (n 63), OR the nopatch baseline produces the target of any gated item whose pass A15 counted (that item is
+#     withdrawn; A15 stands only if the pre-named cell still clears >= .15 immediate and >= .10 gated after withdrawal).
+#   CONFIRMED otherwise; the four controls are then printed in the paper's table beside the shuffled one.
+#   t8 and typo are sensitivity / report-only (typo has no immediate items). Multiplicity: none (one pre-named cell).
+# (c) Primary-string-only column: report-only, printed beside every bench number; it does not change the A15 verdict
+#   (the bench counts aliases) but a reader may hold the claim to it. CPU recount of the STORED wave-4 generations,
+#   done today before any wave-5 run (runs/w5_primary_only/table.md, scripts/w5_primary_table.py): x3c L32 t4 gated
+#   6/63 = .095 (bench 9/63 = .143), immediate 5/28 = .179 (bench 8/28 = .286); L32 t8 8/63 = .127 / 7/28 = .250; L36 t4
+#   7/63 / 6/28; identity3 t4 (E2) 2/63 / 2/28 (bench 3 / 3); typo x3c t8 8/25 = .320 (no aliases used); multihop 1/66
+#   both. The paper states both columns; the sentence "9 items, 3 of them by a registered alias" stays.
+
+# A21 (set 4; placeholder-contamination test, Patchscopes App. C; ~5 A100-h; MECHANISM TEST, report-only, no pass / kill).
+# Hypothesis H_contam: the same-layer vs early-target gap (track B identity3 L32: same .206 vs t4 .469) comes from the
+#   carrier's placeholder token "?" whose representation persists at the patch position in the blocks below the target
+#   and is attended to during generation; H_comp: it comes from the extra computation (blocks t+1..32) the patched
+#   state receives before the read.
+# Code (x3_patchscope.py): --target-layer all<k> = h WRITTEN at the patch position at the embedding and after EVERY
+#   block 0..k (qwen3_min.forward inject_set: overwrite, not add), so no representation of "?" exists there at any
+#   depth <= k; blocks above k run clean. --placeholder <s> swaps the final "?" of the identity carriers for another
+#   single token (arm suffix :ph=<s>). Arms on track B held-out (175 gated of 305), Qwen3-14B, source L32, 8 carriers,
+#   greedy 8, controls shuffled + random (crosscat adds nothing to an exact-match control, A10):
+#   (a) t4 single patch       (existing: w3_B_x3i3_14b_ans_L32 / w3c controls)   identity3 .469 majority
+#   (b) all4                  h at embedding + blocks 0..4, then clean 5..40      NEW  w5_ph_14b_B_i3
+#   (c) all32                 h at embedding + blocks 0..32, then clean 33..40    NEW  (same line)
+#   (d) same-layer single     (existing)                                          identity3 .206
+#   (e) same-layer and t4 with placeholder "x" instead of "?"                     NEW  w5_ph_14b_B_i3_swap
+#   (a')-(c') the same with the continuation carrier (no placeholder: its last token is a real word)  NEW w5_ph_14b_B_cont
+# Statistics: identity3 = majority exact (registered R3 rule) and bench-rule any-of-8 (e5a offline); continuation =
+#   bench-rule any-of-8 and prefix majority (e5a). Paired differences with item-level bootstrap CIs on the same 175 items.
+# PRE-NAMED reading (on identity3 majority exact, the registered statistic):
+#   if |(c) - (a)| <= .05 and (c) - (d) >= .15 -> H_contam: removing the placeholder alone recovers the early-target gain;
+#   if |(c) - (d)| <= .05 and (a) - (c) >= .15 -> H_comp: with no placeholder but no extra computation the gap remains;
+#   (b) vs (a): |(b) - (a)| <= .05 says the placeholder representation in blocks 0..4 does not matter for the t4 arm;
+#   (e): a change of > .05 at same-layer under the swap says the placeholder identity matters there (contamination is
+#        real at same-layer even if not the cause of the gap);
+#   anything else (both, neither, mixed) is reported as unresolved. The continuation carrier repeats the reading with
+#   its own numbers (it has no placeholder, so H_contam predicts (c') ~ (d') there). No headline changes; the paper
+#   reports the four (five) arms as a mechanism table with the prior-work citation.
+
+# A22 (set 5; bridge reading at the first-hop position; ~8 A100-h).
+# Hypothesis: a prompt-blind carrier verbalises the latent bridge where it is REPRESENTED (the first-hop entity's last
+#   token and its neighbours), not where it is merely used (the final token, where R5 KILLED it at <= .028 majority).
+# Code: x3_patchscope.py --positions firsthop-1 / firsthop+1 beside firsthop (controls at the partner's own first-hop +-
+#   k token, the A14 rule; items without a first-hop position skipped and counted); the continuation carrier is a
+#   --carriers kind at any position. x8_wsbench_items.py --x3-positions all (+ --x3-pos-max K): every one of the last K
+#   prompt positions is read (arms _off<k>, controls at the partner's same offset from ITS end, clipped), and
+#   results.json["families"][f]["position_profile"] gives the per-offset bridge1 / target unit rates and the
+#   per-item any-position union (a SELECTION, labelled). The bench's bridge clause is not located per item (its
+#   end is not marked in the bank and a heuristic locator would be a post hoc choice); the scan replaces it.
+# Runs (Qwen3-14B):
+#   (i)  w5_br_14b_B_fh: our track-B bridge items (143 gated, 30 with a first-hop position), positions last / firsthop /
+#        firsthop-1 / firsthop+1, carriers identity3 + continuation, L32 t4 (t8 = optional sensitivity line), 8 carriers,
+#        greedy 8, controls shuffled + random. Scored by the exact rule (majority; identity3) and the bench rule (any-of-8;
+#        both carriers, e5a offline).
+#   (ii) w5_br_14b_mh_scan: bench multihop_mt gated set (66), x3c with the two answer-frame carriers only (indices 4, 5
+#        of x3.CONTINUATION; --x3-carrier-ids), L32 t4, the last 40 prompt positions, shuffled control, bridge1 / bridge2 /
+#        target units under the bench regex per offset.
+# PRE-NAMED cells: (i) identity3 and continuation at `firsthop`, L32 t4; (ii) x3c t4 L32, statistic = the MAXIMUM over
+#   offsets of the per-offset bridge1 unit rate (the same maximum is taken for the shuffled control, so the selection
+#   is applied to the null too).
+# PASS: (i) track-B first-hop majority exact >= .30 (R5's line) with shuffled / random <= .05, OR bench-rule any-of-8
+#   >= .30 with controls <= .05 (either carrier; the two carriers are two arms, declared per arm; +-1 positions are
+#   sensitivity); or (ii) max-over-offsets bridge1 rate >= .20 on the 66 with the shuffled maximum <= .05.
+# KILL: (i) <= .05 at firsthop and firsthop+-1 for both carriers under both rules AND (ii) max-over-offsets bridge1
+#   <= .05 -> the bridge is not verbalisable by a prompt-blind carrier at either position on this model; the paper's
+#   two-position negative. Between the lines: reported as a lead with the per-position profile. Multiplicity: the
+#   per-arm declaration (2 carriers x 2 rules for (i), 1 statistic for (ii)); Holm over the 4 (i)-tests at alpha .05.
+#   The E5a lead (.133 any-of-8 at first-hop t4, 4 / 30) is the number this replaces; it is not a prior for the line.
+
+# A23 (set 6; second model, Qwen3-8B; CONDITIONAL on the download; ~13 A100-h).
+# Model: Qwen/Qwen3-8B (36 blocks, d 4096, dense; the same tokenizer as 1.7B / 14B, so every item file applies
+#   unchanged); Neuronpedia lens qwen3-8b/jlens/Salesforce-wikitext/Qwen3-8B_jacobian_lens.pt (listed on the HF tree,
+#   read 29 Sep; downloaded by scripts/dl_model.sh on the login node, NOT by the implementation agent). Depth marks
+#   at 60 / 80 / 90 %: L22 / L29 / L32 (14B: L24 / L32 / L36). Backend: the min backend (Qwen3 dense), bf16-mixed.
+# Runs (jobs/wave5.txt, CONDITIONAL on the cache holding the model + lens; smoke first):
+#   w5_8b_B_x3i3_L29   track B held-out (phrase_split heldout; gated by the 8B), identity3, targets same / 4 / 8,
+#                      controls shuffled / crosscat / random  (R3)
+#   w5_8b_B_x3i3_L32   the 90 % layer, targets same / 4 (sensitivity)
+#   w5_8b_B_x3cont_L29 continuation carrier, targets 4 / 8 (prefix / bench-rule rows)
+#   w5_8b_A_x3i3_L29   track A held-out (h2a_split heldout; gated by the 8B), identity3, same / 4 / 8 (R3)
+#   w5_8b_x3c_basic    bench basic_readout_mt gated by the 8B (48-token gate), read L22 / L29 / L32 (--x3-layers),
+#                      targets same / 4 / 8, readers jlens (8B lens) / logitlens / x3c / x3 identity3, shuffled (A15 / A16)
+# PRE-NAMED cells: L29 t4 (the 80 % depth, the 14B's L32 t4). Lines: R3 as registered per track (majority exact >= .30
+#   with shuffled and random <= .05; kill < .05 at every layer) evaluated at L29 with Holm over {L29, L32} on track B;
+#   A15's lines on the 8B's own gated-immediate / gated basic_readout sets at L29 t4 (>= .15 and >= .10, shuffled <= .02).
+# Report-only: the 14B / 8B comparison table (same items, same rules); no headline changes. If the 8B misses R3 on
+#   both tracks the paper says "one model" and the 8B numbers are reported as the replication that failed.
+
+# A24 (set 7; fresh, entity-disjoint item set; ~9 A100-h).
+# Purpose: the adaptive-evaluation threat on the identity headline (.469 track B, .310 track A at 14B L32 t4): the
+#   entities of h2a / phrase / single_items were in the files while carriers, targets, layers and rules were chosen.
+# Data (scripts/make_fresh_items.py -> data/fresh_items.json, fresh_split.json, fresh_items_dropped.json; built 29 Sep
+#   AFTER every reader / cell / rule choice was frozen): 1002 items - track B 259 answer / 48 bridge (word-level
+#   pieces; categories person_science / _arts / _writer / _history / _sport, landmark, event, compound, character,
+#   place, capital, country_of_capital, bridges person-nationality / landmark-country / capital-continent), track A
+#   554 answer / 141 bridge (sub-word pieces; the same person / landmark / event / compound categories that tokenise
+#   sub-word, plus capital / country_of_capital / currency / language / element / animal / surname / translation x 5 /
+#   number_word / formula / year / arith_digits and their bridges). Entity-disjointness is enforced in code: a
+#   candidate is dropped if it EQUALS any string / target / alias / unit form / bridge answer / typo_word of the three
+#   item files, the six bench banks, the h2a / phrase builder tables (also the entries the cap left unused) or the
+#   carrier exemplars, or if it CONTAINS / IS CONTAINED IN (whole word) any NAME-LIKE such string (capitalised or
+#   multi-word; a lowercase single noun bans only its exact self). 810 candidates were dropped and are listed with the
+#   offending string. Tokenisation (pieces, round trip, word-level test for track B) is pinned by tests/test_wave5_tiny.py
+#   against the cached Qwen3 tokenizer. Split: EVERY answer id is held-out, none is tuning (nothing is chosen on this
+#   set); bridges are outside the split as in h2a_split.json. Gate at run time as always (greedy-correct).
+# Runs (Qwen3-14B, jobs/wave5.txt): w5_fresh_14b_B_x3i3_L32 (track B answers, identity3 + continuation, targets same /
+#   4, controls shuffled / crosscat / random), w5_fresh_14b_A_x3i3_L32 (track A answers, identity3, same / 4),
+#   w5_fresh_14b_br_L32 (bridges of both tracks, positions last + firsthop, identity3 + continuation, t4). Bench rule
+#   (e5a) offline on all three.
+# PRE-NAMED cell: L32 t4. PASS (per track): R3 as registered - majority exact >= .30 with shuffled and random <= .05 -
+#   on the whole fresh held-out set (no Holm: one layer, one target). The identity result REPLICATES if, in addition,
+#   the fresh point estimate lies inside the original held-out 95 % CI (track B [.389, .543]; track A [.263, .357]);
+#   a pass with a point estimate below the original interval is reported as "passes the line, smaller than the
+#   original" (adaptive inflation of the original). KILL: < .05 at the cell. Report-only: same-layer, any-of-8, prefix
+#   and first-piece rates, per-category tables, the continuation carrier under the bench rule, the bridges under R5's
+#   reading (no line; last-token and first-hop rates with controls).
+
+# A25 (set 8; R7 as registered, instantiated for the Patchscope = E5c; ~1 A100-h).
+# R7's statistic on the Patchscope, fixed here: the certificate score of an activation h is k_agree = the largest
+#   number of the 8 identity3 carriers that emit the SAME non-empty string (cut at the identity stops, norm()) when h
+#   is patched at the pre-named cell (source L32, target t4; same-layer as a second, report-only arm); k_agree_multi =
+#   the same over strings of >= 2 tokens. Background = generic wikitext records (runs/contexts/qwen3_T128_256.pt): 96
+#   records x 24 seeded positions from the valid window = 2,304 activations (R7: >= 2,000 from >= 64 records); the
+#   records are split in half by RECORD (seeded): calibration -> tau_q = split-conformal quantile (sjlens.lens.score
+#   .conformal_threshold) for q = .05 and .01; test -> FPR_q = P(k_agree > tau_q); N_eff = 48 test records.
+#   Script scripts/e5c_certificate.py (generation batched over activations; pinned to x3.patched_generate).
+# PASS (R7 as registered): |FPR_q - q| <= 2 sqrt(q (1 - q) / N_eff) at q = .05 and .01 for k_agree at t4. Because the
+#   score is discrete (0..8) the conformal threshold can only be conservative: an FPR BELOW q - 2 se is recorded as
+#   "conservative (valid, loose)" and does not count as a miss; the registered miss is FPR > q + 2 se (the certificate
+#   over-promises). KILL: none (R7: "a miss means the split is fixed, not the hypothesis").
+# Report-only (the item side, offline from the stored w3_B_x3i3_14b_ans_L32 / w3_A_x3i3_14b_ans_L32 rows, and later
+#   from the fresh runs): coverage = P(k_agree > tau_q), certified-correct = P(k_agree > tau_q and exact majority),
+#   certified-wrong = P(k_agree > tau_q and not exact), for the real rows and every control; the paper's sentence is
+#   "of the items the reader gets right, X % carry a certificate whose background false-alarm rate is <= 5 %".
+
+# A26 (29 Sep 2026, 22:10; written BEFORE the run; approved by the user): neutral-context control for the A22 pass.
+# Problem (LOG 21:40): the continuation carrier at the first-hop token reads the bridge for 26/30 track-B items (bench
+#   rule any-of-8), but the outputs are "... is the capital of Saudi Arabia" from h at "Riyadh". The carrier's forward
+#   pass may RE-DERIVE the country from the entity's identity ("entity-then-recompute"). If so, this is not evidence
+#   that the SOURCE model computed the bridge at that position.
+# Control: the same 30 first-hop entities, each placed in two NEUTRAL sentences that name the entity but ask nothing
+#   about its country (data/a26_neutral_items.json, 60 items, template n1 "Fact: Yesterday someone mentioned <E> is",
+#   n2 "Fact: My notes from the trip include <E> is"). Same bridge string, same first-hop locator (60/60 located, checked
+#   with the Qwen3-14B tokenizer), same reader: x3_patchscope.py, 14B, L32, target 4, carriers continuation + identity3,
+#   position firsthop, 8 carriers, greedy 8, controls shuffled + random; bench-rule any-of-8 via e5a offline.
+# Statistic: bench-rule any-of-8 for the continuation carrier; neutral rate = mean over the two templates; paired by
+#   entity against the A22 two-hop rate on the same 30 items (w5_br_14b_B_fh, .867).
+# Pre-registered reading:
+#   ENTITY-RECOMPUTE: neutral >= two-hop - .10 -> the A22 pass is explained by entity identity + recompute in the
+#     carrier; the paper reports A22 as "the first-hop state carries the entity", NOT as bridge reading.
+#   BRIDGE-BEYOND-ENTITY: two-hop - neutral >= .20 with the paired item-bootstrap 95% CI of the difference excluding 0,
+#     for BOTH templates -> the two-hop context adds bridge information at the first-hop position; A22 stands as bridge
+#     reading.
+#   Anything else: unresolved; reported with both numbers. identity3 numbers are report-only. Controls must stay <= .05.

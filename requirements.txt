@@ -1,0 +1,6 @@
+torch>=2.8
+transformers>=5.0
+huggingface_hub
+datasets
+numpy
+matplotlib

@@ -1,0 +1,430 @@
+{
+ "what": "E5a: bench word-boundary regex inside the UNCUT generation (any / majority of 8) beside the registered cut-then-exact rule (R3 / A12); report only (A18)",
+ "scorer": "mt-regex-2026-09-23",
+ "seed": 0,
+ "runs": {
+  "w5_a26_14b_neutral_v2": {
+   "file": "runs/w5_a26_14b_neutral_v2/results.json",
+   "model": "Qwen/Qwen3-14B",
+   "track": "other:a26_neutral_items.json",
+   "kinds": [
+    "continuation",
+    "identity3"
+   ],
+   "layers": {
+    "32": {
+     "continuation:replace:t4:firsthop [none]": {
+      "n": 60,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.2,
+      "bench_vote_lo": 0.1,
+      "bench_vote_hi": 0.3,
+      "bench_any": 0.7166666666666667,
+      "bench_any_lo": 0.6,
+      "bench_any_hi": 0.8166666666666667,
+      "bench_vote_minus_vote_exact": 0.2,
+      "bench_vote_minus_vote_exact_lo": 0.1,
+      "bench_vote_minus_vote_exact_hi": 0.3,
+      "bench_any_minus_any_exact": 0.7166666666666667,
+      "bench_any_minus_any_exact_lo": 0.6,
+      "bench_any_minus_any_exact_hi": 0.8166666666666667,
+      "n_bench_any_not_registered_any": 43,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [
+       {
+        "id": "curated:bridge_capital_continent:030d21fa:a26n1",
+        "string": " North Macedonia",
+        "gens": [
+         ", the proposal was accepted. Which of",
+         ", the capital of North Macedonia, which",
+         ", \"Dear Mother,\" and she felt"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:030d21fa:a26n2",
+        "string": " North Macedonia",
+        "gens": [
+         ", Skopje and the government of",
+         "'s location, which is in the center",
+         ", Skopje, the capital of"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:3f0e9ca5:a26n1",
+        "string": " Czech Republic",
+        "gens": [
+         " and the committee would meet again in two",
+         ", and the second most important factor was",
+         " and the name of a bank. She"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:3f0e9ca5:a26n2",
+        "string": " Czech Republic",
+        "gens": [
+         ", Budapest, and Vienna would be the",
+         ", the capital of the Czech Republic,",
+         ", Budapest, and the name of a"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:54e5243a:a26n1",
+        "string": " Sierra Leone",
+        "gens": [
+         ", in the absence of any objection,",
+         ", not the amount of money spent on",
+         ", \"Dear Mother,\" and her eyes"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:54e5243a:a26n2",
+        "string": " Sierra Leone",
+        "gens": [
+         ", in his view, the proposal was",
+         ", the capital city of Sierra Leone,",
+         ", Sierra Leone. She had not heard"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:81ec2da8:a26n1",
+        "string": " Saudi Arabia",
+        "gens": [
+         ", the proposal was accepted. Which of",
+         ", the capital of Saudi Arabia, which",
+         ", the capital of Saudi Arabia. She"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:81ec2da8:a26n2",
+        "string": " Saudi Arabia",
+        "gens": [
+         ", the capital of Saudi Arabia, would",
+         ", the capital of Saudi Arabia, which",
+         ", the capital of Saudi Arabia. She"
+        ]
+       }
+      ],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.2,
+        "any_exact": 0.0,
+        "bench_any": 0.7166666666666667
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.2,
+        "any_exact": 0.0,
+        "bench_any": 0.7166666666666667
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop [random]": {
+      "n": 60,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop [shuffled]": {
+      "n": 60,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop [none]": {
+      "n": 60,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.26666666666666666,
+      "bench_vote_lo": 0.16666666666666666,
+      "bench_vote_hi": 0.4,
+      "bench_any": 0.5,
+      "bench_any_lo": 0.36666666666666664,
+      "bench_any_hi": 0.6333333333333333,
+      "bench_vote_minus_vote_exact": 0.26666666666666666,
+      "bench_vote_minus_vote_exact_lo": 0.16666666666666666,
+      "bench_vote_minus_vote_exact_hi": 0.4,
+      "bench_any_minus_any_exact": 0.5,
+      "bench_any_minus_any_exact_lo": 0.36666666666666664,
+      "bench_any_minus_any_exact_hi": 0.6333333333333333,
+      "n_bench_any_not_registered_any": 30,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [
+       {
+        "id": "curated:bridge_capital_continent:030d21fa:a26n1",
+        "string": " North Macedonia",
+        "gens": [
+         ", the capital of North Macedonia, is",
+         ", 5926 -> ",
+         ", the capital of North Macedonia, Sk"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:3f0e9ca5:a26n2",
+        "string": " Czech Republic",
+        "gens": [
+         ", Czech Republic -> Prague, Czech Republic",
+         ", Czech Republic -> Prague, Czech Republic",
+         ", Czech Republic -> Prague, Czech Republic"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:54e5243a:a26n1",
+        "string": " Sierra Leone",
+        "gens": [
+         ", what is the pattern here? The",
+         ", 5926 -> ",
+         ", the capital of Sierra Leone is F"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:54e5243a:a26n2",
+        "string": " Sierra Leone",
+        "gens": [
+         ", Sierra Leone -> Freetown,",
+         ", Freetown -> Freetown",
+         ", Sierra Leone -> Freetown,"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:81ec2da8:a26n1",
+        "string": " Saudi Arabia",
+        "gens": [
+         ", 2023 -> Riyadh",
+         ", 2024-0",
+         ", the capital of Saudi Arabia -> the"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:81ec2da8:a26n2",
+        "string": " Saudi Arabia",
+        "gens": [
+         ", Saudi Arabia -> Riyadh, Saudi Arabia",
+         ", Saudi Arabia -> Riyadh, Saudi Arabia",
+         ", Saudi Arabia -> Riyadh, Saudi Arabia"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:8568e022:a26n1",
+        "string": " Papua New Guinea",
+        "gens": [
+         ", what is the pattern here? The",
+         ", 5926 -> ",
+         ", the capital of Papua New Guinea is"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:90463889:a26n2",
+        "string": " New Zealand",
+        "gens": [
+         ", -> ;, 199",
+         ", -> ; 5926",
+         ", New Zealand -> Wellington, New Zealand"
+        ]
+       }
+      ],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.26666666666666666,
+        "any_exact": 0.0,
+        "bench_any": 0.5
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.26666666666666666,
+        "any_exact": 0.0,
+        "bench_any": 0.5
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop [random]": {
+      "n": 60,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop [shuffled]": {
+      "n": 60,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 60,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,140 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1mm}
+\begin{tabular}{@{}p{2.5cm}p{2.3cm}p{4.5cm}p{1.3cm}p{3.0cm}p{2.9cm}@{}}
+\toprule
+claim (location) & run & cell; carrier; tokens; rule; gate & $k/N$ & controls & registered or post hoc; note \\
+\midrule
+14B two-word (orig.), same layer (Table 2, Fig. 2) & \texttt{w3\_\allowbreak{{}}B\_\allowbreak{{}}x3i3\_\allowbreak{{}}14b\_\allowbreak{{}}ans\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 32; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 36/175 & shuffled 0/171; crosscat 0/175 (corrected donor position); random 0/175 & registered (R3 grid); any-of-8 73/175 \\
+14B two-word (orig.), early (Table 2, Fig. 2) & \texttt{w3\_\allowbreak{{}}B\_\allowbreak{{}}x3i3\_\allowbreak{{}}14b\_\allowbreak{{}}ans\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 4; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 82/175 & shuffled 0/171; crosscat 0/175 (corrected donor position); random 0/175 & registered (R3 grid; best of \{same, 4\} at L32); any-of-8 124/175 \\
+14B two-word (fresh), same layer (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}fresh\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}x3i3\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 32; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 15/175 & shuffled 0/175; crosscat 0/175; random 0/175 & registered (A24); any-of-8 38/175 \\
+14B two-word (fresh), early (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}fresh\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}x3i3\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 4; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 59/175 & shuffled 0/175; crosscat 0/175; random 0/175 & registered (A24, pre-named); any-of-8 94/175 \\
+14B sub-word (orig.), same layer (Table 2, Fig. 2) & \texttt{w3\_\allowbreak{{}}A\_\allowbreak{{}}x3i3\_\allowbreak{{}}14b\_\allowbreak{{}}ans\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 32; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 44/342 & shuffled 0/339; crosscat 0/342 (corrected donor position); random 0/342 & registered (R3 grid); any-of-8 97/342 \\
+14B sub-word (orig.), early (Table 2, Fig. 2) & \texttt{w3\_\allowbreak{{}}A\_\allowbreak{{}}x3i3\_\allowbreak{{}}14b\_\allowbreak{{}}ans\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 4; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 106/342 & shuffled 0/339; crosscat 0/342 (corrected donor position); random 0/342 & registered (R3 grid); any-of-8 177/342 \\
+14B sub-word (fresh), same layer (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}fresh\_\allowbreak{{}}14b\_\allowbreak{{}}A\_\allowbreak{{}}x3i3\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 32; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 19/431 & shuffled 0/429; crosscat 0/431; random 0/431 & registered (A24); any-of-8 57/431 \\
+14B sub-word (fresh), early (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}fresh\_\allowbreak{{}}14b\_\allowbreak{{}}A\_\allowbreak{{}}x3i3\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 4; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 73/431 & shuffled 0/429; crosscat 0/431; random 0/431 & registered (A24, pre-named); any-of-8 184/431 \\
+\bottomrule
+\end{tabular}
+\caption{Claim-to-run provenance, Exact recovery, one-token calibration and the mechanism arms (Sections 4 and 5), part 1 of 3. Every $k/N$ is recomputed from the item rows of the named results file by \texttt{paper/analysis/provenance.py}; \texttt{controls} gives the numerator and denominator of each control on the same cell (a cross-category control is decided only on items with a partner).}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1mm}
+\begin{tabular}{@{}p{2.5cm}p{2.3cm}p{4.5cm}p{1.3cm}p{3.0cm}p{2.9cm}@{}}
+\toprule
+claim (location) & run & cell; carrier; tokens; rule; gate & $k/N$ & controls & registered or post hoc; note \\
+\midrule
+8B two-word, same layer (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}8b\_\allowbreak{{}}B\_\allowbreak{{}}x3i3\_\allowbreak{{}}L29} & 8B, L29 $\to$ block 29; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 40/160 & shuffled 0/156; crosscat 0/160; random 0/160 & registered (A23); any-of-8 83/160 \\
+8B two-word, pre-named early (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}8b\_\allowbreak{{}}B\_\allowbreak{{}}x3i3\_\allowbreak{{}}L29} & 8B, L29 $\to$ block 4; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 0/160 & shuffled 0/156; crosscat 0/160; random 0/160 & registered (A23, pre-named; fails); any-of-8 1/160 \\
+8B two-word, early (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}8b\_\allowbreak{{}}B\_\allowbreak{{}}x3i3\_\allowbreak{{}}L29} & 8B, L29 $\to$ block 8; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 79/160 & shuffled 0/156; crosscat 0/160; random 0/160 & post hoc (in the A23 grid, promoted after t4 failed); any-of-8 119/160 \\
+8B sub-word, same layer (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}8b\_\allowbreak{{}}A\_\allowbreak{{}}x3i3\_\allowbreak{{}}L29} & 8B, L29 $\to$ block 29; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 57/340 & shuffled 0/338; crosscat 0/340; random 0/340 & registered (A23); any-of-8 128/340 \\
+8B sub-word, early (Table 2, Fig. 2) & \texttt{w5\_\allowbreak{{}}8b\_\allowbreak{{}}A\_\allowbreak{{}}x3i3\_\allowbreak{{}}L29} & 8B, L29 $\to$ block 8; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 129/340 & shuffled 1/338; crosscat 0/340; random 0/340 & post hoc (as above); any-of-8 194/340 \\
+1.7B sub-word, same layer (Table 2, Fig. 2) & \texttt{w3\_\allowbreak{{}}A\_\allowbreak{{}}x3i3\_\allowbreak{{}}1p7b\_\allowbreak{{}}ans\_\allowbreak{{}}L22} & 1.7B, L22 $\to$ block 22; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 32/278 & shuffled 2/275; crosscat 0/278 (corrected donor position); random 0/278 & registered (R3 grid); any-of-8 67/278 \\
+1.7B sub-word, early (Table 2, Fig. 2) & \texttt{w3\_\allowbreak{{}}A\_\allowbreak{{}}x3i3\_\allowbreak{{}}1p7b\_\allowbreak{{}}ans\_\allowbreak{{}}L22} & 1.7B, L22 $\to$ block 8; copy prompt, 8 carriers; 8 greedy, cut at ; $\to$ newline; exact majority (any-of-8 in note); greedy-correct answer items & 61/278 & shuffled 1/275; crosscat 0/278 (corrected donor position); random 0/278 & registered (R3 grid; best of \{same, 4, 8\}); any-of-8 106/278 \\
+one-token answers, copy prompt (Sec. 4 text) & \texttt{w3\_\allowbreak{{}}S\_\allowbreak{{}}x3i3\_\allowbreak{{}}14b} & 14B, L32 $\to$ block 32; copy prompt, 8 carriers; 8 greedy, cut; exact majority; greedy-correct one-token items & 114/128 & shuffled 0/127; crosscat 0/128; random 0/128 & registered (R3 calibration set) \\
+\bottomrule
+\end{tabular}
+\caption{Claim-to-run provenance, Exact recovery, one-token calibration and the mechanism arms (Sections 4 and 5), part 2 of 3. Every $k/N$ is recomputed from the item rows of the named results file by \texttt{paper/analysis/provenance.py}; \texttt{controls} gives the numerator and denominator of each control on the same cell (a cross-category control is decided only on items with a partner).}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1mm}
+\begin{tabular}{@{}p{2.5cm}p{2.3cm}p{4.5cm}p{1.3cm}p{3.0cm}p{2.9cm}@{}}
+\toprule
+claim (location) & run & cell; carrier; tokens; rule; gate & $k/N$ & controls & registered or post hoc; note \\
+\midrule
+one-token answers, copy prompt (Sec. 4 text) & \texttt{w3\_\allowbreak{{}}S\_\allowbreak{{}}x3i3\_\allowbreak{{}}14b} & 14B, L32 $\to$ block 4; copy prompt, 8 carriers; 8 greedy, cut; exact majority; greedy-correct one-token items & 101/128 & shuffled 0/127; crosscat 0/128; random 0/128 & registered (R3 calibration set) \\
+placeholder swap (Sec. 5 text) & \texttt{w5\_\allowbreak{{}}ph\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}i3\_\allowbreak{{}}swap} & 14B, L32 $\to$ block 32, placeholder x; copy prompt, 8 carriers; 8 greedy, cut; exact majority; greedy-correct two-word items & 31/175 & shuffled 0/171 & registered arm (A21 e); early-target reading post hoc \\
+placeholder swap (Sec. 5 text) & \texttt{w5\_\allowbreak{{}}ph\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}i3\_\allowbreak{{}}swap} & 14B, L32 $\to$ block 4, placeholder x; copy prompt, 8 carriers; 8 greedy, cut; exact majority; greedy-correct two-word items & 100/175 & shuffled 0/171 & registered arm (A21 e); early-target reading post hoc \\
+mechanism, copy prompt, every block $\le$ 32 (Sec. 5, Fig. 3) & \texttt{w5\_\allowbreak{{}}ph\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}i3} & 14B, L32 $\to$ embedding + blocks 0..32; copy prompt, 8 carriers; 8 greedy, cut; exact majority; greedy-correct two-word items & 61/175 & shuffled 0/171; random 0/175 & registered (A21; report-only mechanism test) \\
+mechanism, copy prompt, every block $\le$ 4 (Sec. 5, Fig. 3) & \texttt{w5\_\allowbreak{{}}ph\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}i3} & 14B, L32 $\to$ embedding + blocks 0..4; copy prompt, 8 carriers; 8 greedy, cut; exact majority; greedy-correct two-word items & 83/175 & shuffled 0/171; random 0/175 & registered (A21; report-only mechanism test) \\
+mechanism, continuation, same layer (Sec. 5, Fig. 3) & \texttt{w5\_\allowbreak{{}}ph\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}cont} & 14B, L32 $\to$ block 32; continuation prompt, 8 carriers; 12 greedy, uncut; prefix majority; greedy-correct two-word items & 66/175 & shuffled 0/171; random 0/175 & registered (A21 continuation arms) \\
+mechanism, continuation, every block $\le$ 32 (Sec. 5, Fig. 3) & \texttt{w5\_\allowbreak{{}}ph\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}cont} & 14B, L32 $\to$ embedding + blocks 0..32; continuation prompt, 8 carriers; 12 greedy, uncut; prefix majority; greedy-correct two-word items & 120/175 & shuffled 0/171; random 0/175 & registered (A21 continuation arms) \\
+mechanism, continuation, every block $\le$ 4 (Sec. 5, Fig. 3) & \texttt{w5\_\allowbreak{{}}ph\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}cont} & 14B, L32 $\to$ embedding + blocks 0..4; continuation prompt, 8 carriers; 12 greedy, uncut; prefix majority; greedy-correct two-word items & 129/175 & shuffled 0/171; random 0/175 & registered (A21 continuation arms) \\
+mechanism, continuation, block 4 (Sec. 5, Fig. 3) & \texttt{w4\_\allowbreak{{}}B\_\allowbreak{{}}x3cont\_\allowbreak{{}}14b\_\allowbreak{{}}ans\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 4; continuation prompt, 8 carriers; 12 greedy, uncut; prefix majority; greedy-correct two-word items & 133/175 & shuffled 0/171; random 0/175 & registered (A21 continuation arms) \\
+\bottomrule
+\end{tabular}
+\caption{Claim-to-run provenance, Exact recovery, one-token calibration and the mechanism arms (Sections 4 and 5), part 3 of 3. Every $k/N$ is recomputed from the item rows of the named results file by \texttt{paper/analysis/provenance.py}; \texttt{controls} gives the numerator and denominator of each control on the same cell (a cross-category control is decided only on items with a partner).}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1mm}
+\begin{tabular}{@{}p{2.5cm}p{2.3cm}p{4.5cm}p{1.3cm}p{3.0cm}p{2.9cm}@{}}
+\toprule
+claim (location) & run & cell; carrier; tokens; rule; gate & $k/N$ & controls & registered or post hoc; note \\
+\midrule
+step readout, 2nd piece top-1 (Table 1) & \texttt{s2\_\allowbreak{{}}g8\_\allowbreak{{}}L16} & 14B, L16 (best of L16/24/32); first-order step readout given the true first piece; n/a; top-1 of the true second piece; gated answer+bridge items & 1/285 & 0 when the lens holds the first piece & registered (R2/step family); pool includes 103 bridge items \\
+beam decoder, exact recall (Table 1) & \texttt{hp\_\allowbreak{{}}heldout\_\allowbreak{{}}L18} & 1.7B, L18; J-lens beam decoder (chosen configuration); beam 10, length 5; exact recall at 1 and 10; held-out sub-word items & 0/60 & n/a & registered configuration chosen on the tuning half; 2 configurations x stop rules on this held-out file; the tuning search (hp\_screen\_L22, 150 items) has one recall@10 hit in one configuration \\
+beam decoder, exact recall (Table 1) & \texttt{hp\_\allowbreak{{}}heldout\_\allowbreak{{}}L22} & 1.7B, L22; J-lens beam decoder (chosen configuration); beam 10, length 5; exact recall at 1 and 10; held-out sub-word items & 0/278 & n/a & registered configuration chosen on the tuning half; 2 configurations x stop rules on this held-out file; the tuning search (hp\_screen\_L22, 150 items) has one recall@10 hit in one configuration \\
+linear probe, sub-word, 2nd piece top-10 (Table 1) & \texttt{p2\_\allowbreak{{}}A\_\allowbreak{{}}14b} & 14B, L32; ridge probe h\_l $\to$ final residual one position ahead (generic text); n/a; top-10 of the true second piece; greedy-correct answer items & 51/342 & shuffled 51/339; paired diff 0.000 [-0.009, 0.009], McNemar b=1 c=1 p=1.0000 & registered (A11 P2); J-lens second piece top-10 10/342 \\
+linear probe, two-word, 2nd piece top-10 (Table 1) & \texttt{p2\_\allowbreak{{}}B\_\allowbreak{{}}14b} & 14B, L32; ridge probe h\_l $\to$ final residual one position ahead (generic text); n/a; top-10 of the true second piece; greedy-correct answer items & 8/175 & shuffled 0/171; paired diff 0.047 [0.018, 0.082], McNemar b=8 c=0 p=0.0078 & registered (A11 P2); J-lens second piece top-10 76/175 \\
+\bottomrule
+\end{tabular}
+\caption{Claim-to-run provenance, Linear and first-order readers (Section 3, Table 1), part 1 of 2. Every $k/N$ is recomputed from the item rows of the named results file by \texttt{paper/analysis/provenance.py}; \texttt{controls} gives the numerator and denominator of each control on the same cell (a cross-category control is decided only on items with a partner).}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1mm}
+\begin{tabular}{@{}p{2.5cm}p{2.3cm}p{4.5cm}p{1.3cm}p{3.0cm}p{2.9cm}@{}}
+\toprule
+claim (location) & run & cell; carrier; tokens; rule; gate & $k/N$ & controls & registered or post hoc; note \\
+\midrule
+linear probe calibration, first answer token top-1 (Table 1) & \texttt{p2\_\allowbreak{{}}S\_\allowbreak{{}}14b} & 14B, L32; same ridge probe; n/a; top-1 of the next (first answer) token; one-token items & 29/128 & n/a & registered calibration \\
+linear probe calibration, first answer token top-1 (Table 1) & \texttt{p2\_\allowbreak{{}}S\_\allowbreak{{}}14b} & 14B, L36; same ridge probe; n/a; top-1 of the next (first answer) token; one-token items & 78/128 & n/a & registered calibration \\
+one-position patch, replacement (h - x\_carrier) (Table 1) & \texttt{w2A\_\allowbreak{{}}x1\_\allowbreak{{}}14b\_\allowbreak{{}}L32\_\allowbreak{{}}s\{0,1,2\}} & 14B, L32, one position before the first piece; 64 generic carriers, true first piece appended; n/a; second piece top-10 by change in log-probability; greedy-correct sub-word items & 135/342 & same-category 18/339; cross-category 1/342; random 0/342 & registered (R1/R2) \\
+one-position patch, additive (+h) (Table 1) & \texttt{w2A\_\allowbreak{{}}x1\_\allowbreak{{}}14b\_\allowbreak{{}}L32\_\allowbreak{{}}s\{0,1,2\}} & 14B, L32, one position before the first piece; 64 generic carriers, true first piece appended; n/a; second piece top-10 by change in log-probability; greedy-correct sub-word items & 149/342 & same-category 43/339; cross-category 7/342; random 0/342 & registered (R1/R2) \\
+exact tangent of the additive map (Table 1) & \texttt{w2A\_\allowbreak{{}}x1\_\allowbreak{{}}14b\_\allowbreak{{}}L32\_\allowbreak{{}}s\{0,1,2\}} & 14B, L32, one position before the first piece; 64 generic carriers, true first piece appended; n/a; second piece top-10 by change in log-probability; greedy-correct sub-word items & 25/342 & same-category 9/339; cross-category 0/342; random 0/342 & registered (R1/R2) \\
+\bottomrule
+\end{tabular}
+\caption{Claim-to-run provenance, Linear and first-order readers (Section 3, Table 1), part 2 of 2. Every $k/N$ is recomputed from the item rows of the named results file by \texttt{paper/analysis/provenance.py}; \texttt{controls} gives the numerator and denominator of each control on the same cell (a cross-category control is decided only on items with a partner).}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1mm}
+\begin{tabular}{@{}p{2.5cm}p{2.3cm}p{4.5cm}p{1.3cm}p{3.0cm}p{2.9cm}@{}}
+\toprule
+claim (location) & run & cell; carrier; tokens; rule; gate & $k/N$ & controls & registered or post hoc; note \\
+\midrule
+27B basic, pre-named cell (Table 4) & \texttt{w5\_\allowbreak{{}}27b\_\allowbreak{{}}full\_\allowbreak{{}}basic} & 27B, L52 $\to$ block 8; continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); all 100 & 14/100 & shuffled 0/100 & registered (A19 pre-named); ; primary-string-only 14/100 \\
+27B basic, selected two-layer union (Table 4) & \texttt{w5\_\allowbreak{{}}27b\_\allowbreak{{}}full\_\allowbreak{{}}basic} & 27B, L52 or L56 $\to$ block 4 (union over layers); continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); all 100 & 22/100 & shuffled 0/100 & post hoc (best of 3 targets x 2 layers); per layer L52 17/100, L56 15/100; strict single-sample recount 21/100; primary-string-only 16/100 \\
+27B basic, same layer (Table 4) & \texttt{w5\_\allowbreak{{}}27b\_\allowbreak{{}}full\_\allowbreak{{}}basic} & 27B, L52 or L56 $\to$ same layer; continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); all 100 & 6/100 & shuffled 0/100 & report-only; ; primary-string-only 4/100 \\
+27B basic, copy prompt (Table 4) & \texttt{w5\_\allowbreak{{}}27b\_\allowbreak{{}}full\_\allowbreak{{}}basic} & 27B, L52 or L56 $\to$ block 4; copy prompt, 8 carriers; 8 greedy, cut; bench regex (units may hit different samples at one layer); all 100 & 4/100 & shuffled 0/100 & report-only; ; primary-string-only 3/100 \\
+27B typo, block 4 (Table 4) & \texttt{w5\_\allowbreak{{}}27b\_\allowbreak{{}}full\_\allowbreak{{}}typo} & 27B, L52 or L56 $\to$ block 4; continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); all 100 & 33/100 & shuffled 0/100 & post hoc (report-only family); 7 of 34 gated items pass; 26 passes are ungated; primary-string-only 33/100 \\
+27B typo, block 8 (Table 4) & \texttt{w5\_\allowbreak{{}}27b\_\allowbreak{{}}full\_\allowbreak{{}}typo} & 27B, L52 or L56 $\to$ block 8; continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); all 100 & 28/100 & shuffled 0/100 & post hoc (report-only family); ; primary-string-only 28/100 \\
+27B multihop, block 4 (Table 4) & \texttt{w5\_\allowbreak{{}}27b\_\allowbreak{{}}full\_\allowbreak{{}}multihop} & 27B, L52 or L56 $\to$ block 4; continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); all 100 & 6/100 & shuffled 0/100 & post hoc (report-only family); final-answer unit alone hits on 35/100; bridge units are the required ones; primary-string-only 6/100 \\
+\bottomrule
+\end{tabular}
+\caption{Claim-to-run provenance, Benchmark, bridges and certificate (Sections 6 and 7), part 1 of 2. Every $k/N$ is recomputed from the item rows of the named results file by \texttt{paper/analysis/provenance.py}; \texttt{controls} gives the numerator and denominator of each control on the same cell (a cross-category control is decided only on items with a partner).}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1mm}
+\begin{tabular}{@{}p{2.5cm}p{2.3cm}p{4.5cm}p{1.3cm}p{3.0cm}p{2.9cm}@{}}
+\toprule
+claim (location) & run & cell; carrier; tokens; rule; gate & $k/N$ & controls & registered or post hoc; note \\
+\midrule
+14B basic, gated (A15 pass) (Sec. 6 text) & \texttt{w5\_\allowbreak{{}}ctrl\_\allowbreak{{}}14b\_\allowbreak{{}}basic\_\allowbreak{{}}typo} & 14B, L32 $\to$ block 4; continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); gated (48-token plain prompt) & 9/63 & shuffled 0/63; crosscat 0/28 decided of 63; random 0/63 decided of 63; no patch 0/63 & registered (A15/A20 pre-named); cross-category control decided on 28 of 63 (35 items have no partner); primary-string-only 6/63 \\
+14B basic, immediate (A15 pass) (Sec. 6 text) & \texttt{w5\_\allowbreak{{}}ctrl\_\allowbreak{{}}14b\_\allowbreak{{}}basic\_\allowbreak{{}}typo} & 14B, L32 $\to$ block 4; continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); gated, immediate & 8/28 & shuffled 0/28; crosscat 0/12 decided of 28; random 0/28 decided of 28; no patch 0/28 & registered (A15 pre-named); ; primary-string-only 5/28 \\
+14B typo, gated (Sec. 6 text) & \texttt{w5\_\allowbreak{{}}ctrl\_\allowbreak{{}}14b\_\allowbreak{{}}basic\_\allowbreak{{}}typo} & 14B, L32 $\to$ block 8; continuation prompt, 8 carriers; 12 greedy, uncut; bench regex (units may hit different samples at one layer); gated (48-token plain prompt) & 8/25 & shuffled 0/25; crosscat 0/16 decided of 25; random 0/25 decided of 25; no patch 0/25 & post hoc (typo report-only under A15); cross-category control decided on 16 of 25; primary-string-only 8/25 \\
+first-hop bridge, continuation prompt (Sec. 7 text) & \texttt{w5\_\allowbreak{{}}br\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}fh} & 14B, L32 $\to$ block 4, read at the first-hop token; continuation prompt, 8 carriers; 8 greedy, uncut; bench regex any-of-8 (exact majority in note); two-hop items with a located first-hop token & 26/30 & shuffled 0/23; random 0/30 (shuffled n 23) & registered (A22 (i), one of four arms; passes); exact majority 0/30; 17 distinct first-hop cues \\
+neutral-context control (Sec. 7 text) & \texttt{w5\_\allowbreak{{}}a26\_\allowbreak{{}}14b\_\allowbreak{{}}neutral\_\allowbreak{{}}v2} & 14B, L32 $\to$ block 4, read at the entity token of a neutral sentence; continuation prompt, 8 carriers; 8 greedy, uncut; bench regex any-of-8; same 30 entities x 2 templates & 43/60 & shuffled 0/60; random 0/60 & registered (A26; verdict unresolved); templates 20/30 and 23/30 \\
+bridge at the last token, copy prompt (Sec. 7 text) & \texttt{w5\_\allowbreak{{}}br\_\allowbreak{{}}14b\_\allowbreak{{}}B\_\allowbreak{{}}fh} & 14B, L32 $\to$ block 4, last token; copy prompt, 8 carriers; 8 greedy, cut; exact majority; gated two-hop items & 4/143 & shuffled 0/143; random 0/143 & registered (R5; did not pass; no kill line in R5) \\
+benchmark multihop position scan, bridge unit maximum (Sec. 7 text) & \texttt{w5\_\allowbreak{{}}br\_\allowbreak{{}}14b\_\allowbreak{{}}mh\_\allowbreak{{}}scan} & 14B, L32 $\to$ block 4, offset 35 of the last 40 positions; two answer-frame carriers; 12 greedy, uncut; bench regex, bridge-1 unit, maximum over offsets; 66 gated multihop items (eligible n varies by offset) & 2/51 & shuffled maximum 0 & registered (A22 (ii); below its .05 line); final-answer unit at the last token 0.258 \\
+certificate: background activations at full agreement (Sec. 7 text) & \texttt{w5\_\allowbreak{{}}e5c\_\allowbreak{{}}14b\_\allowbreak{{}}L32} & 14B, L32 $\to$ block 4, generic text; copy prompt, 8 carriers; 8 greedy, cut; k\_agree = 8; 2,304 background activations & 923/2304 & n/a & registered (A25; passes as registered, zero coverage) \\
+\bottomrule
+\end{tabular}
+\caption{Claim-to-run provenance, Benchmark, bridges and certificate (Sections 6 and 7), part 2 of 2. Every $k/N$ is recomputed from the item rows of the named results file by \texttt{paper/analysis/provenance.py}; \texttt{controls} gives the numerator and denominator of each control on the same cell (a cross-category control is decided only on items with a partner).}
+\end{table*}

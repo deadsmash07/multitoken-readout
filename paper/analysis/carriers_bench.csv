@@ -1,0 +1,8 @@
+cell,run,family,arm,n,pass,per_layer,per_carrier,union_prose,union_frames,strict_single_sample,strict_lost_ids,primary_only,alias_only_ids,n_required_units_gt1
+"27B basic, continuation block 4",w5_27b_full_basic,basic_readout_mt,x3c_t4,100,22,"{""52"": 17, ""56"": 15}",3 3 6 7 13 14 10 12,12,22,21,brh-id-chengho,16,brh-ent-aghlabid-dynasty brh-ent-chindwin-confluence brh-ent-cordillera-blanca-high brh-ent-cur-bhutan brh-ent-lowest-point-australia brh-ent-ottoman-religious-office,40
+"27B basic, continuation block 8",w5_27b_full_basic,basic_readout_mt,x3c_t8,100,19,"{""52"": 14, ""56"": 14}",1 3 5 5 7 11 8 14,10,18,19,,14,brh-ent-aghlabid-dynasty brh-ent-brunt-vaisala-frequency brh-ent-chindwin-confluence brh-ent-hafsid-ifriqiya brh-ent-lowest-point-australia,40
+"27B typo, continuation block 4",w5_27b_full_typo,typo_mt,x3c_t4,100,33,"{""52"": 25, ""56"": 24}",0 0 1 1 1 3 3 29,1,33,33,,33,,0
+"27B typo, continuation block 8",w5_27b_full_typo,typo_mt,x3c_t8,100,28,"{""52"": 21, ""56"": 17}",1 0 0 2 1 3 2 27,3,28,28,,28,,0
+"27B multihop, continuation block 4",w5_27b_full_multihop,multihop_mt,x3c_t4,100,6,"{""52"": 2, ""56"": 5}",0 3 2 0 1 3 2 1,4,3,6,,6,,32
+"14B basic (63 gated), continuation block 4",w5_ctrl_14b_basic_typo,basic_readout_mt,x3c_t4,63,9,"{""32"": 9}",3 1 2 0 7 4 4 2,3,9,9,,6,brh-ent-brunt-vaisala-frequency brh-ent-chindwin-confluence brh-ent-hounsfield-unit,14
+"14B typo (25 gated), continuation block 8",w5_ctrl_14b_basic_typo,typo_mt,x3c_t8,25,8,"{""32"": 8}",0 1 1 1 3 0 3 7,1,8,8,,8,,0

@@ -1,0 +1,35 @@
+# X3 Patchscope reruns with the identity3 carriers (amendment A12: exemplars checked item-free against the three item files and the
+# six WorkspaceBench banks; x3_patchscope.py asserts it at import and at run time) on the INTERNAL item sets, for the paper's headline
+# numbers without the exemplar caveat (FULL_REPORT section 9, N0 / N4; replaces the held w2t_B_x3_14b_ans / w2t_B_x3_14b_br / w2t_S_x3_14b
+# identity2 jobs, qdel'd 27 Sep 00:10). Format: name<TAB>python-args<TAB># ~A100-h; args relative to sjlens/; one GPU per line:
+# Each line: <run name> TAB <arguments to python, relative to the repository root>; one GPU per line.
+# Tracks: A = data/h2a_items.json (sub-word), B = data/phrase_items.json (word phrases), S = data/single_items.json (1-token calibration);
+# held-out half for answers (--split heldout), all gated bridges (--split all --kinds bridge, positions last + firsthop). Every line runs
+# ALL THREE controls (shuffled = same category, crosscat, norm-matched random) as agent N0 was asked; mode = replace only (replace_nm at
+# early targets is inert, ANALYSIS_WAVE2 W6 / FULL_REPORT 4.11; add --modes replace,replace_nm to any line for the wave-2 arm set).
+# Lines: R3 as registered (majority exact >= 0.30 with controls <= 0.05 at the best layer; kill < 0.05 everywhere); R5 for bridges.
+# The target choice (t4 / t8) is inside the A5 grid; report the union over cells as a selection over cells (FULL_REPORT 4.11).
+# Cost model (LOG): 1.7B ~0.25 s per 8-token generation, 14B (bf16-mixed) ~0.75 s; generations per item = 8 carriers x n_targets x
+# 4 conditions (x 2 positions for bridges). Item counts: A 278 held-out gated answers on 1.7B / 342 on 14B; B ~175 held-out gated
+# answers and ~100 gated bridges on 14B (assumed from X1 14B track B); S ~90 gated on 14B. Hours in the trailing comment = per line.
+#
+# ---------------- Qwen3-1.7B, track A answers (the 4.11 best cells L22 t8 / L25 t8), targets same,4,8 ----------------
+w3_A_x3i3_1p7b_ans_L22	scripts/x3_patchscope.py --model Qwen/Qwen3-1.7B --layers 22 --target-layer same,4,8 --split heldout --kinds answer --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last --controls shuffled,crosscat,random --device cuda --resume --tag w3_A_x3i3_1p7b_ans_L22	# ~2 h (278 x 96 gens x 0.25 s)
+w3_A_x3i3_1p7b_ans_L25	scripts/x3_patchscope.py --model Qwen/Qwen3-1.7B --layers 25 --target-layer same,4,8 --split heldout --kinds answer --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last --controls shuffled,crosscat,random --device cuda --resume --tag w3_A_x3i3_1p7b_ans_L25	# ~2 h
+#
+# ---------------- Qwen3-14B (bf16-mixed), track A answers (the 4.11 best cells L32 t4 / L36 t4), targets same,4 ----------------
+w3_A_x3i3_14b_ans_L32	scripts/x3_patchscope.py --model Qwen/Qwen3-14B --dtype bf16-mixed --layers 32 --target-layer same,4 --split heldout --kinds answer --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last --controls shuffled,crosscat,random --device cuda --resume --tag w3_A_x3i3_14b_ans_L32	# ~5 h (342 x 64 gens x 0.75 s)
+w3_A_x3i3_14b_ans_L36	scripts/x3_patchscope.py --model Qwen/Qwen3-14B --dtype bf16-mixed --layers 36 --target-layer same,4 --split heldout --kinds answer --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last --controls shuffled,crosscat,random --device cuda --resume --tag w3_A_x3i3_14b_ans_L36	# ~5 h
+#
+# ---------------- Qwen3-14B, track B (word phrases): answers and bridges at L32 / L36, targets same,4 (replaces w2t_B_x3_14b_ans / _br) ----------------
+w3_B_x3i3_14b_ans_L32	scripts/x3_patchscope.py --model Qwen/Qwen3-14B --dtype bf16-mixed --items data/phrase_items.json --split-file data/phrase_split.json --layers 32 --target-layer same,4 --split heldout --kinds answer --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last --controls shuffled,crosscat,random --device cuda --resume --tag w3_B_x3i3_14b_ans_L32	# ~2.5 h (~175 x 64 gens)
+w3_B_x3i3_14b_ans_L36	scripts/x3_patchscope.py --model Qwen/Qwen3-14B --dtype bf16-mixed --items data/phrase_items.json --split-file data/phrase_split.json --layers 36 --target-layer same,4 --split heldout --kinds answer --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last --controls shuffled,crosscat,random --device cuda --resume --tag w3_B_x3i3_14b_ans_L36	# ~2.5 h
+w3_B_x3i3_14b_br_L32	scripts/x3_patchscope.py --model Qwen/Qwen3-14B --dtype bf16-mixed --items data/phrase_items.json --split-file data/phrase_split.json --layers 32 --target-layer same,4 --split all --kinds bridge --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last,firsthop --controls shuffled,crosscat,random --device cuda --resume --tag w3_B_x3i3_14b_br_L32	# ~3 h (~100 bridges x 128 gens)
+w3_B_x3i3_14b_br_L36	scripts/x3_patchscope.py --model Qwen/Qwen3-14B --dtype bf16-mixed --items data/phrase_items.json --split-file data/phrase_split.json --layers 36 --target-layer same,4 --split all --kinds bridge --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last,firsthop --controls shuffled,crosscat,random --device cuda --resume --tag w3_B_x3i3_14b_br_L36	# ~3 h
+#
+# ---------------- Qwen3-14B, single-token calibration set (S): answers at L32,36, targets same,4 (replaces w2t_S_x3_14b; descriptive, no line) ----------------
+w3_S_x3i3_14b	scripts/x3_patchscope.py --model Qwen/Qwen3-14B --dtype bf16-mixed --items data/single_items.json --split-file data/single_split.json --layers 32,36 --target-layer same,4 --split heldout --kinds answer --carriers identity3 --n-carriers 8 --modes replace --gen 8 --positions last --controls shuffled,crosscat,random --device cuda --resume --tag w3_S_x3i3_14b	# ~2.5 h (~90 x 64 gens x 2 layers)
+#
+# Totals: 1.7B 4 h; 14B track A 10 h; 14B track B 5 h (answers) + 6 h (bridges); 14B S 2.5 h -> ~27.5 A100-h (9 one-GPU lines).
+# Sanity first (debug queue, <= 30 min): scripts/x3_patchscope.py --model Qwen/Qwen3-1.7B --carriers identity3 --n-carriers 8 --gen 8 --carrier-check --device cuda --tag smk_w3_carrier_check_1p7b
+# (the un-patched identity3 carrier with a literal entity in the slot must echo the entity; compare echo rates with smk_w2_carrier_check_1p7b).

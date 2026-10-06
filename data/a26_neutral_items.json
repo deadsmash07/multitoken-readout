@@ -1,0 +1,1458 @@
+[
+ {
+  "id": "curated:bridge_capital_continent:030d21fa:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Skopje is",
+  "readout": "last_prompt_token",
+  "string": " North Macedonia",
+  "pieces": [
+   4787,
+   76409
+  ],
+  "pieces_text": [
+   " North",
+   " Macedonia"
+  ],
+  "target": "Europe",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_continent:030d21fa",
+  "a26_template": "n1",
+  "a26_entity": "Skopje"
+ },
+ {
+  "id": "curated:bridge_capital_continent:030d21fa:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Skopje is",
+  "readout": "last_prompt_token",
+  "string": " North Macedonia",
+  "pieces": [
+   4787,
+   76409
+  ],
+  "pieces_text": [
+   " North",
+   " Macedonia"
+  ],
+  "target": "Europe",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_continent:030d21fa",
+  "a26_template": "n2",
+  "a26_entity": "Skopje"
+ },
+ {
+  "id": "curated:bridge_capital_continent:3f0e9ca5:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Prague is",
+  "readout": "last_prompt_token",
+  "string": " Czech Republic",
+  "pieces": [
+   33150,
+   5429
+  ],
+  "pieces_text": [
+   " Czech",
+   " Republic"
+  ],
+  "target": "Europe",
+  "p1_chars": 5,
+  "shared_s1_group": "Czech",
+  "a26_orig": "curated:bridge_capital_continent:3f0e9ca5",
+  "a26_template": "n1",
+  "a26_entity": "Prague"
+ },
+ {
+  "id": "curated:bridge_capital_continent:3f0e9ca5:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Prague is",
+  "readout": "last_prompt_token",
+  "string": " Czech Republic",
+  "pieces": [
+   33150,
+   5429
+  ],
+  "pieces_text": [
+   " Czech",
+   " Republic"
+  ],
+  "target": "Europe",
+  "p1_chars": 5,
+  "shared_s1_group": "Czech",
+  "a26_orig": "curated:bridge_capital_continent:3f0e9ca5",
+  "a26_template": "n2",
+  "a26_entity": "Prague"
+ },
+ {
+  "id": "curated:bridge_capital_continent:54e5243a:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Freetown is",
+  "readout": "last_prompt_token",
+  "string": " Sierra Leone",
+  "pieces": [
+   35803,
+   65391
+  ],
+  "pieces_text": [
+   " Sierra",
+   " Leone"
+  ],
+  "target": "Africa",
+  "p1_chars": 6,
+  "shared_s1_group": "Sierra",
+  "a26_orig": "curated:bridge_capital_continent:54e5243a",
+  "a26_template": "n1",
+  "a26_entity": "Freetown"
+ },
+ {
+  "id": "curated:bridge_capital_continent:54e5243a:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Freetown is",
+  "readout": "last_prompt_token",
+  "string": " Sierra Leone",
+  "pieces": [
+   35803,
+   65391
+  ],
+  "pieces_text": [
+   " Sierra",
+   " Leone"
+  ],
+  "target": "Africa",
+  "p1_chars": 6,
+  "shared_s1_group": "Sierra",
+  "a26_orig": "curated:bridge_capital_continent:54e5243a",
+  "a26_template": "n2",
+  "a26_entity": "Freetown"
+ },
+ {
+  "id": "curated:bridge_capital_continent:81ec2da8:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Riyadh is",
+  "readout": "last_prompt_token",
+  "string": " Saudi Arabia",
+  "pieces": [
+   17904,
+   23061
+  ],
+  "pieces_text": [
+   " Saudi",
+   " Arabia"
+  ],
+  "target": "Asia",
+  "p1_chars": 5,
+  "shared_s1_group": "Saudi",
+  "a26_orig": "curated:bridge_capital_continent:81ec2da8",
+  "a26_template": "n1",
+  "a26_entity": "Riyadh"
+ },
+ {
+  "id": "curated:bridge_capital_continent:81ec2da8:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Riyadh is",
+  "readout": "last_prompt_token",
+  "string": " Saudi Arabia",
+  "pieces": [
+   17904,
+   23061
+  ],
+  "pieces_text": [
+   " Saudi",
+   " Arabia"
+  ],
+  "target": "Asia",
+  "p1_chars": 5,
+  "shared_s1_group": "Saudi",
+  "a26_orig": "curated:bridge_capital_continent:81ec2da8",
+  "a26_template": "n2",
+  "a26_entity": "Riyadh"
+ },
+ {
+  "id": "curated:bridge_capital_continent:8568e022:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Port Moresby is",
+  "readout": "last_prompt_token",
+  "string": " Papua New Guinea",
+  "pieces": [
+   89081,
+   1532,
+   47803
+  ],
+  "pieces_text": [
+   " Papua",
+   " New",
+   " Guinea"
+  ],
+  "target": "Oceania",
+  "p1_chars": 5,
+  "shared_s1_group": "Papua",
+  "a26_orig": "curated:bridge_capital_continent:8568e022",
+  "a26_template": "n1",
+  "a26_entity": "Port Moresby"
+ },
+ {
+  "id": "curated:bridge_capital_continent:8568e022:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Port Moresby is",
+  "readout": "last_prompt_token",
+  "string": " Papua New Guinea",
+  "pieces": [
+   89081,
+   1532,
+   47803
+  ],
+  "pieces_text": [
+   " Papua",
+   " New",
+   " Guinea"
+  ],
+  "target": "Oceania",
+  "p1_chars": 5,
+  "shared_s1_group": "Papua",
+  "a26_orig": "curated:bridge_capital_continent:8568e022",
+  "a26_template": "n2",
+  "a26_entity": "Port Moresby"
+ },
+ {
+  "id": "curated:bridge_capital_continent:90463889:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Wellington is",
+  "readout": "last_prompt_token",
+  "string": " New Zealand",
+  "pieces": [
+   1532,
+   16911
+  ],
+  "pieces_text": [
+   " New",
+   " Zealand"
+  ],
+  "target": "Oceania",
+  "p1_chars": 3,
+  "shared_s1_group": "New",
+  "a26_orig": "curated:bridge_capital_continent:90463889",
+  "a26_template": "n1",
+  "a26_entity": "Wellington"
+ },
+ {
+  "id": "curated:bridge_capital_continent:90463889:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Wellington is",
+  "readout": "last_prompt_token",
+  "string": " New Zealand",
+  "pieces": [
+   1532,
+   16911
+  ],
+  "pieces_text": [
+   " New",
+   " Zealand"
+  ],
+  "target": "Oceania",
+  "p1_chars": 3,
+  "shared_s1_group": "New",
+  "a26_orig": "curated:bridge_capital_continent:90463889",
+  "a26_template": "n2",
+  "a26_entity": "Wellington"
+ },
+ {
+  "id": "curated:bridge_capital_continent:93a91dbe:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Seoul is",
+  "readout": "last_prompt_token",
+  "string": " South Korea",
+  "pieces": [
+   4882,
+   11862
+  ],
+  "pieces_text": [
+   " South",
+   " Korea"
+  ],
+  "target": "Asia",
+  "p1_chars": 5,
+  "shared_s1_group": "South",
+  "a26_orig": "curated:bridge_capital_continent:93a91dbe",
+  "a26_template": "n1",
+  "a26_entity": "Seoul"
+ },
+ {
+  "id": "curated:bridge_capital_continent:93a91dbe:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Seoul is",
+  "readout": "last_prompt_token",
+  "string": " South Korea",
+  "pieces": [
+   4882,
+   11862
+  ],
+  "pieces_text": [
+   " South",
+   " Korea"
+  ],
+  "target": "Asia",
+  "p1_chars": 5,
+  "shared_s1_group": "South",
+  "a26_orig": "curated:bridge_capital_continent:93a91dbe",
+  "a26_template": "n2",
+  "a26_entity": "Seoul"
+ },
+ {
+  "id": "curated:bridge_capital_continent:b3f1daff:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Pyongyang is",
+  "readout": "last_prompt_token",
+  "string": " North Korea",
+  "pieces": [
+   4787,
+   11862
+  ],
+  "pieces_text": [
+   " North",
+   " Korea"
+  ],
+  "target": "Asia",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_continent:b3f1daff",
+  "a26_template": "n1",
+  "a26_entity": "Pyongyang"
+ },
+ {
+  "id": "curated:bridge_capital_continent:b3f1daff:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Pyongyang is",
+  "readout": "last_prompt_token",
+  "string": " North Korea",
+  "pieces": [
+   4787,
+   11862
+  ],
+  "pieces_text": [
+   " North",
+   " Korea"
+  ],
+  "target": "Asia",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_continent:b3f1daff",
+  "a26_template": "n2",
+  "a26_entity": "Pyongyang"
+ },
+ {
+  "id": "curated:bridge_capital_currency:0b24ee21:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Prague is",
+  "readout": "last_prompt_token",
+  "string": " Czech Republic",
+  "pieces": [
+   33150,
+   5429
+  ],
+  "pieces_text": [
+   " Czech",
+   " Republic"
+  ],
+  "target": "koruna",
+  "p1_chars": 5,
+  "shared_s1_group": "Czech",
+  "a26_orig": "curated:bridge_capital_currency:0b24ee21",
+  "a26_template": "n1",
+  "a26_entity": "Prague"
+ },
+ {
+  "id": "curated:bridge_capital_currency:0b24ee21:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Prague is",
+  "readout": "last_prompt_token",
+  "string": " Czech Republic",
+  "pieces": [
+   33150,
+   5429
+  ],
+  "pieces_text": [
+   " Czech",
+   " Republic"
+  ],
+  "target": "koruna",
+  "p1_chars": 5,
+  "shared_s1_group": "Czech",
+  "a26_orig": "curated:bridge_capital_currency:0b24ee21",
+  "a26_template": "n2",
+  "a26_entity": "Prague"
+ },
+ {
+  "id": "curated:bridge_capital_currency:14c07c43:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Skopje is",
+  "readout": "last_prompt_token",
+  "string": " North Macedonia",
+  "pieces": [
+   4787,
+   76409
+  ],
+  "pieces_text": [
+   " North",
+   " Macedonia"
+  ],
+  "target": "denar",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_currency:14c07c43",
+  "a26_template": "n1",
+  "a26_entity": "Skopje"
+ },
+ {
+  "id": "curated:bridge_capital_currency:14c07c43:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Skopje is",
+  "readout": "last_prompt_token",
+  "string": " North Macedonia",
+  "pieces": [
+   4787,
+   76409
+  ],
+  "pieces_text": [
+   " North",
+   " Macedonia"
+  ],
+  "target": "denar",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_currency:14c07c43",
+  "a26_template": "n2",
+  "a26_entity": "Skopje"
+ },
+ {
+  "id": "curated:bridge_capital_currency:ac64ae1e:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Riyadh is",
+  "readout": "last_prompt_token",
+  "string": " Saudi Arabia",
+  "pieces": [
+   17904,
+   23061
+  ],
+  "pieces_text": [
+   " Saudi",
+   " Arabia"
+  ],
+  "target": "riyal",
+  "p1_chars": 5,
+  "shared_s1_group": "Saudi",
+  "a26_orig": "curated:bridge_capital_currency:ac64ae1e",
+  "a26_template": "n1",
+  "a26_entity": "Riyadh"
+ },
+ {
+  "id": "curated:bridge_capital_currency:ac64ae1e:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Riyadh is",
+  "readout": "last_prompt_token",
+  "string": " Saudi Arabia",
+  "pieces": [
+   17904,
+   23061
+  ],
+  "pieces_text": [
+   " Saudi",
+   " Arabia"
+  ],
+  "target": "riyal",
+  "p1_chars": 5,
+  "shared_s1_group": "Saudi",
+  "a26_orig": "curated:bridge_capital_currency:ac64ae1e",
+  "a26_template": "n2",
+  "a26_entity": "Riyadh"
+ },
+ {
+  "id": "curated:bridge_capital_currency:d23a3acb:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Port Moresby is",
+  "readout": "last_prompt_token",
+  "string": " Papua New Guinea",
+  "pieces": [
+   89081,
+   1532,
+   47803
+  ],
+  "pieces_text": [
+   " Papua",
+   " New",
+   " Guinea"
+  ],
+  "target": "kina",
+  "p1_chars": 5,
+  "shared_s1_group": "Papua",
+  "a26_orig": "curated:bridge_capital_currency:d23a3acb",
+  "a26_template": "n1",
+  "a26_entity": "Port Moresby"
+ },
+ {
+  "id": "curated:bridge_capital_currency:d23a3acb:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Port Moresby is",
+  "readout": "last_prompt_token",
+  "string": " Papua New Guinea",
+  "pieces": [
+   89081,
+   1532,
+   47803
+  ],
+  "pieces_text": [
+   " Papua",
+   " New",
+   " Guinea"
+  ],
+  "target": "kina",
+  "p1_chars": 5,
+  "shared_s1_group": "Papua",
+  "a26_orig": "curated:bridge_capital_currency:d23a3acb",
+  "a26_template": "n2",
+  "a26_entity": "Port Moresby"
+ },
+ {
+  "id": "curated:bridge_capital_language:14773fb0:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Pyongyang is",
+  "readout": "last_prompt_token",
+  "string": " North Korea",
+  "pieces": [
+   4787,
+   11862
+  ],
+  "pieces_text": [
+   " North",
+   " Korea"
+  ],
+  "target": "Korean",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_language:14773fb0",
+  "a26_template": "n1",
+  "a26_entity": "Pyongyang"
+ },
+ {
+  "id": "curated:bridge_capital_language:14773fb0:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Pyongyang is",
+  "readout": "last_prompt_token",
+  "string": " North Korea",
+  "pieces": [
+   4787,
+   11862
+  ],
+  "pieces_text": [
+   " North",
+   " Korea"
+  ],
+  "target": "Korean",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_language:14773fb0",
+  "a26_template": "n2",
+  "a26_entity": "Pyongyang"
+ },
+ {
+  "id": "curated:bridge_capital_language:43396af7:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Seoul is",
+  "readout": "last_prompt_token",
+  "string": " South Korea",
+  "pieces": [
+   4882,
+   11862
+  ],
+  "pieces_text": [
+   " South",
+   " Korea"
+  ],
+  "target": "Korean",
+  "p1_chars": 5,
+  "shared_s1_group": "South",
+  "a26_orig": "curated:bridge_capital_language:43396af7",
+  "a26_template": "n1",
+  "a26_entity": "Seoul"
+ },
+ {
+  "id": "curated:bridge_capital_language:43396af7:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Seoul is",
+  "readout": "last_prompt_token",
+  "string": " South Korea",
+  "pieces": [
+   4882,
+   11862
+  ],
+  "pieces_text": [
+   " South",
+   " Korea"
+  ],
+  "target": "Korean",
+  "p1_chars": 5,
+  "shared_s1_group": "South",
+  "a26_orig": "curated:bridge_capital_language:43396af7",
+  "a26_template": "n2",
+  "a26_entity": "Seoul"
+ },
+ {
+  "id": "curated:bridge_capital_language:7a870e05:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned San Salvador is",
+  "readout": "last_prompt_token",
+  "string": " El Salvador",
+  "pieces": [
+   3984,
+   48359
+  ],
+  "pieces_text": [
+   " El",
+   " Salvador"
+  ],
+  "target": "Spanish",
+  "p1_chars": 2,
+  "shared_s1_group": "El",
+  "a26_orig": "curated:bridge_capital_language:7a870e05",
+  "a26_template": "n1",
+  "a26_entity": "San Salvador"
+ },
+ {
+  "id": "curated:bridge_capital_language:7a870e05:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include San Salvador is",
+  "readout": "last_prompt_token",
+  "string": " El Salvador",
+  "pieces": [
+   3984,
+   48359
+  ],
+  "pieces_text": [
+   " El",
+   " Salvador"
+  ],
+  "target": "Spanish",
+  "p1_chars": 2,
+  "shared_s1_group": "El",
+  "a26_orig": "curated:bridge_capital_language:7a870e05",
+  "a26_template": "n2",
+  "a26_entity": "San Salvador"
+ },
+ {
+  "id": "curated:bridge_capital_language:95d4d673:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Skopje is",
+  "readout": "last_prompt_token",
+  "string": " North Macedonia",
+  "pieces": [
+   4787,
+   76409
+  ],
+  "pieces_text": [
+   " North",
+   " Macedonia"
+  ],
+  "target": "Macedonian",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_language:95d4d673",
+  "a26_template": "n1",
+  "a26_entity": "Skopje"
+ },
+ {
+  "id": "curated:bridge_capital_language:95d4d673:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Skopje is",
+  "readout": "last_prompt_token",
+  "string": " North Macedonia",
+  "pieces": [
+   4787,
+   76409
+  ],
+  "pieces_text": [
+   " North",
+   " Macedonia"
+  ],
+  "target": "Macedonian",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_capital_language:95d4d673",
+  "a26_template": "n2",
+  "a26_entity": "Skopje"
+ },
+ {
+  "id": "curated:bridge_capital_language:9c947b17:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Wellington is",
+  "readout": "last_prompt_token",
+  "string": " New Zealand",
+  "pieces": [
+   1532,
+   16911
+  ],
+  "pieces_text": [
+   " New",
+   " Zealand"
+  ],
+  "target": "English",
+  "p1_chars": 3,
+  "shared_s1_group": "New",
+  "a26_orig": "curated:bridge_capital_language:9c947b17",
+  "a26_template": "n1",
+  "a26_entity": "Wellington"
+ },
+ {
+  "id": "curated:bridge_capital_language:9c947b17:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Wellington is",
+  "readout": "last_prompt_token",
+  "string": " New Zealand",
+  "pieces": [
+   1532,
+   16911
+  ],
+  "pieces_text": [
+   " New",
+   " Zealand"
+  ],
+  "target": "English",
+  "p1_chars": 3,
+  "shared_s1_group": "New",
+  "a26_orig": "curated:bridge_capital_language:9c947b17",
+  "a26_template": "n2",
+  "a26_entity": "Wellington"
+ },
+ {
+  "id": "curated:bridge_capital_language:c7bff3bd:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Riyadh is",
+  "readout": "last_prompt_token",
+  "string": " Saudi Arabia",
+  "pieces": [
+   17904,
+   23061
+  ],
+  "pieces_text": [
+   " Saudi",
+   " Arabia"
+  ],
+  "target": "Arabic",
+  "p1_chars": 5,
+  "shared_s1_group": "Saudi",
+  "a26_orig": "curated:bridge_capital_language:c7bff3bd",
+  "a26_template": "n1",
+  "a26_entity": "Riyadh"
+ },
+ {
+  "id": "curated:bridge_capital_language:c7bff3bd:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Riyadh is",
+  "readout": "last_prompt_token",
+  "string": " Saudi Arabia",
+  "pieces": [
+   17904,
+   23061
+  ],
+  "pieces_text": [
+   " Saudi",
+   " Arabia"
+  ],
+  "target": "Arabic",
+  "p1_chars": 5,
+  "shared_s1_group": "Saudi",
+  "a26_orig": "curated:bridge_capital_language:c7bff3bd",
+  "a26_template": "n2",
+  "a26_entity": "Riyadh"
+ },
+ {
+  "id": "curated:bridge_capital_language:cde4c2f7:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Freetown is",
+  "readout": "last_prompt_token",
+  "string": " Sierra Leone",
+  "pieces": [
+   35803,
+   65391
+  ],
+  "pieces_text": [
+   " Sierra",
+   " Leone"
+  ],
+  "target": "English",
+  "p1_chars": 6,
+  "shared_s1_group": "Sierra",
+  "a26_orig": "curated:bridge_capital_language:cde4c2f7",
+  "a26_template": "n1",
+  "a26_entity": "Freetown"
+ },
+ {
+  "id": "curated:bridge_capital_language:cde4c2f7:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Freetown is",
+  "readout": "last_prompt_token",
+  "string": " Sierra Leone",
+  "pieces": [
+   35803,
+   65391
+  ],
+  "pieces_text": [
+   " Sierra",
+   " Leone"
+  ],
+  "target": "English",
+  "p1_chars": 6,
+  "shared_s1_group": "Sierra",
+  "a26_orig": "curated:bridge_capital_language:cde4c2f7",
+  "a26_template": "n2",
+  "a26_entity": "Freetown"
+ },
+ {
+  "id": "curated:bridge_capital_language:e9cf071f:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned Santo Domingo is",
+  "readout": "last_prompt_token",
+  "string": " Dominican Republic",
+  "pieces": [
+   66013,
+   5429
+  ],
+  "pieces_text": [
+   " Dominican",
+   " Republic"
+  ],
+  "target": "Spanish",
+  "p1_chars": 9,
+  "shared_s1_group": "Dominican",
+  "a26_orig": "curated:bridge_capital_language:e9cf071f",
+  "a26_template": "n1",
+  "a26_entity": "Santo Domingo"
+ },
+ {
+  "id": "curated:bridge_capital_language:e9cf071f:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include Santo Domingo is",
+  "readout": "last_prompt_token",
+  "string": " Dominican Republic",
+  "pieces": [
+   66013,
+   5429
+  ],
+  "pieces_text": [
+   " Dominican",
+   " Republic"
+  ],
+  "target": "Spanish",
+  "p1_chars": 9,
+  "shared_s1_group": "Dominican",
+  "a26_orig": "curated:bridge_capital_language:e9cf071f",
+  "a26_template": "n2",
+  "a26_entity": "Santo Domingo"
+ },
+ {
+  "id": "curated:bridge_capital_language:f4919dad:a26n1",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned San José is",
+  "readout": "last_prompt_token",
+  "string": " Costa Rica",
+  "pieces": [
+   31280,
+   51949
+  ],
+  "pieces_text": [
+   " Costa",
+   " Rica"
+  ],
+  "target": "Spanish",
+  "p1_chars": 5,
+  "shared_s1_group": "Costa",
+  "a26_orig": "curated:bridge_capital_language:f4919dad",
+  "a26_template": "n1",
+  "a26_entity": "San José"
+ },
+ {
+  "id": "curated:bridge_capital_language:f4919dad:a26n2",
+  "source": "curated",
+  "category": "bridge_capital_language",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include San José is",
+  "readout": "last_prompt_token",
+  "string": " Costa Rica",
+  "pieces": [
+   31280,
+   51949
+  ],
+  "pieces_text": [
+   " Costa",
+   " Rica"
+  ],
+  "target": "Spanish",
+  "p1_chars": 5,
+  "shared_s1_group": "Costa",
+  "a26_orig": "curated:bridge_capital_language:f4919dad",
+  "a26_template": "n2",
+  "a26_entity": "San José"
+ },
+ {
+  "id": "curated:bridge_currency_capital:13385389:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_capital",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the colón is",
+  "readout": "last_prompt_token",
+  "string": " Costa Rica",
+  "pieces": [
+   31280,
+   51949
+  ],
+  "pieces_text": [
+   " Costa",
+   " Rica"
+  ],
+  "target": "San José",
+  "p1_chars": 5,
+  "shared_s1_group": "Costa",
+  "a26_orig": "curated:bridge_currency_capital:13385389",
+  "a26_template": "n1",
+  "a26_entity": "the colón"
+ },
+ {
+  "id": "curated:bridge_currency_capital:13385389:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_capital",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the colón is",
+  "readout": "last_prompt_token",
+  "string": " Costa Rica",
+  "pieces": [
+   31280,
+   51949
+  ],
+  "pieces_text": [
+   " Costa",
+   " Rica"
+  ],
+  "target": "San José",
+  "p1_chars": 5,
+  "shared_s1_group": "Costa",
+  "a26_orig": "curated:bridge_currency_capital:13385389",
+  "a26_template": "n2",
+  "a26_entity": "the colón"
+ },
+ {
+  "id": "curated:bridge_currency_capital:27e98ec4:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_capital",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the leone is",
+  "readout": "last_prompt_token",
+  "string": " Sierra Leone",
+  "pieces": [
+   35803,
+   65391
+  ],
+  "pieces_text": [
+   " Sierra",
+   " Leone"
+  ],
+  "target": "Freetown",
+  "p1_chars": 6,
+  "shared_s1_group": "Sierra",
+  "a26_orig": "curated:bridge_currency_capital:27e98ec4",
+  "a26_template": "n1",
+  "a26_entity": "the leone"
+ },
+ {
+  "id": "curated:bridge_currency_capital:27e98ec4:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_capital",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the leone is",
+  "readout": "last_prompt_token",
+  "string": " Sierra Leone",
+  "pieces": [
+   35803,
+   65391
+  ],
+  "pieces_text": [
+   " Sierra",
+   " Leone"
+  ],
+  "target": "Freetown",
+  "p1_chars": 6,
+  "shared_s1_group": "Sierra",
+  "a26_orig": "curated:bridge_currency_capital:27e98ec4",
+  "a26_template": "n2",
+  "a26_entity": "the leone"
+ },
+ {
+  "id": "curated:bridge_currency_capital:48367711:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_capital",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the kina is",
+  "readout": "last_prompt_token",
+  "string": " Papua New Guinea",
+  "pieces": [
+   89081,
+   1532,
+   47803
+  ],
+  "pieces_text": [
+   " Papua",
+   " New",
+   " Guinea"
+  ],
+  "target": "Port Moresby",
+  "p1_chars": 5,
+  "shared_s1_group": "Papua",
+  "a26_orig": "curated:bridge_currency_capital:48367711",
+  "a26_template": "n1",
+  "a26_entity": "the kina"
+ },
+ {
+  "id": "curated:bridge_currency_capital:48367711:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_capital",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the kina is",
+  "readout": "last_prompt_token",
+  "string": " Papua New Guinea",
+  "pieces": [
+   89081,
+   1532,
+   47803
+  ],
+  "pieces_text": [
+   " Papua",
+   " New",
+   " Guinea"
+  ],
+  "target": "Port Moresby",
+  "p1_chars": 5,
+  "shared_s1_group": "Papua",
+  "a26_orig": "curated:bridge_currency_capital:48367711",
+  "a26_template": "n2",
+  "a26_entity": "the kina"
+ },
+ {
+  "id": "curated:bridge_currency_capital:f4cc7623:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_capital",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the koruna is",
+  "readout": "last_prompt_token",
+  "string": " Czech Republic",
+  "pieces": [
+   33150,
+   5429
+  ],
+  "pieces_text": [
+   " Czech",
+   " Republic"
+  ],
+  "target": "Prague",
+  "p1_chars": 5,
+  "shared_s1_group": "Czech",
+  "a26_orig": "curated:bridge_currency_capital:f4cc7623",
+  "a26_template": "n1",
+  "a26_entity": "the koruna"
+ },
+ {
+  "id": "curated:bridge_currency_capital:f4cc7623:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_capital",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the koruna is",
+  "readout": "last_prompt_token",
+  "string": " Czech Republic",
+  "pieces": [
+   33150,
+   5429
+  ],
+  "pieces_text": [
+   " Czech",
+   " Republic"
+  ],
+  "target": "Prague",
+  "p1_chars": 5,
+  "shared_s1_group": "Czech",
+  "a26_orig": "curated:bridge_currency_capital:f4cc7623",
+  "a26_template": "n2",
+  "a26_entity": "the koruna"
+ },
+ {
+  "id": "curated:bridge_currency_continent:48998706:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the rand is",
+  "readout": "last_prompt_token",
+  "string": " South Africa",
+  "pieces": [
+   4882,
+   10174
+  ],
+  "pieces_text": [
+   " South",
+   " Africa"
+  ],
+  "target": "Africa",
+  "p1_chars": 5,
+  "shared_s1_group": "South",
+  "a26_orig": "curated:bridge_currency_continent:48998706",
+  "a26_template": "n1",
+  "a26_entity": "the rand"
+ },
+ {
+  "id": "curated:bridge_currency_continent:48998706:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the rand is",
+  "readout": "last_prompt_token",
+  "string": " South Africa",
+  "pieces": [
+   4882,
+   10174
+  ],
+  "pieces_text": [
+   " South",
+   " Africa"
+  ],
+  "target": "Africa",
+  "p1_chars": 5,
+  "shared_s1_group": "South",
+  "a26_orig": "curated:bridge_currency_continent:48998706",
+  "a26_template": "n2",
+  "a26_entity": "the rand"
+ },
+ {
+  "id": "curated:bridge_currency_continent:6170dd8d:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the kina is",
+  "readout": "last_prompt_token",
+  "string": " Papua New Guinea",
+  "pieces": [
+   89081,
+   1532,
+   47803
+  ],
+  "pieces_text": [
+   " Papua",
+   " New",
+   " Guinea"
+  ],
+  "target": "Oceania",
+  "p1_chars": 5,
+  "shared_s1_group": "Papua",
+  "a26_orig": "curated:bridge_currency_continent:6170dd8d",
+  "a26_template": "n1",
+  "a26_entity": "the kina"
+ },
+ {
+  "id": "curated:bridge_currency_continent:6170dd8d:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the kina is",
+  "readout": "last_prompt_token",
+  "string": " Papua New Guinea",
+  "pieces": [
+   89081,
+   1532,
+   47803
+  ],
+  "pieces_text": [
+   " Papua",
+   " New",
+   " Guinea"
+  ],
+  "target": "Oceania",
+  "p1_chars": 5,
+  "shared_s1_group": "Papua",
+  "a26_orig": "curated:bridge_currency_continent:6170dd8d",
+  "a26_template": "n2",
+  "a26_entity": "the kina"
+ },
+ {
+  "id": "curated:bridge_currency_continent:63dbece9:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the koruna is",
+  "readout": "last_prompt_token",
+  "string": " Czech Republic",
+  "pieces": [
+   33150,
+   5429
+  ],
+  "pieces_text": [
+   " Czech",
+   " Republic"
+  ],
+  "target": "Europe",
+  "p1_chars": 5,
+  "shared_s1_group": "Czech",
+  "a26_orig": "curated:bridge_currency_continent:63dbece9",
+  "a26_template": "n1",
+  "a26_entity": "the koruna"
+ },
+ {
+  "id": "curated:bridge_currency_continent:63dbece9:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the koruna is",
+  "readout": "last_prompt_token",
+  "string": " Czech Republic",
+  "pieces": [
+   33150,
+   5429
+  ],
+  "pieces_text": [
+   " Czech",
+   " Republic"
+  ],
+  "target": "Europe",
+  "p1_chars": 5,
+  "shared_s1_group": "Czech",
+  "a26_orig": "curated:bridge_currency_continent:63dbece9",
+  "a26_template": "n2",
+  "a26_entity": "the koruna"
+ },
+ {
+  "id": "curated:bridge_currency_continent:8ad64efe:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the denar is",
+  "readout": "last_prompt_token",
+  "string": " North Macedonia",
+  "pieces": [
+   4787,
+   76409
+  ],
+  "pieces_text": [
+   " North",
+   " Macedonia"
+  ],
+  "target": "Europe",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_currency_continent:8ad64efe",
+  "a26_template": "n1",
+  "a26_entity": "the denar"
+ },
+ {
+  "id": "curated:bridge_currency_continent:8ad64efe:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the denar is",
+  "readout": "last_prompt_token",
+  "string": " North Macedonia",
+  "pieces": [
+   4787,
+   76409
+  ],
+  "pieces_text": [
+   " North",
+   " Macedonia"
+  ],
+  "target": "Europe",
+  "p1_chars": 5,
+  "shared_s1_group": "North",
+  "a26_orig": "curated:bridge_currency_continent:8ad64efe",
+  "a26_template": "n2",
+  "a26_entity": "the denar"
+ },
+ {
+  "id": "curated:bridge_currency_continent:8b73838e:a26n1",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: Yesterday someone mentioned the leone is",
+  "readout": "last_prompt_token",
+  "string": " Sierra Leone",
+  "pieces": [
+   35803,
+   65391
+  ],
+  "pieces_text": [
+   " Sierra",
+   " Leone"
+  ],
+  "target": "Africa",
+  "p1_chars": 6,
+  "shared_s1_group": "Sierra",
+  "a26_orig": "curated:bridge_currency_continent:8b73838e",
+  "a26_template": "n1",
+  "a26_entity": "the leone"
+ },
+ {
+  "id": "curated:bridge_currency_continent:8b73838e:a26n2",
+  "source": "curated",
+  "category": "bridge_currency_continent",
+  "kind": "bridge",
+  "name": "",
+  "prompt": "Fact: My notes from the trip include the leone is",
+  "readout": "last_prompt_token",
+  "string": " Sierra Leone",
+  "pieces": [
+   35803,
+   65391
+  ],
+  "pieces_text": [
+   " Sierra",
+   " Leone"
+  ],
+  "target": "Africa",
+  "p1_chars": 6,
+  "shared_s1_group": "Sierra",
+  "a26_orig": "curated:bridge_currency_continent:8b73838e",
+  "a26_template": "n2",
+  "a26_entity": "the leone"
+ }
+]

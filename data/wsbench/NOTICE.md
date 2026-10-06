@@ -1,0 +1,1 @@
+The files in this directory are item banks from WorkspaceBench (Blank, Bhatia, Ong and Nanda, 2026), taken from the public repository https://github.com/camilablank/workspace-bench at commit 92d763e. They are redistributed unchanged under that repository's MIT License; its full text is in LICENSE in this directory.

@@ -1,0 +1,6482 @@
+[
+ {
+  "track": "B",
+  "id": "fresh:person_science:708340f0",
+  "string": " James Clerk Maxwell",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "maxwell"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_science:747999fd",
+  "string": " James Clerk Maxwell",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "maxwell"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_science_nationality:19ade7bc",
+  "string": " James Clerk Maxwell",
+  "category": "bridge_person_science_nationality",
+  "kind": "bridge",
+  "overlaps": "maxwell"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:bf0bee8c",
+  "string": " Johann Sebastian Bach",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "johann sebastian bach"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:93aeb993",
+  "string": " Johann Sebastian Bach",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "johann sebastian bach"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:c8179e73",
+  "string": " Johann Sebastian Bach",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "johann sebastian bach"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:bc945a97",
+  "string": " Richard Wagner",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "wagner"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:49f7075d",
+  "string": " Richard Wagner",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "wagner"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:df8572ea",
+  "string": " Richard Wagner",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "wagner"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:2a890221",
+  "string": " Leonardo da Vinci",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "leonardo da vinci"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:484e4cd3",
+  "string": " Leonardo da Vinci",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "leonardo da vinci"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:697954ec",
+  "string": " Leonardo da Vinci",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "leonardo da vinci"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_writer:92caf282",
+  "string": " Arthur Conan Doyle",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "arthur conan doyle"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_writer:91ac0be2",
+  "string": " Arthur Conan Doyle",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "arthur conan doyle"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_writer_nationality:7ce23420",
+  "string": " Arthur Conan Doyle",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "arthur conan doyle"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_writer:18eb09d2",
+  "string": " Edgar Allan Poe",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "edgar allan poe"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_writer:8124554f",
+  "string": " Edgar Allan Poe",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "edgar allan poe"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_writer_nationality:cbb736b0",
+  "string": " Edgar Allan Poe",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "edgar allan poe"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_writer:64c33f89",
+  "string": " Lewis Carroll",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "lewis carroll"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_writer:59d7026a",
+  "string": " Lewis Carroll",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "lewis carroll"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_writer_nationality:adf5a6aa",
+  "string": " Lewis Carroll",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "lewis carroll"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:296d084f",
+  "string": " Martin Luther King",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "martin luther king"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:5b78b3ee",
+  "string": " Martin Luther King",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "martin luther king"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:cabedb7a",
+  "string": " Martin Luther King",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "martin luther king"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:694919d2",
+  "string": " Alexander the Great",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "alexander the great"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:380752e9",
+  "string": " Alexander the Great",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "alexander the great"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:8e4ef44e",
+  "string": " Alexander the Great",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "alexander the great"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:fa411d66",
+  "string": " Joan of Arc",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "joan of arc"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:e4d59751",
+  "string": " Joan of Arc",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "joan of arc"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:fc0d1b12",
+  "string": " Joan of Arc",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "joan of arc"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:7aea2253",
+  "string": " Alexander Graham Bell",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "alexander graham bell"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:05feb193",
+  "string": " Alexander Graham Bell",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "alexander graham bell"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:5984dc3f",
+  "string": " Alexander Graham Bell",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "alexander graham bell"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:cfddb6bf",
+  "string": " Benjamin Franklin",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "benjamin franklin"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:aaf07178",
+  "string": " Benjamin Franklin",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "benjamin franklin"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:3393d857",
+  "string": " Benjamin Franklin",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "benjamin franklin"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:2e2f57ae",
+  "string": " Rosa Parks",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "rosa parks"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:e7a75366",
+  "string": " Rosa Parks",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "rosa parks"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:d7955125",
+  "string": " Rosa Parks",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "rosa parks"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_sport:cf02ae92",
+  "string": " Kobe Bryant",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "kobe bryant"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_sport:cfa22e39",
+  "string": " Kobe Bryant",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "kobe bryant"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_sport_nationality:3fb70d40",
+  "string": " Kobe Bryant",
+  "category": "bridge_person_sport_nationality",
+  "kind": "bridge",
+  "overlaps": "kobe bryant"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_sport:911d2d1f",
+  "string": " Lewis Hamilton",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "lewis hamilton"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_sport:dc22bb3c",
+  "string": " Lewis Hamilton",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "lewis hamilton"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_sport_nationality:dd22d6be",
+  "string": " Lewis Hamilton",
+  "category": "bridge_person_sport_nationality",
+  "kind": "bridge",
+  "overlaps": "lewis hamilton"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_sport:2478af10",
+  "string": " Michael Phelps",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "michael phelps"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_sport:a77e2ae8",
+  "string": " Michael Phelps",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "michael phelps"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_sport_nationality:dd4155f1",
+  "string": " Michael Phelps",
+  "category": "bridge_person_sport_nationality",
+  "kind": "bridge",
+  "overlaps": "michael phelps"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:73481cd5",
+  "string": " Margaret Thatcher",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "margaret thatcher"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:6099ff19",
+  "string": " Margaret Thatcher",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "margaret thatcher"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:351038d8",
+  "string": " Margaret Thatcher",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "margaret thatcher"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:d88f49f8",
+  "string": " Tony Blair",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "tony blair"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:bf207c47",
+  "string": " Tony Blair",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "tony blair"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:606bc4c1",
+  "string": " Tony Blair",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "tony blair"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:bd6befc6",
+  "string": " Angela Merkel",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "angela merkel"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:c322d7ba",
+  "string": " Angela Merkel",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "angela merkel"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:c289549b",
+  "string": " Angela Merkel",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "angela merkel"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:3cd5ec09",
+  "string": " Vladimir Putin",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "vladimir putin"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:d2cac43c",
+  "string": " Vladimir Putin",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "vladimir putin"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:aa811422",
+  "string": " Vladimir Putin",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "vladimir putin"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:3da020e1",
+  "string": " Ho Chi Minh",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "ho chi minh city"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:2afa8117",
+  "string": " Ho Chi Minh",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "ho chi minh city"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:15a51038",
+  "string": " Ho Chi Minh",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "ho chi minh city"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:32b742f6",
+  "string": " Marco Polo",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "marco polo"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:4f033985",
+  "string": " Marco Polo",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "marco polo"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:af9dfb1c",
+  "string": " Marco Polo",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "marco polo"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:7bf13fc9",
+  "string": " Mary Queen of Scots",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "queen"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:b672d6dc",
+  "string": " Mary Queen of Scots",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "queen"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:0805dbfa",
+  "string": " Mary Queen of Scots",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "queen"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:44adfddd",
+  "string": " Julius Caesar",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "julius caesar"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:ee7b6ce3",
+  "string": " Julius Caesar",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "julius caesar"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:dc44956c",
+  "string": " Julius Caesar",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "julius caesar"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:0d6bb57f",
+  "string": " Bill Clinton",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "bill clinton"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:da99d93e",
+  "string": " Bill Clinton",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "bill clinton"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:fcb46e77",
+  "string": " Bill Clinton",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "bill clinton"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:b8f33d1c",
+  "string": " Barack Obama",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "barack obama"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:c110035a",
+  "string": " Barack Obama",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "barack obama"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:5312b104",
+  "string": " Barack Obama",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "barack obama"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:919de3b4",
+  "string": " Donald Trump",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "donald trump"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:b385a382",
+  "string": " Donald Trump",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "donald trump"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:871cc6ad",
+  "string": " Donald Trump",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "donald trump"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:ddea1db4",
+  "string": " Joe Biden",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "joe biden"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_history:a0330853",
+  "string": " Joe Biden",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "joe biden"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_history_nationality:e3043c0a",
+  "string": " Joe Biden",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "joe biden"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:4c3abaac",
+  "string": " Freddie Mercury",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "freddie mercury"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:ff467a59",
+  "string": " Freddie Mercury",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "freddie mercury"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:20fa31cf",
+  "string": " Freddie Mercury",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "freddie mercury"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:1231108c",
+  "string": " Bob Dylan",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "bob dylan"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:2dc07b55",
+  "string": " Bob Dylan",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "bob dylan"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:6a50739b",
+  "string": " Bob Dylan",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "bob dylan"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:3df13fac",
+  "string": " Michael Jackson",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "michael jackson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:8a1f5045",
+  "string": " Michael Jackson",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "michael jackson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:46286ca3",
+  "string": " Michael Jackson",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "michael jackson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:8a504650",
+  "string": " Taylor Swift",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "taylor swift"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:8c5a207c",
+  "string": " Taylor Swift",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "taylor swift"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:e811e587",
+  "string": " Taylor Swift",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "taylor swift"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:cbf5f112",
+  "string": " Lady Gaga",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "lady gaga"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:d4bc441c",
+  "string": " Lady Gaga",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "lady gaga"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:70d260c3",
+  "string": " Lady Gaga",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "lady gaga"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:a1f81254",
+  "string": " Frank Sinatra",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "frank sinatra"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:a2bf33bd",
+  "string": " Frank Sinatra",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "frank sinatra"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:1d372370",
+  "string": " Frank Sinatra",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "frank sinatra"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:080fed5c",
+  "string": " Louis Armstrong",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "louis armstrong"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:25fef9c7",
+  "string": " Louis Armstrong",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "louis armstrong"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:102368d1",
+  "string": " Louis Armstrong",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "louis armstrong"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:4d06266e",
+  "string": " Ella Fitzgerald",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "fitzgerald"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:cd4a1fe4",
+  "string": " Ella Fitzgerald",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "fitzgerald"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:1205e444",
+  "string": " Ella Fitzgerald",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "fitzgerald"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:1969a408",
+  "string": " Johnny Cash",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "johnny cash"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:f8e92855",
+  "string": " Johnny Cash",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "johnny cash"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:f8683549",
+  "string": " Johnny Cash",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "johnny cash"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:10fcd82e",
+  "string": " John Lennon",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "john lennon"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:fb1584e9",
+  "string": " John Lennon",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "john lennon"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:70a5dd95",
+  "string": " John Lennon",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "john lennon"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:e2b2e802",
+  "string": " Paul McCartney",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "paul mccartney"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:1e5b461a",
+  "string": " Paul McCartney",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "paul mccartney"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:cba21a26",
+  "string": " Paul McCartney",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "paul mccartney"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:3d5202b9",
+  "string": " Justin Bieber",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "justin bieber"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:c8a51de2",
+  "string": " Justin Bieber",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "justin bieber"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:f2f3cdee",
+  "string": " Justin Bieber",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "justin bieber"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:ea6aeb2d",
+  "string": " Marilyn Monroe",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "marilyn monroe"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:c40b19d6",
+  "string": " Marilyn Monroe",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "marilyn monroe"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:2cbbc432",
+  "string": " Marilyn Monroe",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "marilyn monroe"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:d60761d4",
+  "string": " Tom Cruise",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "tom cruise"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:8b609327",
+  "string": " Tom Cruise",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "tom cruise"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:8d4084f7",
+  "string": " Tom Cruise",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "tom cruise"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:9d125963",
+  "string": " Brad Pitt",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "brad pitt"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:af9992b4",
+  "string": " Brad Pitt",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "brad pitt"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:c04ac42c",
+  "string": " Brad Pitt",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "brad pitt"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:ecfc2bb6",
+  "string": " Harrison Ford",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "harrison ford"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:1f58f35e",
+  "string": " Harrison Ford",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "harrison ford"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:cec1deb1",
+  "string": " Harrison Ford",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "harrison ford"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:9bb6e3d6",
+  "string": " Will Smith",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "will smith"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:b3ec22bd",
+  "string": " Will Smith",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "will smith"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:fe849997",
+  "string": " Will Smith",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "will smith"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:7c070790",
+  "string": " Julia Roberts",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "julia roberts"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:551aef00",
+  "string": " Julia Roberts",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "julia roberts"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:b272f847",
+  "string": " Julia Roberts",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "julia roberts"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:76d665ad",
+  "string": " Jennifer Lawrence",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "jennifer lawrence"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:5e2a84c0",
+  "string": " Jennifer Lawrence",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "jennifer lawrence"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:8efa64b4",
+  "string": " Jennifer Lawrence",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "jennifer lawrence"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:0f8a91d1",
+  "string": " Emma Watson",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "emma watson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:614d825b",
+  "string": " Emma Watson",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "emma watson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:32f71d13",
+  "string": " Emma Watson",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "emma watson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:3ab57c83",
+  "string": " Steven Spielberg",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "steven spielberg"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:15608780",
+  "string": " Steven Spielberg",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "steven spielberg"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:67cfd5f9",
+  "string": " Steven Spielberg",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "steven spielberg"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:985c845c",
+  "string": " Christopher Nolan",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "christopher nolan"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:858115ef",
+  "string": " Christopher Nolan",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "christopher nolan"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:0f74f5b0",
+  "string": " Christopher Nolan",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "christopher nolan"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:291199d3",
+  "string": " James Cameron",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "james cameron"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:d2c023a8",
+  "string": " James Cameron",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "james cameron"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:2aa029b4",
+  "string": " James Cameron",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "james cameron"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:0a30e61b",
+  "string": " George Lucas",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "george lucas"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:4253f6c9",
+  "string": " George Lucas",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "george lucas"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:59683df0",
+  "string": " George Lucas",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "george lucas"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:8b92a4ce",
+  "string": " Peter Jackson",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "peter jackson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:c07a21c6",
+  "string": " Peter Jackson",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "peter jackson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:6982e111",
+  "string": " Peter Jackson",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "peter jackson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:cf0dcb54",
+  "string": " Walt Disney",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "walt disney"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:2aff2ffe",
+  "string": " Walt Disney",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "walt disney"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:d7612701",
+  "string": " Walt Disney",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "walt disney"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:3e024953",
+  "string": " Woody Allen",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "woody"
+ },
+ {
+  "track": "B",
+  "id": "fresh:person_arts:4e13b2b2",
+  "string": " Woody Allen",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "woody"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_person_arts_nationality:5a025a01",
+  "string": " Woody Allen",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "woody"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:2d37e8ed",
+  "string": " Statue of Liberty",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "statue of liberty"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:1eb7c384",
+  "string": " Forbidden City",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "the forbidden city walls"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:87dfa47f",
+  "string": " Sahara Desert",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "sahara"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:7482af1f",
+  "string": " Lake Superior",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "lake superior"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:f7d45923",
+  "string": " Bay of Bengal",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "bay of bengal"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:8fa1342b",
+  "string": " Gulf of Mexico",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "gulf of mexico"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:8a6a23d5",
+  "string": " Strait of Gibraltar",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "strait of gibraltar"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:a6098ee8",
+  "string": " Victoria Falls",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "victoria falls"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:32d6a191",
+  "string": " Grand Canyon",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "grand canyon"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:79982c1b",
+  "string": " Golden Gate Bridge",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "golden gate bridge"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:f39b8f78",
+  "string": " Sydney Opera House",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "sydney opera house"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:37dc3d77",
+  "string": " Great Barrier Reef",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "great barrier reef"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:71117e22",
+  "string": " Great Wall of China",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "great wall"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:5fbb2349",
+  "string": " Niagara Falls",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "niagara falls"
+ },
+ {
+  "track": "B",
+  "id": "fresh:landmark:8a50ee1c",
+  "string": " Mount Fuji",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "mount fuji"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:873ab40d",
+  "string": " Spanish Flu",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "spanish"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:a1579cdd",
+  "string": " Berlin Wall",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "berlin"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:36af4392",
+  "string": " Congress of Vienna",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "vienna"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:dde3bb4c",
+  "string": " Louisiana Purchase",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "louisiana"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:c3df3e3b",
+  "string": " Prague Spring",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "prague"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:6be15c6c",
+  "string": " Battle of Hastings",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "battle of hastings"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:6efcf493",
+  "string": " Battle of Waterloo",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "battle of waterloo"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:b270c781",
+  "string": " California Gold Rush",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "california"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:66033f26",
+  "string": " Nobel Prize",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "nobel"
+ },
+ {
+  "track": "B",
+  "id": "fresh:event:693dd2e6",
+  "string": " Great Depression",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "great depression"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:c07d19d0",
+  "string": " ice cream",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "ice cream"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:0a06f415",
+  "string": " hot dog",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "hot dog"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:3292f349",
+  "string": " french fries",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "french fries"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:8b9201d6",
+  "string": " peanut butter",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "peanut butter"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:f87efa6c",
+  "string": " shooting star",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "shooting star"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:fb8252a1",
+  "string": " Northern Lights",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "northern lights"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:95ede4d4",
+  "string": " living room",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "living room"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:eddb6cbd",
+  "string": " swimming pool",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "swimming pool"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:ac47c77d",
+  "string": " traffic light",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "traffic light"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:847d0405",
+  "string": " police officer",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "police officer"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:ad6b7fdd",
+  "string": " post office",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "post office"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:a73290a0",
+  "string": " washing machine",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "washing machine"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:3a70af81",
+  "string": " vacuum cleaner",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "vacuum cleaner"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:ec7205a6",
+  "string": " alarm clock",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "alarm clock"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:dfea99e1",
+  "string": " orange juice",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "orange juice"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:db59fcd0",
+  "string": " birthday cake",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "birthday cake"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:d47d18a6",
+  "string": " wedding ring",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "wedding ring"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:81a3690c",
+  "string": " heart attack",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "heart attack"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:a3f8602f",
+  "string": " common cold",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "common cold"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:42f4cc17",
+  "string": " black hole",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "black hole"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:40df47d5",
+  "string": " solar system",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "solar system"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:60149c86",
+  "string": " full moon",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "full moon"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:9fc0267e",
+  "string": " solar eclipse",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "solar eclipse"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:1566255d",
+  "string": " lunar eclipse",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "lunar eclipse"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:bc723852",
+  "string": " North Pole",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "north pole"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:5f76d997",
+  "string": " South Pole",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "south pole"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:37c3e7a3",
+  "string": " time zone",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "time zone"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:fa3b0bb6",
+  "string": " leap year",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "leap year"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:3dcfdc89",
+  "string": " sea level",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "sea level"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:d64627a6",
+  "string": " mountain range",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "gamburtsev mountain range"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:3ef29b05",
+  "string": " prime minister",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "prime minister"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:941e5084",
+  "string": " vice president",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "vice president"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:66411612",
+  "string": " Supreme Court",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "supreme court"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:150c0d1a",
+  "string": " stock market",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "stock market"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:8a1982c4",
+  "string": " real estate",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "real estate"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:8b341b5f",
+  "string": " middle class",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "middle class"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:e85f43c2",
+  "string": " ice hockey",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "ice hockey"
+ },
+ {
+  "track": "B",
+  "id": "fresh:compound:0656f9e1",
+  "string": " Christmas tree",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "christmas"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:aba59131",
+  "string": " Harry Potter",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "harry potter"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:50b704f7",
+  "string": " James Bond",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "james bond"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:35a210a6",
+  "string": " Indiana Jones",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "indiana jones"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:013e0b3a",
+  "string": " Luke Skywalker",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "luke skywalker"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:eae8a275",
+  "string": " Darth Vader",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "darth vader"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:73b069ed",
+  "string": " Bruce Wayne",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "bruce wayne"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:970c2160",
+  "string": " Peter Parker",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "peter parker"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:a1879c82",
+  "string": " Clark Kent",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "clark kent"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:36c74e0d",
+  "string": " Tony Stark",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "tony stark"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:904d028d",
+  "string": " Homer Simpson",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "homer simpson"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:ab569cb7",
+  "string": " Mickey Mouse",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "mickey mouse"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:22570ee1",
+  "string": " Donald Duck",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "donald duck"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:1c77cfa0",
+  "string": " Bugs Bunny",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "bugs bunny"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:91f9f704",
+  "string": " Peter Pan",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "peter pan"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:ba05ae50",
+  "string": " Robin Hood",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "robin hood"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:efd39279",
+  "string": " King Arthur",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "king arthur"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:958fd842",
+  "string": " Captain America",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "captain america"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:9fa9f77c",
+  "string": " Black Widow",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "black widow"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:726db5f5",
+  "string": " Charlie Brown",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "charlie brown"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:55787828",
+  "string": " Oliver Twist",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "oliver twist"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:d70d0c78",
+  "string": " Tom Sawyer",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "tom sawyer"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:5622c79a",
+  "string": " Romeo and Juliet",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "romeo and juliet"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:f2dcaed9",
+  "string": " Santa Claus",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "santa claus"
+ },
+ {
+  "track": "B",
+  "id": "fresh:character:c8452f24",
+  "string": " Big Apple",
+  "category": "character",
+  "kind": "answer",
+  "overlaps": "apple"
+ },
+ {
+  "track": "B",
+  "id": "fresh:place:a1c1fff8",
+  "string": " San Antonio",
+  "category": "place",
+  "kind": "answer",
+  "overlaps": "san antonio"
+ },
+ {
+  "track": "B",
+  "id": "fresh:place:1b7dfa0f",
+  "string": " Baton Rouge",
+  "category": "place",
+  "kind": "answer",
+  "overlaps": "baton rouge"
+ },
+ {
+  "track": "B",
+  "id": "fresh:place:34547d10",
+  "string": " Little Rock",
+  "category": "place",
+  "kind": "answer",
+  "overlaps": "little rock"
+ },
+ {
+  "track": "B",
+  "id": "fresh:place:b39455af",
+  "string": " Des Moines",
+  "category": "place",
+  "kind": "answer",
+  "overlaps": "des moines"
+ },
+ {
+  "track": "B",
+  "id": "fresh:place:8aa607dd",
+  "string": " Green Bay",
+  "category": "place",
+  "kind": "answer",
+  "overlaps": "green bay packers"
+ },
+ {
+  "track": "B",
+  "id": "fresh:place:52eba7aa",
+  "string": " New Haven",
+  "category": "place",
+  "kind": "answer",
+  "overlaps": "new haven"
+ },
+ {
+  "track": "B",
+  "id": "fresh:place:64e5f36c",
+  "string": " Rhode Island",
+  "category": "place",
+  "kind": "answer",
+  "overlaps": "rhode island"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_landmark_country:95da7d42",
+  "string": " Statue of Liberty",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "statue of liberty"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_landmark_country:28453483",
+  "string": " Forbidden City",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "the forbidden city walls"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_landmark_country:4bed354f",
+  "string": " Grand Canyon",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "grand canyon"
+ },
+ {
+  "track": "B",
+  "id": "fresh:country_of_capital:37227a2c",
+  "string": " Papua New Guinea",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "papua new guinea"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_capital_continent:8568e022",
+  "string": " Papua New Guinea",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "papua new guinea"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_capital_currency:d23a3acb",
+  "string": " Papua New Guinea",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "overlaps": "papua new guinea"
+ },
+ {
+  "track": "B",
+  "id": "fresh:country_of_capital:50bc90e9",
+  "string": " Solomon Islands",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "solomon islands"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_capital_continent:6204fa06",
+  "string": " Solomon Islands",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "solomon islands"
+ },
+ {
+  "track": "B",
+  "id": "fresh:country_of_capital:02e8e2f9",
+  "string": " Cape Verde",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "cape verde"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_capital_continent:d73b1dc2",
+  "string": " Cape Verde",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "cape verde"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_capital_currency:3de9e669",
+  "string": " Cape Verde",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "overlaps": "cape verde"
+ },
+ {
+  "track": "B",
+  "id": "fresh:country_of_capital:2e2922a9",
+  "string": " Central African Republic",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "central african republic"
+ },
+ {
+  "track": "B",
+  "id": "fresh:bridge_capital_continent:41f5f975",
+  "string": " Central African Republic",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "central african republic"
+ },
+ {
+  "track": "B",
+  "id": "fresh:capital:6e6498e3",
+  "string": " Panama City",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "panama city"
+ },
+ {
+  "track": "B",
+  "id": "fresh:country_of_capital:7fa9c643",
+  "string": " Saint Lucia",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "saint lucia"
+ },
+ {
+  "track": "B",
+  "id": "fresh:animal:b7b8dc6b",
+  "string": " polar bear",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "polar bear"
+ },
+ {
+  "track": "B",
+  "id": "fresh:animal:57181c03",
+  "string": " bald eagle",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "bald eagle"
+ },
+ {
+  "track": "B",
+  "id": "fresh:animal:c1b1a3f5",
+  "string": " blue whale",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "blue whale"
+ },
+ {
+  "track": "B",
+  "id": "fresh:animal:3621a091",
+  "string": " giant panda",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "giant panda"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:5b62bb2e",
+  "string": " Dmitri Mendeleev",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "mendeleev"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:29e1ff71",
+  "string": " Dmitri Mendeleev",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "mendeleev"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_science_nationality:20c37705",
+  "string": " Dmitri Mendeleev",
+  "category": "bridge_person_science_nationality",
+  "kind": "bridge",
+  "overlaps": "mendeleev"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:6330e660",
+  "string": " Tycho Brahe",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "brahe"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:f58130d6",
+  "string": " Tycho Brahe",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "brahe"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_science_nationality:9415f428",
+  "string": " Tycho Brahe",
+  "category": "bridge_person_science_nationality",
+  "kind": "bridge",
+  "overlaps": "brahe"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:5d410cfb",
+  "string": " Edwin Hubble",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "edwin hubble"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:61512fb5",
+  "string": " Edwin Hubble",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "edwin hubble"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_science_nationality:b573ce52",
+  "string": " Edwin Hubble",
+  "category": "bridge_person_science_nationality",
+  "kind": "bridge",
+  "overlaps": "edwin hubble"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:367fed7b",
+  "string": " Ernest Rutherford",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "ernest rutherford"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:7c19f3cf",
+  "string": " Ernest Rutherford",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "ernest rutherford"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_science_nationality:0cdeb325",
+  "string": " Ernest Rutherford",
+  "category": "bridge_person_science_nationality",
+  "kind": "bridge",
+  "overlaps": "ernest rutherford"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:43c1e540",
+  "string": " Gregor Mendel",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "gregor mendel"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_science:d9d47cd5",
+  "string": " Gregor Mendel",
+  "category": "person_science",
+  "kind": "answer",
+  "overlaps": "gregor mendel"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_science_nationality:7871ba5d",
+  "string": " Gregor Mendel",
+  "category": "bridge_person_science_nationality",
+  "kind": "bridge",
+  "overlaps": "gregor mendel"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:29e98892",
+  "string": " Ludwig van Beethoven",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "ludwig van beethoven"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:ad9f4b4f",
+  "string": " Ludwig van Beethoven",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "ludwig van beethoven"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:85828b6f",
+  "string": " Ludwig van Beethoven",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "ludwig van beethoven"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:b19271a8",
+  "string": " Wolfgang Amadeus Mozart",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "wolfgang amadeus mozart"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:916b660a",
+  "string": " Wolfgang Amadeus Mozart",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "wolfgang amadeus mozart"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:205ae28a",
+  "string": " Wolfgang Amadeus Mozart",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "wolfgang amadeus mozart"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:a95ab880",
+  "string": " Franz Schubert",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "schubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:413f5cf7",
+  "string": " Franz Schubert",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "schubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:009d1bed",
+  "string": " Franz Schubert",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "schubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:5a03b03e",
+  "string": " Igor Stravinsky",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "stravinsky"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:8f951bda",
+  "string": " Igor Stravinsky",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "stravinsky"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:328a6126",
+  "string": " Igor Stravinsky",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "stravinsky"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:8f971189",
+  "string": " Claude Debussy",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "debussy"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:2bdc77c6",
+  "string": " Claude Debussy",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "debussy"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:6700ffd7",
+  "string": " Claude Debussy",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "debussy"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:0277fe5b",
+  "string": " Giuseppe Verdi",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "verdi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:7fd3b111",
+  "string": " Giuseppe Verdi",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "verdi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:60df32fc",
+  "string": " Giuseppe Verdi",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "verdi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:df58213e",
+  "string": " Vincent van Gogh",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "vincent van gogh"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:e9b3231c",
+  "string": " Vincent van Gogh",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "vincent van gogh"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:0ff0110b",
+  "string": " Vincent van Gogh",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "vincent van gogh"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:2829a8e9",
+  "string": " Edvard Munch",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "munch"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:20f4c180",
+  "string": " Edvard Munch",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "munch"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:6e99c601",
+  "string": " Edvard Munch",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "munch"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:4ff1b42f",
+  "string": " Gustav Klimt",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "klimt"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:ee1b999f",
+  "string": " Gustav Klimt",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "klimt"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:abb1ac5d",
+  "string": " Gustav Klimt",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "klimt"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:f3d1f9be",
+  "string": " Auguste Rodin",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "auguste rodin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:0e5b4240",
+  "string": " Auguste Rodin",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "auguste rodin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:f2655554",
+  "string": " Auguste Rodin",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "auguste rodin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:eedfc71f",
+  "string": " Antoni Gaudi",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "antoni gaudi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:8d8bc3a3",
+  "string": " Antoni Gaudi",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "antoni gaudi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:d51e70b7",
+  "string": " Antoni Gaudi",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "antoni gaudi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:aeb51136",
+  "string": " Frederic Chopin",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "frederic chopin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_arts:5021665f",
+  "string": " Frederic Chopin",
+  "category": "person_arts",
+  "kind": "answer",
+  "overlaps": "frederic chopin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_arts_nationality:163acba1",
+  "string": " Frederic Chopin",
+  "category": "bridge_person_arts_nationality",
+  "kind": "bridge",
+  "overlaps": "frederic chopin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:639d4e89",
+  "string": " Gabriel Garcia Marquez",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "gabriel garcia marquez"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:f8f29206",
+  "string": " Gabriel Garcia Marquez",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "gabriel garcia marquez"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_writer_nationality:802ef1f5",
+  "string": " Gabriel Garcia Marquez",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "gabriel garcia marquez"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:e1809e57",
+  "string": " Miguel de Cervantes",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "cervantes"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:b38df7d4",
+  "string": " Miguel de Cervantes",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "cervantes"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_writer_nationality:c846e29a",
+  "string": " Miguel de Cervantes",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "cervantes"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:f22767c5",
+  "string": " Marcel Proust",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "proust"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:5496bfa9",
+  "string": " Marcel Proust",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "proust"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_writer_nationality:4cc30534",
+  "string": " Marcel Proust",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "proust"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:f989089f",
+  "string": " Haruki Murakami",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "murakami"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:8f631e6c",
+  "string": " Haruki Murakami",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "murakami"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_writer_nationality:e0b9ab6b",
+  "string": " Haruki Murakami",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "murakami"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:e753f8e0",
+  "string": " Herman Melville",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "melville"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:d076c030",
+  "string": " Herman Melville",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "melville"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_writer_nationality:314df65c",
+  "string": " Herman Melville",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "melville"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:dcb77619",
+  "string": " Anton Chekhov",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "chekhov"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:e64808d9",
+  "string": " Anton Chekhov",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "chekhov"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_writer_nationality:554cea00",
+  "string": " Anton Chekhov",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "chekhov"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:5a6eb35e",
+  "string": " Albert Camus",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "camus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:8721621c",
+  "string": " Albert Camus",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "camus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_writer_nationality:2f541277",
+  "string": " Albert Camus",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "camus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:f41ff989",
+  "string": " Gustave Flaubert",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "flaubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_writer:d47fe793",
+  "string": " Gustave Flaubert",
+  "category": "person_writer",
+  "kind": "answer",
+  "overlaps": "flaubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_writer_nationality:d8156a52",
+  "string": " Gustave Flaubert",
+  "category": "bridge_person_writer_nationality",
+  "kind": "bridge",
+  "overlaps": "flaubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:17b8a875",
+  "string": " Thomas Hobbes",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "hobbes"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:46cf9d48",
+  "string": " Thomas Hobbes",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "hobbes"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_history_nationality:25fa65a6",
+  "string": " Thomas Hobbes",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "hobbes"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:1e8596dc",
+  "string": " Vasco da Gama",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "vasco da gama"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:bbf373c6",
+  "string": " Vasco da Gama",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "vasco da gama"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_history_nationality:f38647c7",
+  "string": " Vasco da Gama",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "vasco da gama"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:c7524582",
+  "string": " Simon Bolivar",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "simon bolivar"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:09974495",
+  "string": " Simon Bolivar",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "simon bolivar"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_history_nationality:ae971d44",
+  "string": " Simon Bolivar",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "simon bolivar"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:77e99968",
+  "string": " Otto von Bismarck",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "bismarck"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:701d0695",
+  "string": " Otto von Bismarck",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "bismarck"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_history_nationality:e0cf15c2",
+  "string": " Otto von Bismarck",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "bismarck"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:7f8b32fe",
+  "string": " Hannibal Barca",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "hannibal"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:0e92edf9",
+  "string": " Hannibal Barca",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "hannibal"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_history_nationality:65e49d36",
+  "string": " Hannibal Barca",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "hannibal"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:5b5d81d3",
+  "string": " Che Guevara",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "che guevara"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:e73b7221",
+  "string": " Che Guevara",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "che guevara"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_history_nationality:b93e5dba",
+  "string": " Che Guevara",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "che guevara"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:9729e05a",
+  "string": " Kemal Ataturk",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "mustafa kemal ataturk"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:c1252b5f",
+  "string": " Kemal Ataturk",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "mustafa kemal ataturk"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_history_nationality:f1836234",
+  "string": " Kemal Ataturk",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "mustafa kemal ataturk"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:afdba0f6",
+  "string": " Haile Selassie",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "haile selassie"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_history:2ef4dde0",
+  "string": " Haile Selassie",
+  "category": "person_history",
+  "kind": "answer",
+  "overlaps": "haile selassie"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_history_nationality:90191ce4",
+  "string": " Haile Selassie",
+  "category": "bridge_person_history_nationality",
+  "kind": "bridge",
+  "overlaps": "haile selassie"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_sport:6f657c38",
+  "string": " Jack Nicklaus",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "jack nicklaus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_sport:4a0bdd80",
+  "string": " Jack Nicklaus",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "jack nicklaus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_sport_nationality:f04e1c2c",
+  "string": " Jack Nicklaus",
+  "category": "bridge_person_sport_nationality",
+  "kind": "bridge",
+  "overlaps": "jack nicklaus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_sport:6e4263a6",
+  "string": " Michael Schumacher",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "michael schumacher"
+ },
+ {
+  "track": "A",
+  "id": "fresh:person_sport:a66f188c",
+  "string": " Michael Schumacher",
+  "category": "person_sport",
+  "kind": "answer",
+  "overlaps": "michael schumacher"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_sport_nationality:3589d0ea",
+  "string": " Michael Schumacher",
+  "category": "bridge_person_sport_nationality",
+  "kind": "bridge",
+  "overlaps": "michael schumacher"
+ },
+ {
+  "track": "A",
+  "id": "fresh:landmark:3c8daa53",
+  "string": " Lake Tanganyika",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "lake tanganyika"
+ },
+ {
+  "track": "A",
+  "id": "fresh:landmark:23b34b31",
+  "string": " Stonehenge",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "stonehenge"
+ },
+ {
+  "track": "A",
+  "id": "fresh:landmark:fb981e28",
+  "string": " Angkor Wat",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "angkor wat"
+ },
+ {
+  "track": "A",
+  "id": "fresh:landmark:be2a48d2",
+  "string": " Uluru",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "uluru"
+ },
+ {
+  "track": "A",
+  "id": "fresh:landmark:e33ac492",
+  "string": " Burj Khalifa",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "burj khalifa"
+ },
+ {
+  "track": "A",
+  "id": "fresh:landmark:48ba6c2a",
+  "string": " Taj Mahal",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "taj mahal"
+ },
+ {
+  "track": "A",
+  "id": "fresh:landmark:fb302449",
+  "string": " Machu Picchu",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "machu picchu"
+ },
+ {
+  "track": "A",
+  "id": "fresh:landmark:a28bdb43",
+  "string": " Mount Rushmore",
+  "category": "landmark",
+  "kind": "answer",
+  "overlaps": "mount rushmore state"
+ },
+ {
+  "track": "A",
+  "id": "fresh:event:d7e21c3a",
+  "string": " Treaty of Versailles",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "treaty of versailles"
+ },
+ {
+  "track": "A",
+  "id": "fresh:event:6ad226ed",
+  "string": " Yom Kippur War",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "yom kippur"
+ },
+ {
+  "track": "A",
+  "id": "fresh:event:099aeb27",
+  "string": " Hindenburg disaster",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "hindenburg"
+ },
+ {
+  "track": "A",
+  "id": "fresh:event:3a82fc7b",
+  "string": " Chernobyl",
+  "category": "event",
+  "kind": "answer",
+  "overlaps": "chernobyl"
+ },
+ {
+  "track": "A",
+  "id": "fresh:compound:8de28605",
+  "string": " equator",
+  "category": "compound",
+  "kind": "answer",
+  "overlaps": "equator"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_landmark_country:540defc2",
+  "string": " Stonehenge",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "stonehenge"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_landmark_country:ef285516",
+  "string": " Angkor Wat",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "angkor wat"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_landmark_country:782bc37e",
+  "string": " Taj Mahal",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "taj mahal"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_landmark_country:e75973f2",
+  "string": " Machu Picchu",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "machu picchu"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_landmark_country:46da2665",
+  "string": " Burj Khalifa",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "burj khalifa"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_landmark_country:b157258a",
+  "string": " Mount Rushmore",
+  "category": "bridge_landmark_country",
+  "kind": "bridge",
+  "overlaps": "mount rushmore state"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:f0541e54",
+  "string": " Suva",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "suva"
+ },
+ {
+  "track": "A",
+  "id": "fresh:country_of_capital:3d03a7fb",
+  "string": " Vanuatu",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "the vanuatu vatu"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:9b4a2208",
+  "string": " vatu",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "vatu"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_capital_continent:f8ea7bc6",
+  "string": " Vanuatu",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "the vanuatu vatu"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_capital_currency:4ae11eda",
+  "string": " Vanuatu",
+  "category": "bridge_capital_currency",
+  "kind": "bridge",
+  "overlaps": "the vanuatu vatu"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:4a6e19d8",
+  "string": " Ngerulmud",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "ngerulmud"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:055343ec",
+  "string": " Port Moresby",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "port moresby"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:c0d642f6",
+  "string": " kina",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "kina"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:81234335",
+  "string": " Honiara",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "honiara"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:6788ba7d",
+  "string": " Dili",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "dili"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:79786d45",
+  "string": " rial",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "rial"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:03f8fc94",
+  "string": " dinar",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "dinar"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:0c0b38c2",
+  "string": " rupee",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "rupee"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:02aa7b7f",
+  "string": " rupee",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "rupee"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:2a7fb978",
+  "string": " lilangeni",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "lilangeni"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:2f2cc443",
+  "string": " Libreville",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "libreville"
+ },
+ {
+  "track": "A",
+  "id": "fresh:country_of_capital:d2f6ff67",
+  "string": " Gabon",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "gabon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_capital_continent:e47eea4a",
+  "string": " Gabon",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "gabon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:c90fb084",
+  "string": " Conakry",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "conakry"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:8a5e0618",
+  "string": " dalasi",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "dalasi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:776cbeaa",
+  "string": " Praia",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "praia"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:4e3d5767",
+  "string": " escudo",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "escudo"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:9ee4c40c",
+  "string": " Malabo",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "malabo"
+ },
+ {
+  "track": "A",
+  "id": "fresh:country_of_capital:1059fa41",
+  "string": " Equatorial Guinea",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "equatorial guinea"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_capital_continent:421a7868",
+  "string": " Equatorial Guinea",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "equatorial guinea"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:e65a5e4b",
+  "string": " Bangui",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "bangui"
+ },
+ {
+  "track": "A",
+  "id": "fresh:country_of_capital:ae827b3e",
+  "string": " Guyana",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "guyana"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_capital_continent:8ba29833",
+  "string": " Guyana",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "guyana"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:ef5f4c52",
+  "string": " Paramaribo",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "paramaribo"
+ },
+ {
+  "track": "A",
+  "id": "fresh:country_of_capital:1e6aa740",
+  "string": " Suriname",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "suriname"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_capital_continent:1c29035c",
+  "string": " Suriname",
+  "category": "bridge_capital_continent",
+  "kind": "bridge",
+  "overlaps": "suriname"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:4ef617df",
+  "string": " Tegucigalpa",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "tegucigalpa"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:d08f7e22",
+  "string": " lempira",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "lempira"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:8efb4e0a",
+  "string": " Managua",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "managua"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:0a0c33cf",
+  "string": " balboa",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "balboa"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:5c866192",
+  "string": " Port-au-Prince",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "port-au-prince"
+ },
+ {
+  "track": "A",
+  "id": "fresh:currency:f76d40d0",
+  "string": " gourde",
+  "category": "currency",
+  "kind": "answer",
+  "overlaps": "gourde"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:67b69a27",
+  "string": " Nassau",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "nassau"
+ },
+ {
+  "track": "A",
+  "id": "fresh:capital:5578acb8",
+  "string": " Castries",
+  "category": "capital",
+  "kind": "answer",
+  "overlaps": "castries"
+ },
+ {
+  "track": "A",
+  "id": "fresh:country_of_capital:79b6c371",
+  "string": " Antigua and Barbuda",
+  "category": "country_of_capital",
+  "kind": "answer",
+  "overlaps": "antigua and barbuda"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:f4aa2d2f",
+  "string": " Mendeleev",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "mendeleev"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:e2f6d746",
+  "string": " Mendeleev",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "mendeleev"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:42f7eec4",
+  "string": " Brahe",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "brahe"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:c79879a2",
+  "string": " Brahe",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "brahe"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:18c0107e",
+  "string": " Hubble",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "edwin hubble"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:b44dfdd3",
+  "string": " Hubble",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "edwin hubble"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:1f6f2b30",
+  "string": " Rutherford",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "ernest rutherford"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:b9ea213f",
+  "string": " Rutherford",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "ernest rutherford"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:4b777bd3",
+  "string": " Mendel",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "gregor mendel"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:455c1d60",
+  "string": " Mendel",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "gregor mendel"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:f3ba7378",
+  "string": " Schubert",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "schubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:72d6c5ee",
+  "string": " Schubert",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "schubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:59c1febd",
+  "string": " Stravinsky",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "stravinsky"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:09555829",
+  "string": " Stravinsky",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "stravinsky"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:ddbcd1d4",
+  "string": " Debussy",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "debussy"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:1ce0caa8",
+  "string": " Debussy",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "debussy"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:249eb848",
+  "string": " Verdi",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "verdi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:b6e8e5ee",
+  "string": " Verdi",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "verdi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:4112d4b1",
+  "string": " Munch",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "munch"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:d25993c3",
+  "string": " Munch",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "munch"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:09449562",
+  "string": " Klimt",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "klimt"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:3ea794b0",
+  "string": " Klimt",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "klimt"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:3f226dc8",
+  "string": " Rodin",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "rodin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:dcb5df97",
+  "string": " Rodin",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "rodin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:5e0d5572",
+  "string": " Gaudi",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "antoni gaudi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:39a18102",
+  "string": " Gaudi",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "antoni gaudi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:3c2a2783",
+  "string": " Chopin",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "chopin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:d7e9ad4b",
+  "string": " Chopin",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "chopin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:d0c130d5",
+  "string": " Marquez",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "gabriel garcia marquez"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:53baf0ce",
+  "string": " Marquez",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "gabriel garcia marquez"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:a4d0ffae",
+  "string": " Proust",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "proust"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:eb046034",
+  "string": " Proust",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "proust"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:e9f34905",
+  "string": " Murakami",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "murakami"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:6893e28e",
+  "string": " Murakami",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "murakami"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:bbc3d836",
+  "string": " Melville",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "melville"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:3f83a2d7",
+  "string": " Melville",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "melville"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:06ea819d",
+  "string": " Chekhov",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "chekhov"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:ef76d7f4",
+  "string": " Chekhov",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "chekhov"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:21376596",
+  "string": " Camus",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "camus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:b4534b53",
+  "string": " Camus",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "camus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:5a565fd9",
+  "string": " Flaubert",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "flaubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:a56eb562",
+  "string": " Flaubert",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "flaubert"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:d5872b0b",
+  "string": " Hobbes",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "hobbes"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:34fd4fb6",
+  "string": " Hobbes",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "hobbes"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:ad59b739",
+  "string": " Bolivar",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "simon bolivar"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:6f04e9b3",
+  "string": " Bolivar",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "simon bolivar"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:8194daf3",
+  "string": " Guevara",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "che guevara"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:69167eba",
+  "string": " Guevara",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "che guevara"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:892c7161",
+  "string": " Ataturk",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "mustafa kemal ataturk"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:ef301a1a",
+  "string": " Ataturk",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "mustafa kemal ataturk"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:cff6ba9b",
+  "string": " Selassie",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "haile selassie"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:4249d0cd",
+  "string": " Selassie",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "haile selassie"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:506d9304",
+  "string": " Nicklaus",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "jack nicklaus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:eca88685",
+  "string": " Nicklaus",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "jack nicklaus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:surname:59fe4e21",
+  "string": " Schumacher",
+  "category": "surname",
+  "kind": "answer",
+  "overlaps": "michael schumacher"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_person_nationality:5fc28279",
+  "string": " Schumacher",
+  "category": "bridge_person_nationality",
+  "kind": "bridge",
+  "overlaps": "michael schumacher"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:a3ce6547",
+  "string": " beryllium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "beryllium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:8f41b5e2",
+  "string": " beryllium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "beryllium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:16d9319a",
+  "string": " phosphorus",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "phosphorus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:211de24d",
+  "string": " phosphorus",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "phosphorus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:38ce0fad",
+  "string": " argon",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "argon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:fc2a6787",
+  "string": " argon",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "argon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:a9a31972",
+  "string": " scandium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "scandium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:6cae346e",
+  "string": " scandium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "scandium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:9c8086e1",
+  "string": " vanadium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "vanadium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:a5662340",
+  "string": " vanadium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "vanadium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:2ed2f214",
+  "string": " cobalt",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "cobalt"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:0402d9a8",
+  "string": " cobalt",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "cobalt"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:f854127c",
+  "string": " gallium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "gallium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:6b5013ef",
+  "string": " gallium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "gallium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:e9395ea9",
+  "string": " germanium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "germanium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:0c3c424f",
+  "string": " germanium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "germanium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:5c20b2ba",
+  "string": " arsenic",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "arsenic"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:a6415188",
+  "string": " arsenic",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "arsenic"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:48320bb4",
+  "string": " bromine",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "bromine"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:41422ffd",
+  "string": " bromine",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "bromine"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:eb6f2f36",
+  "string": " krypton",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "krypton"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:735d02fd",
+  "string": " krypton",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "krypton"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:55cad662",
+  "string": " rubidium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "rubidium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:83ea53b4",
+  "string": " rubidium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "rubidium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:f43b36de",
+  "string": " strontium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "strontium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:2467775d",
+  "string": " strontium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "strontium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:1becd3fc",
+  "string": " yttrium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "yttrium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:1a04d8eb",
+  "string": " yttrium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "yttrium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:9f7f53c0",
+  "string": " zirconium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "zirconium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:a43468ee",
+  "string": " zirconium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "zirconium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:d889b7b3",
+  "string": " niobium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "niobium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:a07a7049",
+  "string": " niobium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "niobium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:e735d47f",
+  "string": " molybdenum",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "molybdenum"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:694f4c6f",
+  "string": " molybdenum",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "molybdenum"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:a15a3bc5",
+  "string": " technetium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "technetium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:9a831a5b",
+  "string": " technetium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "technetium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:e4553ca9",
+  "string": " ruthenium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "ruthenium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:47a033a2",
+  "string": " ruthenium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "ruthenium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:d0442295",
+  "string": " rhodium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "rhodium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:1e816cf8",
+  "string": " rhodium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "rhodium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:26c2cd61",
+  "string": " palladium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "palladium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:8511f3f6",
+  "string": " palladium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "palladium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:9514cdc9",
+  "string": " cadmium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "cadmium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:33369abf",
+  "string": " cadmium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "cadmium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:4d40febe",
+  "string": " indium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "indium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:8bbf3545",
+  "string": " indium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "indium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:e4e94773",
+  "string": " antimony",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "antimony"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:1e8c0413",
+  "string": " antimony",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "antimony"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:4555a2c0",
+  "string": " tellurium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "tellurium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:e13b6fec",
+  "string": " tellurium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "tellurium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:c1bb2deb",
+  "string": " iodine",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "iodine"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:a833ffe3",
+  "string": " iodine",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "iodine"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:f8b52670",
+  "string": " xenon",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "xenon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:9b679dcc",
+  "string": " xenon",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "xenon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:42f32151",
+  "string": " caesium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "caesium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:aadf26ff",
+  "string": " caesium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "caesium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:a16c573c",
+  "string": " barium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "barium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:c15c82e8",
+  "string": " barium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "barium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:abc37f36",
+  "string": " lanthanum",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "lanthanum"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:1a51506b",
+  "string": " lanthanum",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "lanthanum"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:cd775f87",
+  "string": " cerium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "cerium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:2b4202d3",
+  "string": " cerium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "cerium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:6b158c66",
+  "string": " praseodymium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "praseodymium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:9fff02bc",
+  "string": " praseodymium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "praseodymium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:3c8f9b91",
+  "string": " neodymium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "neodymium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:2e3be6d8",
+  "string": " neodymium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "neodymium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:5c33d54e",
+  "string": " samarium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "samarium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:eb69ddcd",
+  "string": " samarium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "samarium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:43cf1fee",
+  "string": " europium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "europium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:0c85675b",
+  "string": " europium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "europium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:62b8b98f",
+  "string": " gadolinium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "gadolinium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:7b8529c3",
+  "string": " gadolinium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "gadolinium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:eaebc1c8",
+  "string": " terbium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "terbium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:d0606dc6",
+  "string": " terbium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "terbium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:990680f2",
+  "string": " dysprosium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "dysprosium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:9543a011",
+  "string": " dysprosium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "dysprosium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:4c9cc69c",
+  "string": " holmium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "holmium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:92cd21d9",
+  "string": " holmium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "holmium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:af2a8695",
+  "string": " erbium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "erbium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:243b71ac",
+  "string": " erbium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "erbium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:57c7b747",
+  "string": " ytterbium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "ytterbium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:ebfdff53",
+  "string": " ytterbium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "ytterbium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:19ebf41a",
+  "string": " lutetium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "lutetium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:ae1d6b08",
+  "string": " lutetium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "lutetium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:86c2ff9b",
+  "string": " hafnium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "hafnium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:20c9f028",
+  "string": " hafnium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "hafnium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:c2d27c9e",
+  "string": " tantalum",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "tantalum"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:25c28398",
+  "string": " tantalum",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "tantalum"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:d8563c39",
+  "string": " tungsten",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "tungsten"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:171ac4cd",
+  "string": " tungsten",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "tungsten"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:e0115c88",
+  "string": " rhenium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "rhenium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:f0335f3d",
+  "string": " rhenium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "rhenium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:093dfeaf",
+  "string": " osmium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "osmium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:b7e693d7",
+  "string": " osmium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "osmium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:c6f24ebe",
+  "string": " iridium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "iridium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:84a1c5f9",
+  "string": " iridium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "iridium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:53b2af69",
+  "string": " thallium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "thallium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:1ac8e748",
+  "string": " thallium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "thallium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:d20f560a",
+  "string": " bismuth",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "bismuth"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:0021421c",
+  "string": " bismuth",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "bismuth"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:6f9def17",
+  "string": " polonium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "polonium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:1b1390a1",
+  "string": " polonium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "polonium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:e8fa2c64",
+  "string": " radon",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "radon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:0ba6d65d",
+  "string": " radon",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "radon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:b6c89be6",
+  "string": " francium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "francium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:29058019",
+  "string": " francium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "francium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:ea83d441",
+  "string": " radium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "radium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:c1a8b3be",
+  "string": " radium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "radium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:bf6c02bf",
+  "string": " thorium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "thorium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:7f438a67",
+  "string": " thorium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "thorium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:94de7e77",
+  "string": " neptunium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "neptunium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:5e2b51d6",
+  "string": " neptunium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "neptunium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:a33c5122",
+  "string": " plutonium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "plutonium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:2066e8c4",
+  "string": " plutonium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "plutonium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:e3e268f4",
+  "string": " americium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "americium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:376595d5",
+  "string": " americium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "americium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:133a7d5a",
+  "string": " curium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "curium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:acd77a1a",
+  "string": " curium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "curium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:61758418",
+  "string": " einsteinium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "einsteinium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:2e6cc630",
+  "string": " einsteinium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "einsteinium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:element:4e8f2d0f",
+  "string": " meitnerium",
+  "category": "element",
+  "kind": "answer",
+  "overlaps": "meitnerium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:bridge_element_number:8a6c339a",
+  "string": " meitnerium",
+  "category": "bridge_element_number",
+  "kind": "bridge",
+  "overlaps": "meitnerium"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:2977e172",
+  "string": " capybara",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "capybara"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:5fc86dbc",
+  "string": " kangaroo",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "kangaroo"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:54544a7e",
+  "string": " penguin",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "penguin"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:332f14af",
+  "string": " zebra",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "zebra"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:4856fab6",
+  "string": " Komodo dragon",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "komodo dragon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:28255136",
+  "string": " sloth",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "sloth"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:37ff40af",
+  "string": " armadillo",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "armadillo"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:7a1485d4",
+  "string": " platypus",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "platypus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:6cfb749e",
+  "string": " cobra",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "cobra"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:60ad6b4c",
+  "string": " anaconda",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "anaconda"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:c2ee02e2",
+  "string": " parrot",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "owl parrot"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:899c01e9",
+  "string": " ostrich",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "ostrich"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:3dc3a25a",
+  "string": " flamingo",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "flamingo"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:a6f287a3",
+  "string": " hummingbird",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "hummingbird"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:9395fae2",
+  "string": " hedgehog",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "hedgehog"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:0cbfe714",
+  "string": " raccoon",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "raccoon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:c13e6cc1",
+  "string": " moose",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "moose"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:f840d307",
+  "string": " giraffe",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "giraffe"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:96c93eaf",
+  "string": " rhinoceros",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "rhinoceros"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:2393ecae",
+  "string": " hippopotamus",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "hippopotamus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:add604b5",
+  "string": " octopus",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "octopus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:56a2d0e0",
+  "string": " gorilla",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "gorilla"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:21a3cf0c",
+  "string": " orangutan",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "orangutan"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:a3dbcb9c",
+  "string": " lemur",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "lemur"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:1ef414ba",
+  "string": " tortoise",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "tortoise"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:0bb81609",
+  "string": " chameleon",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "chameleon"
+ },
+ {
+  "track": "A",
+  "id": "fresh:animal:d1146a1f",
+  "string": " emu",
+  "category": "animal",
+  "kind": "answer",
+  "overlaps": "emu"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:1e5a3881",
+  "string": "ventana",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "ventana"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:fa4eb98d",
+  "string": "fenêtre",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "fenêtre"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:8035a563",
+  "string": "Fenster",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "fenster"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:d851e0bc",
+  "string": "finestra",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "finestra"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:8bda100a",
+  "string": "janela",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "janela"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:4d03f456",
+  "string": "cocina",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "cocina"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:b10bdd61",
+  "string": "cuisine",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "cuisine"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:96b01ce9",
+  "string": "Küche",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "küche"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:e1aa68c4",
+  "string": "cucina",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "cucina"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:b5fcc73b",
+  "string": "cozinha",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "cozinha"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:7ad0529f",
+  "string": "bosque",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "bosque"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:4b5c0457",
+  "string": "forêt",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "forêt"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:7fbd4362",
+  "string": "Wald",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "wald"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:b1597858",
+  "string": "foresta",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "foresta"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:362b6901",
+  "string": "floresta",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "floresta"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:8d83de87",
+  "string": "montaña",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "montaña"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:0c873856",
+  "string": "montagne",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "montagne"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:8539996c",
+  "string": "Berg",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "berg"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:ca1e6585",
+  "string": "montagna",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "montagna"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:b32d35ff",
+  "string": "montanha",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "montanha"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:f7eb36ca",
+  "string": "río",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "río"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:424cc1dd",
+  "string": "queso",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "queso"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:a5fb1b01",
+  "string": "fromage",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "fromage"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:f3ba0d2c",
+  "string": "Käse",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "käse"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:c9ef3835",
+  "string": "formaggio",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "formaggio"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:859aee51",
+  "string": "queijo",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "queijo"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:0de8085c",
+  "string": "Brot",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "brot"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:aac9ec4f",
+  "string": "pão",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "pão"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:3d44fcfa",
+  "string": "mantequilla",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "mantequilla"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:2cc52aad",
+  "string": "beurre",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "beurre"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:c4a0e91a",
+  "string": "burro",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "burro"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:a6cf43d7",
+  "string": "manteiga",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "manteiga"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:e85a859c",
+  "string": "poulet",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "poulet"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:c6f5adb5",
+  "string": "Huhn",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "huhn"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:79646db0",
+  "string": "frango",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "frango"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:66395ad9",
+  "string": "fresa",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "fresa"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:5c9db7f7",
+  "string": "fraise",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "fraise"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:e75aff5a",
+  "string": "Erdbeere",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "erdbeere"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:e473aa56",
+  "string": "fragola",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "fragola"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:44f5189b",
+  "string": "morango",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "morango"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:4dbbccac",
+  "string": "miércoles",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "miércoles"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:0937720f",
+  "string": "mercredi",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "mercredi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:68549671",
+  "string": "Mittwoch",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "mittwoch"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:1ad756b0",
+  "string": "mercoledì",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "mercoledì"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:dc5647f8",
+  "string": "quarta-feira",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "quarta-feira"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:da946e31",
+  "string": "jueves",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "jueves"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:4114395e",
+  "string": "jeudi",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "jeudi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:87adaf77",
+  "string": "Donnerstag",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "donnerstag"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:d9fb5e64",
+  "string": "giovedì",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "giovedì"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:550a56f1",
+  "string": "quinta-feira",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "quinta-feira"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:e4291978",
+  "string": "sábado",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "sábado"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:cc06c63a",
+  "string": "samedi",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "samedi"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:9882b705",
+  "string": "Samstag",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "samstag"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:c8a82fcd",
+  "string": "sabato",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "sabato"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:504606b9",
+  "string": "sábado",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "sábado"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:0e912bce",
+  "string": "otoño",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "otoño"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:3afac499",
+  "string": "automne",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "automne"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:ccfbb552",
+  "string": "Herbst",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "herbst"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:63f2100c",
+  "string": "autunno",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "autunno"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:d26e248b",
+  "string": "outono",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "outono"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:6a36cbb5",
+  "string": "primavera",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "primavera"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:27f5e0a9",
+  "string": "printemps",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "printemps"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:dc06f6f6",
+  "string": "Frühling",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "frühling"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:14ba5790",
+  "string": "primavera",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "primavera"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:b57eaccc",
+  "string": "primavera",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "primavera"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:e2f232e3",
+  "string": "nieve",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "nieve"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:d828a19f",
+  "string": "neige",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "neige"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:65a4c88e",
+  "string": "Schnee",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "schnee"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:ab0bf709",
+  "string": "neve",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "neve"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:5256c293",
+  "string": "neve",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "neve"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:efda3bb1",
+  "string": "paraguas",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "paraguas"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:e0bbefd7",
+  "string": "parapluie",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "parapluie"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:34baa24e",
+  "string": "Regenschirm",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "regenschirm"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:e968c7d0",
+  "string": "ombrello",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "ombrello"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:6a3bd7c7",
+  "string": "guarda-chuva",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "guarda-chuva"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:e219a722",
+  "string": "zapato",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "zapato"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:c61665dd",
+  "string": "chaussure",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "chaussure"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:e1f370ca",
+  "string": "Schuh",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "schuh"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:6efa16f8",
+  "string": "scarpa",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "scarpa"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:3e8facbf",
+  "string": "sapato",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "sapato"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:f6ef5745",
+  "string": "guante",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "guante"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:2de6915c",
+  "string": "gant",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "gant"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:7771152b",
+  "string": "Handschuh",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "handschuh"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:4e8e3d7c",
+  "string": "guanto",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "guanto"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:6647091d",
+  "string": "luva",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "luva"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:96cbb83e",
+  "string": "église",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "église"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:7e9470a4",
+  "string": "hôpital",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "hôpital"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:7d5752f6",
+  "string": "Krankenhaus",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "krankenhaus"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:b22294b8",
+  "string": "ospedale",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "ospedale"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:aedb5f8a",
+  "string": "biblioteca",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "biblioteca"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:e5f0439b",
+  "string": "bibliothèque",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "bibliothèque"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:c317bf43",
+  "string": "Bibliothek",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "bibliothek"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:f0ac7b27",
+  "string": "biblioteca",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "biblioteca"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:00993d16",
+  "string": "biblioteca",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "biblioteca"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:2ba665f5",
+  "string": "periódico",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "periódico"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:218c1fa6",
+  "string": "Zeitung",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "zeitung"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:b74baaa1",
+  "string": "giornale",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "giornale"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:cd4c7da8",
+  "string": "jornal",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "jornal"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:ce16b308",
+  "string": "carta",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "magna carta"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:6bc2bb56",
+  "string": "carta",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "magna carta"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:42b5ced0",
+  "string": "Salz",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "salz"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:796c8a16",
+  "string": "azúcar",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "azúcar"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:605608b6",
+  "string": "sucre",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "sucre"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:d106882d",
+  "string": "Zucker",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "zucker"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:971b4f40",
+  "string": "zucchero",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "zucchero"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:e1b7c60b",
+  "string": "açúcar",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "açúcar"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_spanish:c84c8b01",
+  "string": "libertad",
+  "category": "translation_spanish",
+  "kind": "answer",
+  "overlaps": "libertad"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_french:bfb3ac1c",
+  "string": "liberté",
+  "category": "translation_french",
+  "kind": "answer",
+  "overlaps": "liberté"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_german:ce2bbd8c",
+  "string": "Freiheit",
+  "category": "translation_german",
+  "kind": "answer",
+  "overlaps": "freiheit"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_italian:a017a538",
+  "string": "libertà",
+  "category": "translation_italian",
+  "kind": "answer",
+  "overlaps": "libertà"
+ },
+ {
+  "track": "A",
+  "id": "fresh:translation_portuguese:6b49e308",
+  "string": "liberdade",
+  "category": "translation_portuguese",
+  "kind": "answer",
+  "overlaps": "liberdade"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:a26fb6ec",
+  "string": " twenty-five",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "twenty-five"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:09dac460",
+  "string": " twenty-seven",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "twenty-seven"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:1c55a2b6",
+  "string": " twenty-five",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "twenty-five"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:72548435",
+  "string": " twenty-five",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "twenty-five"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:cf34d774",
+  "string": " thirty-six",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "thirty-six"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:3603187a",
+  "string": " forty-two",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "forty-two"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:0a14b0d8",
+  "string": " forty-four",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "one hundred forty-four"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:aa2ef5d8",
+  "string": " forty-nine",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "forty-nine"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:9d130258",
+  "string": " forty-nine",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "forty-nine"
+ },
+ {
+  "track": "A",
+  "id": "fresh:number_word:c4433000",
+  "string": " fifty-nine",
+  "category": "number_word",
+  "kind": "answer",
+  "overlaps": "fifty-nine"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:b6494d5f",
+  "string": " H2SO4",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "h2so4"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:b1e30909",
+  "string": " HCl",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "hcl"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:1bc9f2dc",
+  "string": " HNO3",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "hno3"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:aa2b4628",
+  "string": " NaOH",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "naoh"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:ac024798",
+  "string": " KCl",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "kcl"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:e061a907",
+  "string": " CaCO3",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "caco3"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:b5a34157",
+  "string": " NaHCO3",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "nahco3"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:a317642b",
+  "string": " H2O2",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "h2o2"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:69ae1ca1",
+  "string": " N2O",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "n2o"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:55d6b55f",
+  "string": " SO2",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "so2"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:893d3fa0",
+  "string": " O3",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "o3"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:7a80390b",
+  "string": " C2H5OH",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "c2h5oh"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:bd2f7bd3",
+  "string": " C3H8",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "c3h8"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:d7917198",
+  "string": " SiO2",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "sio2"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:bacc657f",
+  "string": " MgO",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "mgo"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:e05047e5",
+  "string": " CaO",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "cao"
+ },
+ {
+  "track": "A",
+  "id": "fresh:formula:e90e2845",
+  "string": " Fe2O3",
+  "category": "formula",
+  "kind": "answer",
+  "overlaps": "fe2o3"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:d397d6d8",
+  "string": "1789",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1789"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:ce950397",
+  "string": "1066",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1066"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:72f87d5c",
+  "string": "1215",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1215"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:609fe71a",
+  "string": "1455",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1455"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:1e1e1afa",
+  "string": "1666",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1666"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:84b18d16",
+  "string": "1776",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1776"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:11d415ea",
+  "string": "1815",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1815"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:a5408980",
+  "string": "1869",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1869"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:d8979730",
+  "string": "1889",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1889"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:777dc733",
+  "string": "1912",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1912"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:e579b3ed",
+  "string": "1917",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1917"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:967e4956",
+  "string": "1929",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1929"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:00e5a6ff",
+  "string": "1947",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1947"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:ce0c898d",
+  "string": "1962",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1962"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:bfc69fa5",
+  "string": "1969",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1969"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:1d3b68bf",
+  "string": "1986",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1986"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:ca4cce8b",
+  "string": "1991",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1991"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:eea8039f",
+  "string": "2002",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "2002"
+ },
+ {
+  "track": "A",
+  "id": "fresh:year:ff849d51",
+  "string": "1903",
+  "category": "year",
+  "kind": "answer",
+  "overlaps": "1903"
+ },
+ {
+  "track": "A",
+  "id": "fresh:arith_digits:c61af690",
+  "string": "196",
+  "category": "arith_digits",
+  "kind": "answer",
+  "overlaps": "196"
+ },
+ {
+  "track": "A",
+  "id": "fresh:arith_digits:e629653b",
+  "string": "324",
+  "category": "arith_digits",
+  "kind": "answer",
+  "overlaps": "324"
+ },
+ {
+  "track": "A",
+  "id": "fresh:arith_digits:b55f58f1",
+  "string": "108",
+  "category": "arith_digits",
+  "kind": "answer",
+  "overlaps": "108"
+ },
+ {
+  "track": "A",
+  "id": "fresh:arith_digits:50796740",
+  "string": "87",
+  "category": "arith_digits",
+  "kind": "answer",
+  "overlaps": "87"
+ },
+ {
+  "track": "A",
+  "id": "fresh:arith_digits:b25f7466",
+  "string": "111",
+  "category": "arith_digits",
+  "kind": "answer",
+  "overlaps": "111"
+ },
+ {
+  "track": "A",
+  "id": "fresh:arith_digits:d4f05c42",
+  "string": "164",
+  "category": "arith_digits",
+  "kind": "answer",
+  "overlaps": "164"
+ }
+]

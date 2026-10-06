@@ -1,0 +1,18 @@
+family,cell,k,n,rate,p_one_sided_vs_0.30,p_holm
+"R3, 14B two-word (L32/L36 x same/block 4)",L32 same,36,175,0.2057142857142857,0.9981248820136746,1.0
+"R3, 14B two-word (L32/L36 x same/block 4)",L32 block 4,82,175,0.4685714285714286,2.019866734747473e-06,8.079466938989891e-06
+"R3, 14B two-word (L32/L36 x same/block 4)",L36 same,34,175,0.19428571428571428,0.9994401157114764,1.0
+"R3, 14B two-word (L32/L36 x same/block 4)",L36 block 4,73,175,0.41714285714285715,0.0006578432480547987,0.001973529744164396
+"R3, 14B sub-word (L32/L36 x same/block 4)",L32 same,44,342,0.1286549707602339,0.9999999999999581,1.0
+"R3, 14B sub-word (L32/L36 x same/block 4)",L32 block 4,106,342,0.30994152046783624,0.36352007082359433,1.0
+"R3, 14B sub-word (L32/L36 x same/block 4)",L36 same,39,342,0.11403508771929824,0.999999999999981,1.0
+"R3, 14B sub-word (L32/L36 x same/block 4)",L36 block 4,102,342,0.2982456140350877,0.5485556290421059,1.0
+"A24, fresh 14B two-word (one cell)",L32 block 4,59,175,0.33714285714285713,0.16105325688029593,0.16105325688029593
+"A24, fresh 14B sub-word (one cell)",L32 block 4,73,431,0.16937354988399073,0.9999999998503526,0.9999999998503526
+"A23, 8B two-word (pre-named L29 block 4; L32 block 4; post hoc block 8)",L29 block 4,0,160,0.0,0.9999999999999911,1.0
+"A23, 8B two-word (pre-named L29 block 4; L32 block 4; post hoc block 8)",L32 block 4,4,160,0.025,0.9999999999999911,1.0
+"A23, 8B two-word (pre-named L29 block 4; L32 block 4; post hoc block 8)",L29 block 8 (post hoc),79,160,0.49375,2.2155896951217742e-07,6.646769085365323e-07
+"A22 (i), first-hop bridge arms (2 carriers x 2 rules)","continuation, bench any-of-8",26,30,0.8666666666666667,1.7837475074107953e-10,7.134990029643181e-10
+"A22 (i), first-hop bridge arms (2 carriers x 2 rules)","continuation, exact majority",0,30,0.0,0.9999999999999983,1.0
+"A22 (i), first-hop bridge arms (2 carriers x 2 rules)","copy prompt, bench any-of-8",4,30,0.13333333333333333,0.9906834326888212,1.0
+"A22 (i), first-hop bridge arms (2 carriers x 2 rules)","copy prompt, exact majority",0,30,0.0,0.9999999999999983,1.0

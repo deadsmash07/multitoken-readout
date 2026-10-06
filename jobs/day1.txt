@@ -1,0 +1,28 @@
+# Day 1 of docs/REFORMULATION_AND_PLAN.md section 6, pre-registered in docs/prereg_R.yaml.
+# Format: name<TAB>python-args, args relative to sjlens/. One command per GPU (8 x A100-80GB):
+# Each line: <run name> TAB <arguments to python, relative to the repository root>; one GPU per line.
+# GPU 0-3: X1 (R1 locality, R2 linearity) on Qwen3-1.7B, one layer each, HELD-OUT half, 64 carriers.
+# GPU 4-5: X3 (R3 verbalisation, R5) on Qwen3-1.7B: answers on one GPU, bridges with the position scan on the other.
+# GPU 6-7: X0 (R0 / R8) on Qwen3-14B: the E7 gap profile at L16 and L24 in bf16-mixed (bf16 weights, fp32 acts).
+# Estimated A100 wall clock (see the note at the bottom): x1_* 4-5 h each (x1_L22 about 6 h: two frames),
+# x3_ans 1-1.5 h, x3_br about 6-7 h, x0_L16 / x0_L24 6-7 h each. Whole pack: about 7 h if all eight start together.
+x1_L14	scripts/x1_gap1_patch.py --model Qwen/Qwen3-1.7B --layers 14 --split heldout --n-ctx 64 --chunk 8 --alphas 0.3,1 --modes add,replace --linear --fargap --controls shuffled,random --frame plain --kinds answer --device cuda --contexts runs/contexts/qwen3_T128_256.pt --resume --tag x1_L14
+x1_L18	scripts/x1_gap1_patch.py --model Qwen/Qwen3-1.7B --layers 18 --split heldout --n-ctx 64 --chunk 8 --alphas 0.3,1 --modes add,replace --linear --fargap --controls shuffled,random --frame plain --kinds answer --device cuda --contexts runs/contexts/qwen3_T128_256.pt --resume --tag x1_L18
+x1_L22	scripts/x1_gap1_patch.py --model Qwen/Qwen3-1.7B --layers 22 --split heldout --n-ctx 64 --chunk 8 --alphas 0.3,1 --modes add,replace --linear --fargap --controls shuffled,random --frame plain,answer --kinds answer --device cuda --contexts runs/contexts/qwen3_T128_256.pt --resume --tag x1_L22
+x1_L26	scripts/x1_gap1_patch.py --model Qwen/Qwen3-1.7B --layers 26 --split heldout --n-ctx 64 --chunk 8 --alphas 0.3,1 --modes add,replace --linear --fargap --controls shuffled,random --frame plain --kinds answer --device cuda --contexts runs/contexts/qwen3_T128_256.pt --resume --tag x1_L26
+x3_ans	scripts/x3_patchscope.py --model Qwen/Qwen3-1.7B --layers 10,14,18,22,25,27 --split heldout --kinds answer --carriers identity,describe --n-carriers 8 --modes replace --gen 6 --positions last --controls shuffled,random --device cuda --resume --tag x3_ans
+x3_br	scripts/x3_patchscope.py --model Qwen/Qwen3-1.7B --layers 10,14,18,22,25,27 --split all --kinds bridge --carriers identity,describe --n-carriers 8 --modes replace --gen 6 --positions all --controls shuffled,random --device cuda --resume --tag x3_br
+x0_L16	scripts/phase_a_local.py --model Qwen/Qwen3-14B --lens-file qwen3-14b/jlens/Salesforce-wikitext/Qwen3-14B_jacobian_lens.pt --layers 16 --do E7 --dtype bf16-mixed --n-dims 64 --dim-batch 4 --n-ctx-gap 8 --n-ctx 8 --n-bg 8 --T 128 --contexts runs/contexts/qwen3_T128_256.pt --device cuda --tag s2_g4_L16
+x0_L24	scripts/phase_a_local.py --model Qwen/Qwen3-14B --lens-file qwen3-14b/jlens/Salesforce-wikitext/Qwen3-14B_jacobian_lens.pt --layers 24 --do E7 --dtype bf16-mixed --n-dims 64 --dim-batch 4 --n-ctx-gap 8 --n-ctx 8 --n-bg 8 --T 128 --contexts runs/contexts/qwen3_T128_256.pt --device cuda --tag s2_g4_L24
+# Runtime notes (A100-80GB, from the H100 timings in the plan, section 6, doubled):
+#  x1: about 280 gated held-out answer items (434 held-out ids x the 65 % answer gate rate measured on 1.7B).
+#      Per item and layer: 3 finite arms (add at 2 alphas, replace) x 64 carriers, one shared clean forward per
+#      frame, 2 linear JVPs and 1 far-gap JVP, everything x3 (none + shuffled + random). That is about 640 carrier
+#      forwards and 70 chunked JVPs per item, i.e. 50-60 s on an A100 in fp32 (no TF32 override in the code), so
+#      4-5 h per layer and about 6 h for L22, which also runs the answer frame. --resume makes a requeue cheap.
+#  x3: 6 layers x 16 carriers x 6 greedy tokens per item. Answers (about 280 items, last position only): 1-1.5 h.
+#      Bridges (about 150 gated items) scan every prompt position (mean about 14), so 6-7 h; it is the long pole
+#      of the pack. If the queue is tight, drop x3_br to --layers 14,22,27.
+#  x0: E7 on 14B is d = 5120, 40 blocks, 64 sampled output dims, 8 contexts of T = 128 (111 sources). Memory, not
+#      time, is the constraint: --dim-batch 4 keeps the batched backward under about 55 GB with bf16 weights
+#      (28 GB) and fp32 activations. About 6-7 h per layer; if it OOMs, halve --dim-batch (2) or --n-ctx-gap (4).

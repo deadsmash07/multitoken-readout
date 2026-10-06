@@ -1,0 +1,1315 @@
+{
+ "what": "E5a: bench word-boundary regex inside the UNCUT generation (any / majority of 8) beside the registered cut-then-exact rule (R3 / A12); report only (A18)",
+ "scorer": "mt-regex-2026-09-23",
+ "seed": 0,
+ "runs": {
+  "w5_br_14b_B_fh": {
+   "file": "runs/w5_br_14b_B_fh/results.json",
+   "model": "Qwen/Qwen3-14B",
+   "track": "B",
+   "kinds": [
+    "identity3",
+    "continuation"
+   ],
+   "layers": {
+    "32": {
+     "continuation:replace:t4:firsthop [none]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.03333333333333333,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.1,
+      "bench_any": 0.8666666666666667,
+      "bench_any_lo": 0.7333333333333333,
+      "bench_any_hi": 0.9666666666666667,
+      "bench_vote_minus_vote_exact": 0.03333333333333333,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.1,
+      "bench_any_minus_any_exact": 0.8666666666666667,
+      "bench_any_minus_any_exact_lo": 0.7333333333333333,
+      "bench_any_minus_any_exact_hi": 0.9666666666666667,
+      "n_bench_any_not_registered_any": 26,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [
+       {
+        "id": "curated:bridge_capital_continent:81ec2da8",
+        "string": " Saudi Arabia",
+        "gens": [
+         " is the capital of Saudi Arabia. What",
+         " is the level of education of the parents",
+         " is a city in which country? The"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:93a91dbe",
+        "string": " South Korea",
+        "gens": [
+         " is was approved by a large majority.",
+         " is the level of education of the parents",
+         " is a city in South Korea. She"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:b3f1daff",
+        "string": " North Korea",
+        "gens": [
+         " is the accepted version. The proposal was",
+         " is the level of education of the parents",
+         " is a city in North Korea. She"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:030d21fa",
+        "string": " North Macedonia",
+        "gens": [
+         " is was approved by a large majority.",
+         " is the level of education of the parents",
+         " is the capital of North Macedonia. She"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:3f0e9ca5",
+        "string": " Czech Republic",
+        "gens": [
+         " is the capital of the Czech Republic.",
+         " is the level of education of the parents",
+         " is the capital of the Czech Republic."
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:54e5243a",
+        "string": " Sierra Leone",
+        "gens": [
+         " is was approved by a large majority.",
+         " is the level of education of the parents",
+         " is a city in the north of the"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:90463889",
+        "string": " New Zealand",
+        "gens": [
+         " is was approved by a large majority.",
+         " is the level of the country's economic",
+         " is the capital of New Zealand. She"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_continent:8568e022",
+        "string": " Papua New Guinea",
+        "gens": [
+         " is was approved by a large majority.",
+         " is the level of education of the parents",
+         " is the capital of Papua New Guinea."
+        ]
+       }
+      ],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.03333333333333333,
+        "any_exact": 0.0,
+        "bench_any": 0.8666666666666667
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.03333333333333333,
+        "any_exact": 0.0,
+        "bench_any": 0.8666666666666667
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop [random]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop [shuffled]": {
+      "n": 23,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop+1 [none]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.06666666666666667,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.16666666666666666,
+      "bench_any": 0.16666666666666666,
+      "bench_any_lo": 0.03333333333333333,
+      "bench_any_hi": 0.3,
+      "bench_vote_minus_vote_exact": 0.06666666666666667,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.16666666666666666,
+      "bench_any_minus_any_exact": 0.16666666666666666,
+      "bench_any_minus_any_exact_lo": 0.03333333333333333,
+      "bench_any_minus_any_exact_hi": 0.3,
+      "n_bench_any_not_registered_any": 5,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [
+       {
+        "id": "curated:bridge_capital_continent:90463889",
+        "string": " New Zealand",
+        "gens": [
+         " New Zealand.\n\nDoes the sentence make sense",
+         " New Zealand's unique geographical isolation. What",
+         " New Zealand. She was very excited because"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_currency:0b24ee21",
+        "string": " Czech Republic",
+        "gens": [
+         " the Czech Republic, France, Germany,",
+         " the Czech Republic's membership in the European",
+         " the Czech Republic. She was born in"
+        ]
+       },
+       {
+        "id": "curated:bridge_currency_capital:f4cc7623",
+        "string": " Czech Republic",
+        "gens": [
+         " Prague will host the 201",
+         " Prague's location in the center of Europe",
+         " Prague. She had never been there,"
+        ]
+       },
+       {
+        "id": "curated:bridge_currency_capital:27e98ec4",
+        "string": " Sierra Leone",
+        "gens": [
+         " Freetown would be the capital of",
+         " FDI inflows. The report also",
+         " Freetown, the capital of Sierra"
+        ]
+       },
+       {
+        "id": "curated:bridge_currency_capital:13385389",
+        "string": " Costa Rica",
+        "gens": [
+         " San Salvador will be the site of the",
+         " San José, which is the capital of",
+         " San Salvador, the capital of El Salvador"
+        ]
+       }
+      ],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.06666666666666667,
+        "any_exact": 0.0,
+        "bench_any": 0.16666666666666666
+       }
+      },
+      "by_position_rule": {
+       "firsthop+1": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.06666666666666667,
+        "any_exact": 0.0,
+        "bench_any": 0.16666666666666666
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop+1 [random]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop+1": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop+1 [shuffled]": {
+      "n": 23,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop+1": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop-1 [none]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop-1": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop-1 [random]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop-1": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:firsthop-1 [shuffled]": {
+      "n": 23,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop-1": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:last [none]": {
+      "n": 143,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.04895104895104895,
+      "bench_vote_lo": 0.013986013986013986,
+      "bench_vote_hi": 0.08391608391608392,
+      "bench_any": 0.1958041958041958,
+      "bench_any_lo": 0.13286713286713286,
+      "bench_any_hi": 0.25874125874125875,
+      "bench_vote_minus_vote_exact": 0.04895104895104895,
+      "bench_vote_minus_vote_exact_lo": 0.013986013986013986,
+      "bench_vote_minus_vote_exact_hi": 0.08391608391608392,
+      "bench_any_minus_any_exact": 0.1958041958041958,
+      "bench_any_minus_any_exact_lo": 0.13286713286713286,
+      "bench_any_minus_any_exact_hi": 0.25874125874125875,
+      "n_bench_any_not_registered_any": 28,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [
+       {
+        "id": "curated:bridge_capital_continent:90463889",
+        "string": " New Zealand",
+        "gens": [
+         " New Zealand.\n\nDoes the sentence make sense",
+         " New Zealand's unique geographical isolation. What",
+         " New Zealand. She was very excited because"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_currency:ac64ae1e",
+        "string": " Saudi Arabia",
+        "gens": [
+         " Saudi Arabian Monetary Agency had agreed to the",
+         " Saudi Arabian oil reserves. The report said",
+         " Saudi Arabian Airlines. She was surprised because"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_currency:0b24ee21",
+        "string": " Czech Republic",
+        "gens": [
+         " Czech Republic would be the next country to",
+         " Czech crown's exchange rate against the euro",
+         " Czech Republic. She was born in the"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_currency:d23a3acb",
+        "string": " Papua New Guinea",
+        "gens": [
+         " Papua New Guinea would be the next country",
+         " Australian dollar's exchange rate against the US",
+         " Australian dollar. She was very surprised,"
+        ]
+       },
+       {
+        "id": "curated:bridge_currency_capital:f4cc7623",
+        "string": " Czech Republic",
+        "gens": [
+         " Prague will host the 201",
+         " Prague's location in the center of Europe",
+         " Prague. She had never been there,"
+        ]
+       },
+       {
+        "id": "curated:bridge_currency_capital:27e98ec4",
+        "string": " Sierra Leone",
+        "gens": [
+         " Freetown would be the capital of",
+         " FDI inflows. The report also",
+         " Freetown, the capital of Sierra"
+        ]
+       },
+       {
+        "id": "curated:bridge_currency_capital:13385389",
+        "string": " Costa Rica",
+        "gens": [
+         " San Salvador will be the site of the",
+         " San José, which is the capital of",
+         " San Salvador, the capital of El Salvador"
+        ]
+       },
+       {
+        "id": "phrase:bridge_capital_currency:3de9e669",
+        "string": " Cape Verde",
+        "gens": [
+         " Cape Town would host the 20",
+         " Cape Verdean identity, which was more",
+         " Cape of Good Hope. She was born"
+        ]
+       }
+      ],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.04895104895104895,
+        "any_exact": 0.0,
+        "bench_any": 0.1958041958041958
+       }
+      },
+      "by_position_rule": {
+       "last": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.04895104895104895,
+        "any_exact": 0.0,
+        "bench_any": 0.1958041958041958
+       }
+      }
+     },
+     "continuation:replace:t4:last [random]": {
+      "n": 143,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "last": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "continuation:replace:t4:last [shuffled]": {
+      "n": 143,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "last": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop [none]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.13333333333333333,
+      "bench_any_lo": 0.03333333333333333,
+      "bench_any_hi": 0.26666666666666666,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.13333333333333333,
+      "bench_any_minus_any_exact_lo": 0.03333333333333333,
+      "bench_any_minus_any_exact_hi": 0.26666666666666666,
+      "n_bench_any_not_registered_any": 4,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [
+       {
+        "id": "curated:bridge_capital_continent:54e5243a",
+        "string": " Sierra Leone",
+        "gens": [
+         " is a city in Sierra Leone -> F",
+         " is the name of the hotel, the",
+         " is -> is; 199"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_currency:ac64ae1e",
+        "string": " Saudi Arabia",
+        "gens": [
+         " is the correct answer. The answer is",
+         " is the correct answer. The user is",
+         " is the correct answer. The task is"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_language:c7bff3bd",
+        "string": " Saudi Arabia",
+        "gens": [
+         " is the correct answer. The answer is",
+         " is the correct answer. The user is",
+         " is the correct answer. The other options"
+        ]
+       },
+       {
+        "id": "curated:bridge_capital_language:cde4c2f7",
+        "string": " Sierra Leone",
+        "gens": [
+         " is -> is; Sierra Leone -> Sierra",
+         " is the name of the hotel, the",
+         " is -> is; 199"
+        ]
+       }
+      ],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.13333333333333333
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.13333333333333333
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop [random]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop [shuffled]": {
+      "n": 23,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop+1 [none]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.03333333333333333,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.13333333333333333,
+      "any_exact": 0.03333333333333333,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.13333333333333333,
+      "bench_vote": 0.06666666666666667,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.16666666666666666,
+      "bench_any": 0.06666666666666667,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.16666666666666666,
+      "bench_vote_minus_vote_exact": 0.03333333333333333,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.1,
+      "bench_any_minus_any_exact": 0.03333333333333333,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.1,
+      "n_bench_any_not_registered_any": 1,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [
+       {
+        "id": "curated:bridge_capital_currency:0b24ee21",
+        "string": " Czech Republic",
+        "gens": [
+         " the -> the; 199",
+         " the Czech Republic -> the Czech Republic;",
+         " the Czech Republic -> the Czech Republic;"
+        ]
+       }
+      ],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.03333333333333333,
+        "bench_vote": 0.06666666666666667,
+        "any_exact": 0.03333333333333333,
+        "bench_any": 0.06666666666666667
+       }
+      },
+      "by_position_rule": {
+       "firsthop+1": {
+        "n": 30,
+        "vote_exact": 0.03333333333333333,
+        "bench_vote": 0.06666666666666667,
+        "any_exact": 0.03333333333333333,
+        "bench_any": 0.06666666666666667
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop+1 [random]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop+1": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop+1 [shuffled]": {
+      "n": 23,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop+1": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop-1 [none]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop-1": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop-1 [random]": {
+      "n": 30,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop-1": {
+        "n": 30,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:firsthop-1 [shuffled]": {
+      "n": 23,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "firsthop-1": {
+        "n": 23,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:last [none]": {
+      "n": 143,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.027972027972027972,
+      "vote_exact_lo": 0.006993006993006993,
+      "vote_exact_hi": 0.055944055944055944,
+      "any_exact": 0.04895104895104895,
+      "any_exact_lo": 0.013986013986013986,
+      "any_exact_hi": 0.08391608391608392,
+      "bench_vote": 0.027972027972027972,
+      "bench_vote_lo": 0.006993006993006993,
+      "bench_vote_hi": 0.055944055944055944,
+      "bench_any": 0.04895104895104895,
+      "bench_any_lo": 0.013986013986013986,
+      "bench_any_hi": 0.08391608391608392,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 143,
+        "vote_exact": 0.027972027972027972,
+        "bench_vote": 0.027972027972027972,
+        "any_exact": 0.04895104895104895,
+        "bench_any": 0.04895104895104895
+       }
+      },
+      "by_position_rule": {
+       "last": {
+        "n": 143,
+        "vote_exact": 0.027972027972027972,
+        "bench_vote": 0.027972027972027972,
+        "any_exact": 0.04895104895104895,
+        "bench_any": 0.04895104895104895
+       }
+      }
+     },
+     "identity3:replace:t4:last [random]": {
+      "n": 143,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "last": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     },
+     "identity3:replace:t4:last [shuffled]": {
+      "n": 143,
+      "skipped_no_gens": 0,
+      "vote_exact": 0.0,
+      "vote_exact_lo": 0.0,
+      "vote_exact_hi": 0.0,
+      "any_exact": 0.0,
+      "any_exact_lo": 0.0,
+      "any_exact_hi": 0.0,
+      "bench_vote": 0.0,
+      "bench_vote_lo": 0.0,
+      "bench_vote_hi": 0.0,
+      "bench_any": 0.0,
+      "bench_any_lo": 0.0,
+      "bench_any_hi": 0.0,
+      "bench_vote_minus_vote_exact": 0.0,
+      "bench_vote_minus_vote_exact_lo": 0.0,
+      "bench_vote_minus_vote_exact_hi": 0.0,
+      "bench_any_minus_any_exact": 0.0,
+      "bench_any_minus_any_exact_lo": 0.0,
+      "bench_any_minus_any_exact_hi": 0.0,
+      "n_bench_any_not_registered_any": 0,
+      "n_registered_any_not_bench_any": 0,
+      "examples_bench_only": [],
+      "examples_registered_only": [],
+      "by_kind": {
+       "bridge": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      },
+      "by_position_rule": {
+       "last": {
+        "n": 143,
+        "vote_exact": 0.0,
+        "bench_vote": 0.0,
+        "any_exact": 0.0,
+        "bench_any": 0.0
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -68,7 +68,7 @@ ax.spines["left"].set_color("#BDBDBD")
 ax.spines["left"].set_linewidth(0.8)
 ax.grid(axis="x", color="#E6E6E6", lw=0.6, zorder=0)
 ax.set_axisbelow(True)
-ax.set_xlabel("Held-out answers written exactly", labelpad=3)
+ax.set_xlabel("Exact-match accuracy", labelpad=3)
 
 handles = [Line2D([], [], marker="o", ls="none", ms=5.2, mfc="white", mec=BASE, mew=1.2),
            Line2D([], [], marker="o", ls="none", ms=5.6, mfc=OURS, mec=OURS)]

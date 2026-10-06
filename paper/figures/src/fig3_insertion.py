@@ -40,7 +40,7 @@ ax.set_xticklabels(["0", "25", "50", "75%"])
 ax.spines["left"].set_visible(False)
 ax.grid(axis="x", color="#E6E6E6", lw=0.6, zorder=0)
 ax.set_axisbelow(True)
-ax.set_xlabel("Answers written exactly", labelpad=3)
+ax.set_xlabel("Exact-match accuracy", labelpad=3)
 
 handles = [Line2D([], [], marker="o", ls="none", ms=5.6, color=COPY_C),
            Line2D([], [], marker="D", ls="none", ms=5.0, color=CONT_C, mec="#4F79B0", mew=0.6)]
